@@ -31,7 +31,7 @@ folium_map = folium.Map(location=[-33.4489, -70.6693],
                         tiles='cartodbpositron', zoom_start=9)
 
 for idx, row in df_map.iterrows():
-    popup = folium.Popup(f"<b>Nombre:</b> {row.nombre} <br> <b>Precipitación:</b> {row.pp} [mm] <br> <b>Lat, Lon:</b> ({round(row.lat,3)}°, {round(row.lon,3)})°", max_width=1000)
+    popup = folium.Popup(f"<b>Nombre:</b> {row.nombre} <br> <b>Precipitación:</b> {row.pp} [mm] <br> <b>Lat, Lon:</b> ({round(row.lat,3)}°, {round(row.lon,3)}°)", max_width=1000)
     Circle(location=[row.lat, row.lon], radius=1, color='darkblue', fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     Circle(location=[row.lat, row.lon], radius=row.pp*25, color='royalblue', fill_color='royalblue', fill=True, fill_opacity=0.4, popup=popup).add_to(folium_map)
 
