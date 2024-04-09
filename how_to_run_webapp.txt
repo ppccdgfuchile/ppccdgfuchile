@@ -1,0 +1,4 @@
+- create environment
+- pip install requirements.txt
+- cd ../ppcc_dgfuchile
+- streamlit run 1_🏠_Inicio
