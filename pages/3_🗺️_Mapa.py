@@ -12,24 +12,18 @@ import branca.colormap as cm
 
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
-df = pd.read_csv('data_test.csv', sep=';')
+df = pd.read_csv('.\eventos\data_test.csv', sep=';')
 df_map = df[['lat', 'lon', 'pp']].astype('float64')
 df_map['nombre'] = df['nombre']
 
 df_map.drop(77, inplace=True)
 df_map.drop(118, inplace=True)
-
 df_map.dropna(inplace=True)
-
-# st.header('Mapa creado con Streamlit')
-# st.map(df_map, latitude='lat', longitude='lon', size='pp')
-# st.divider()
 
 st.header('Mapa evento YYYY/MM/dd - Scatter')
 # Create a base map
 folium_map = folium.Map(location=[-33.4489, -70.6693],
                         tiles='cartodbpositron', zoom_start=9)
-
 for idx, row in df_map.iterrows():
     popup = folium.Popup(f"<b>Nombre:</b> {row.nombre} <br> <b>Precipitación:</b> {row.pp} [mm] <br> <b>Lat, Lon:</b> ({round(row.lat,3)}°, {round(row.lon,3)}°)", max_width=1000)
     Circle(location=[row.lat, row.lon], radius=1, color='darkblue', fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
@@ -43,8 +37,5 @@ st.header('Mapa evento YYYY/MM/dd - Heatmap')
 # Create a base map
 folium_map2 = folium.Map(location=[-33.4489, -70.6693],
                          tiles='cartodbpositron', zoom_start=9)
-
-cbar = cm.linear.BuPu_05.scale(min(df_map.pp), max(df_map.pp))
 HeatMap(df_map[['lat', 'lon']], radius=25, blur=25).add_to(folium_map2)
-
 st_map2 = st_folium(folium_map2, width=1300, height=700)
