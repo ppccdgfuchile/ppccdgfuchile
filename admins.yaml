@@ -1,0 +1,18 @@
+credentials:
+  usernames:
+    tomas:
+      email:
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: Tomas Caballero
+      password: abc # Will be hashed automatically
+    lucas:
+      email:
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: Lucas Glasner
+      password: abc # Will be hashed automatically
+cookie:
+  expiry_days: 0
+  key: dsad13 # Must be string
+  name: admins

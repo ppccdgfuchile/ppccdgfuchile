@@ -12,7 +12,7 @@ import branca.colormap as cm
 
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
-df = pd.read_csv('.\eventos\data_test.csv', sep=';')
+df = pd.read_csv('.\data_test.csv', sep=';')
 df_map = df[['lat', 'lon', 'pp']].astype('float64')
 df_map['nombre'] = df['nombre']
 
