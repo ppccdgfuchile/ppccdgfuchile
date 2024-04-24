@@ -1,4 +1,4 @@
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex, justify-content: space-between,">
     <img src="static/logo_dgf.png" alt="logo_dgf" width='300'>
     <img src="static/logo_ppcc.png" alt="logo_ppcc" width='300'>
 </div>
