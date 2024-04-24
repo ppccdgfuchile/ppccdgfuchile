@@ -1,4 +1,5 @@
 import streamlit as st
+from params import *
 
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
@@ -11,11 +12,8 @@ with col1:
             
                 En este repositorio se encuentra la información y mediciones recopiladas por los voluntarios, además de las herramientas desarrolladas para su despliegue público en la web.
                 """, )
-    
+
 with col2:
-    st.image('static\\logo_dgf.png')
+    st.image(f'static{path_sep}logo_dgf.png')
     st.divider()
-    st.image('static\\logo_ppcc.png')
-
-
-
+    st.image(f'static{path_sep}logo_ppcc.png')
