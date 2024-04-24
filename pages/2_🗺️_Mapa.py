@@ -14,7 +14,7 @@ import sys
 import locale
 sys.path.append('../.')
 
-# locale.setlocale(locale.LC_TIME, 'es_ES')
+locale.setlocale(locale.LC_TIME, 'es_ES')
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
 events = sorted(os.listdir(f".{path_sep}eventos"))
@@ -51,7 +51,7 @@ for idx, row in df_map.iterrows():
 
 st_map = st_folium(folium_map, width=1300, height=700)
 
-st.divider()
+# st.divider()
 
 # st.header('Mapa evento YYYY/MM/dd - Heatmap')
 # # Create a base map
