@@ -18,21 +18,18 @@ events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%Y/%B/%
 
 
 def check_valid_email(email):
+    pat = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
     usuarios = pd.read_csv(f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
     lista_mails = usuarios.mail.to_list()
-    if email in lista_mails:
-        return True
+    if re.match(pat, email):
+        if email in lista_mails:
+            return True
+        else:
+            st.error("El correo no se encuentra registrado")
+            return False
     else:
-        st.error("Email no se encuentra registrado")
+        st.error("El correo no es válido")
         return False
-    # # Regular expression for validating an Email
-    # regex = r'^[a-z0-9]+[\._]?[a-z0-9]+[@]^[a-z0-9]+[\._]?[a-z0-9]+[.]\w+$'
-    # # If the string matches the regex, it is a valid email
-    # if re.match(regex, email):
-    #     return True
-    # else:
-    #     st.error("E-mail no válido")
-    #     return False
 
 
 def check_valid_precipitation(precipitation):
@@ -59,7 +56,7 @@ def submit_information(email, event, precipitation):
 
         # Save data
         df.to_csv(
-            f".{path_sep}eventos{path_sep}{events[events_names.index(event)]}")
+            f".{path_sep}eventos{path_sep}{events[events_names.index(event)]}", index=False)
 
         st.success(f"Información registrada exitosamente!")
         st.success(f"Email: {email}")
@@ -70,7 +67,7 @@ def submit_information(email, event, precipitation):
 st.header('Ingresa tus Datos')
 
 with st.form(key='my_form', border=False):
-    email = st.text_input(label='Ingresa tu email')
+    email = st.text_input(label='Ingresa tu correo')
     event = st.selectbox(
         'Seleccione el evento del dato a registrar', events_names)
     precipitation = st.number_input(

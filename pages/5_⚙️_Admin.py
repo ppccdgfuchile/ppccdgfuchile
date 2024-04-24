@@ -35,6 +35,15 @@ if authentication_status:
 
     st.divider()
 
+    with st.expander("Ver datos de evento"):
+        events = sorted(os.listdir(f".{path_sep}eventos"))
+        events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%Y/%B/%d")
+                        for e in events]
+        event = st.selectbox(
+            'Seleccione evento', events_names, key='verdatos')
+        data = pd.read_csv(f".{path_sep}eventos{path_sep}{events[events_names.index(event)]}", index_col='index')
+        st.dataframe(data, use_container_width=True)
+
     with st.expander("Añadir nuevo evento"):
         d = st.date_input("Fecha del evento")
         if st.button('Añadir'):
@@ -48,7 +57,7 @@ if authentication_status:
         events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%Y/%B/%d")
                         for e in events]
         target_event = st.selectbox(
-            'Seleccione el evento a eliminar', events_names)
+            'Seleccione el evento a eliminar', events_names, key='eliminarevento')
         if st.button("Eliminar"):
             os.remove(f".{path_sep}eventos{path_sep}{events[events_names.index(target_event)]}")
             st.warning(f"{events[events_names.index(target_event)]} ha sido eliminado de la base de datos")
