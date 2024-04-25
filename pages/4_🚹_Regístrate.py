@@ -30,7 +30,7 @@ def check_valid_email(email):
 
 
 def check_nombre(nombre):
-    pat = r'[a-zA-Záéíóú\s]+$'
+    pat = r'[a-zA-Zñáéíóú\s]+$'
     if re.match(pat, nombre):
         return True
     else:
@@ -39,7 +39,7 @@ def check_nombre(nombre):
 
 
 def check_comuna(comuna):
-    pat = r'[a-zA-Záéíóú\s]+$'
+    pat = r'[a-zA-Zñáéíóú\s]+$'
     if re.match(pat, comuna):
         return True
     else:

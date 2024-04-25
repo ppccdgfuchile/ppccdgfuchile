@@ -33,8 +33,17 @@ df_map.dropna(inplace=True)
 
 st.header(f'Mapa evento {target_event} - Scatter')
 # Create a base map
+tile = folium.TileLayer(
+        tiles = 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+        attr = 'Esri',
+        name = 'Esri Satellite',
+        overlay = False,
+        control = True
+)
+# folium_map = folium.Map(location=[-33.4489, -70.6693],
+#                         tiles='CartoDB Positron', zoom_start=9)
 folium_map = folium.Map(location=[-33.4489, -70.6693],
-                        tiles='cartodbpositron', zoom_start=9)
+                        tiles=tile, zoom_start=9)
 colormap = cm.linear.YlGnBu_09.scale(df.pp.min(), df.pp.max())
 for idx, row in df_map.iterrows():
     # color = colormap.scale(row.pp)
@@ -44,7 +53,9 @@ for idx, row in df_map.iterrows():
     #        fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     Circle(location=[row.lat, row.lon],
            radius=row.pp*25,
-           stroke=False,
+           stroke=True,
+           weight=0.75,
+           color='black',
            fill_color=colormap(row.pp), fill=True,
            fill_opacity=0.8,
            popup=popup).add_to(folium_map)

@@ -51,6 +51,7 @@ if authentication_status:
             df['pp'] = np.nan
             df.to_csv(f".{path_sep}eventos{path_sep}{d.strftime('%Y-%m-%d')}.csv", index=False)
             st.success(f"{d.strftime('%Y-%m-%d')}.csv ha sido creado!")
+            st.rerun()
 
     with st.expander("Eliminar evento"):
         events = sorted(os.listdir(f".{path_sep}eventos"))
@@ -69,7 +70,7 @@ if authentication_status:
         usuarios = pd.read_csv(f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
 
         def update_df():
-            usuarios_edited.reset_index(inplace=True)
+            usuarios_edited.reset_index(inplace=True, drop=True)
             usuarios_edited.to_csv(f".{path_sep}usuarios{path_sep}usuarios.csv")
 
         update_button = st.button("Update", on_click=update_df)
