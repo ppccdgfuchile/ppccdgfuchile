@@ -78,6 +78,12 @@ with st.form(key='my_form', border=False):
     comuna = st.text_input(label='Comuna').rstrip()
     alias = st.text_input(label='Alias').rstrip()
     # grupo = st.text_input(label='Grupo')
+
+    st.divider()
+
+    with st.expander("¿Cómo obtener la latitud y longitud de tu ubicación?"):
+        st.write('Video')
+
     latitud = st.number_input(
         label='Ingresa tu latitud en grados', min_value=-90., max_value=90., step=0.00001)
     longitud = st.number_input(

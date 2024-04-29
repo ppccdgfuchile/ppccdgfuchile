@@ -41,8 +41,16 @@ if authentication_status:
                         for e in events]
         event = st.selectbox(
             'Seleccione evento', events_names, key='verdatos')
+        
         data = pd.read_csv(f".{path_sep}eventos{path_sep}{events[events_names.index(event)]}", index_col='index')
-        st.dataframe(data, use_container_width=True)
+
+        def update_data():
+            data_edited.reset_index(inplace=True, drop=True)
+            data_edited.index.name = 'index'
+            data_edited.to_csv(f".{path_sep}eventos{path_sep}{events[events_names.index(event)]}")
+
+        update_data = st.button("Update", on_click=update_data, key='data_edited')
+        data_edited = st.data_editor(data, use_container_width=True, num_rows='dynamic')
 
     with st.expander("Añadir nuevo evento"):
         d = st.date_input("Fecha del evento")
@@ -71,8 +79,9 @@ if authentication_status:
 
         def update_df():
             usuarios_edited.reset_index(inplace=True, drop=True)
+            usuarios_edited.index.name = 'index'
             usuarios_edited.to_csv(f".{path_sep}usuarios{path_sep}usuarios.csv")
 
-        update_button = st.button("Update", on_click=update_df)
+        update_button = st.button("Update", on_click=update_df, key='usuarios_edited')
         usuarios_edited = st.data_editor(usuarios, use_container_width=True, num_rows="dynamic")
 

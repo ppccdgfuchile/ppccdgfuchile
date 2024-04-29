@@ -40,10 +40,10 @@ tile = folium.TileLayer(
         overlay = False,
         control = True
 )
-# folium_map = folium.Map(location=[-33.4489, -70.6693],
-#                         tiles='CartoDB Positron', zoom_start=9)
 folium_map = folium.Map(location=[-33.4489, -70.6693],
-                        tiles=tile, zoom_start=9)
+                        tiles='CartoDB Positron', zoom_start=11)
+# folium_map = folium.Map(location=[-33.4489, -70.6693],
+#                         tiles=tile, zoom_start=11)
 colormap = cm.linear.YlGnBu_09.scale(df.pp.min(), df.pp.max())
 for idx, row in df_map.iterrows():
     # color = colormap.scale(row.pp)
