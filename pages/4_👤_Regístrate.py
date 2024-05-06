@@ -6,16 +6,17 @@ import os
 import re
 import sys
 import time
-import locale
+# import locale
 sys.path.append('../.')
 
 # Use Spanish Locale
-locale.setlocale(locale.LC_TIME, 'es_ES')
+# locale.setlocale(locale.LC_TIME, 'es_ES')
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
 
 def check_valid_email(email):
-    usuarios = pd.read_csv(f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
+    usuarios = pd.read_csv(
+        f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
     lista_mails = usuarios.mail.to_list()
     pat = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
     if re.match(pat, email):
@@ -52,7 +53,8 @@ def check_alias(alias):
     if re.match(pat, alias):
         return True
     else:
-        st.error("El alias no es válido (Debe ser una palabra solo con letras y números, sin tildes)")
+        st.error(
+            "El alias no es válido (Debe ser una palabra solo con letras y números, sin tildes)")
         return False
 
 
@@ -66,8 +68,10 @@ def register_user(nombre, mail, comuna, alias, latitud, longitud):
     elif not check_alias(alias):
         return None
     else:
-        usuarios = pd.read_csv(f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
-        usuarios.loc[len(usuarios.index)] = [nombre, mail, comuna, latitud, longitud, alias, '']
+        usuarios = pd.read_csv(
+            f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
+        usuarios.loc[len(usuarios.index)] = [nombre, mail,
+                                             comuna, latitud, longitud, alias, '']
         usuarios.to_csv(f".{path_sep}usuarios{path_sep}usuarios.csv")
         st.success("Usuario registrado!")
 
@@ -92,4 +96,3 @@ with st.form(key='my_form', border=False):
 
 if submit_button:
     register_user(nombre, mail, comuna, alias, latitud, longitud)
-    

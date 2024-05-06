@@ -5,11 +5,11 @@ from datetime import datetime
 import os
 import re
 import sys
-import locale
+# import locale
 sys.path.append('../.')
 
 # Use Spanish Locale
-locale.setlocale(locale.LC_TIME, 'es_ES')
+# locale.setlocale(locale.LC_TIME, 'es_ES')
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
 events = sorted(os.listdir(f".{path_sep}eventos"))
@@ -19,7 +19,8 @@ events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%Y/%B/%
 
 def check_valid_email(email):
     pat = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
-    usuarios = pd.read_csv(f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
+    usuarios = pd.read_csv(
+        f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
     lista_mails = usuarios.mail.to_list()
     if re.match(pat, email):
         if email in lista_mails:

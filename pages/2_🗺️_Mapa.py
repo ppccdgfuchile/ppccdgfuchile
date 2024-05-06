@@ -11,10 +11,10 @@ from folium.plugins import HeatMap, MarkerCluster  # for plugins
 import branca.colormap as cm
 from datetime import datetime
 import sys
-import locale
+# import locale
 sys.path.append('../.')
 
-locale.setlocale(locale.LC_TIME, 'es_ES')
+# locale.setlocale(locale.LC_TIME, 'es_ES')
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
 events = sorted(os.listdir(f".{path_sep}eventos"))
@@ -29,26 +29,47 @@ df = pd.read_csv(
     f'.{path_sep}eventos{path_sep}{events[events_names.index(target_event)]}')
 df_map = df[['lat', 'lon', 'pp']].astype('float64')
 df_map['nombre'] = df['nombre']
+df_map['alias'] = df['alias']
 df_map.dropna(inplace=True)
+st.header(f'Precipitaciones Evento {target_event}')
 
-st.header(f'Mapa evento {target_event} - Scatter')
-# Create a base map
-tile = folium.TileLayer(
-        tiles = 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
-        attr = 'Esri',
-        name = 'Esri Satellite',
-        overlay = False,
-        control = True
+# ---------------------------------------------------------------------------- #
+# BASEMAPS
+
+# google_maps_tile = folium.TileLayer(
+#     tiles='https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}',
+#     attr='Esri',
+#     name='Esri Satellite',
+#     overlay=False,
+#     control=True
+# )
+
+
+# google_hybrid_tile = folium.TileLayer(
+#     tiles='https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+#     attr='Esri',
+#     name='Esri Satellite',
+#     overlay=False,
+#     control=True
+# )
+
+google_satellite_tile = folium.TileLayer(
+    tiles='http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}',
+    attr='Esri',
+    name='Esri Satellite',
+    overlay=False,
+    control=True
 )
+
+# ---------------------------------------------------------------------------- #
 folium_map = folium.Map(location=[-33.4489, -70.6693],
-                        tiles='CartoDB Positron', zoom_start=11)
-# folium_map = folium.Map(location=[-33.4489, -70.6693],
-#                         tiles=tile, zoom_start=11)
+                        tiles=google_satellite_tile, zoom_start=11)
+
 colormap = cm.linear.YlGnBu_09.scale(df.pp.min(), df.pp.max())
 for idx, row in df_map.iterrows():
     # color = colormap.scale(row.pp)
     popup = folium.Popup(
-        f"<b>Nombre:</b> {row.nombre} <br> <b>Precipitación:</b> {row.pp} [mm] <br> <b>Lat, Lon:</b> ({round(row.lat,3)}°, {round(row.lon,3)}°)", max_width=1000)
+        f"<b>Alias:</b> {row.alias} <br> <b>Precipitación:</b> {row.pp} [mm] <br> <b>Lat, Lon:</b> ({round(row.lat,3)}°, {round(row.lon,3)}°)", max_width=1000)
     # Circle(location=[row.lat, row.lon], radius=1, color='darkblue',
     #        fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     Circle(location=[row.lat, row.lon],
