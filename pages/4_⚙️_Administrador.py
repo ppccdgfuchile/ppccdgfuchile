@@ -13,6 +13,9 @@ import time
 sys.path.append('../.')
 
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
+st.sidebar.image(f"static{path_sep}logo_ppcc.png", use_column_width=True)
+st.sidebar.image(f"static{path_sep}logo_dgf.png", use_column_width=True)
+st.sidebar.image(f"static{path_sep}logo_cr2.jpg", use_column_width=True)
 
 with open(f'.{path_sep}admins.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
@@ -31,12 +34,27 @@ if authentication_status == False:
     st.error("Usuario o contraseña incorrectos!")
 
 if authentication_status:
-    authenticator.logout("Logout", "sidebar")
     st.header("Página de Administración")
-
     st.divider()
 
-    with st.expander("Ver datos de evento"):
+    with st.expander("Usuarios registrados", expanded=True):
+        data = pd.read_csv(
+            f".{path_sep}usuarios{path_sep}usuarios.csv",
+            index_col='index')
+
+        def update_data():
+            st.success('Actualización exitosa!')
+            data_edited.reset_index(inplace=True, drop=True)
+            data_edited.index.name = 'index'
+            data_edited.to_csv(
+                f".{path_sep}usuarios{path_sep}usuarios.csv")
+
+        update_data = st.button(
+            "Actualizar", on_click=update_data, key='data_update_users')
+        data_edited = st.data_editor(data, use_container_width=True,
+                                     num_rows='dynamic', key='data_edit_users')
+
+    with st.expander("Ver datos de evento", expanded=False):
         events = sorted(os.listdir(f".{path_sep}eventos"))
         events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%Y/%m/%d")
                         for e in events]
@@ -53,11 +71,12 @@ if authentication_status:
                 f".{path_sep}eventos{path_sep}{events[events_names.index(event)]}")
 
         update_data = st.button(
-            "Update", on_click=update_data, key='data_edited')
+            "Actualizar", on_click=update_data, key='data_update_event')
         data_edited = st.data_editor(
-            data, use_container_width=True, num_rows='dynamic')
+            data, use_container_width=True, num_rows='dynamic',
+            key='data_edit_event')
 
-    with st.expander("Añadir nuevo evento"):
+    with st.expander("Añadir nuevo evento", expanded=False):
         d = st.date_input("Fecha del evento a añadir:")
         sheet = st.file_uploader('Cargar planilla de registros...')
         if sheet is not None:
@@ -91,7 +110,7 @@ if authentication_status:
                 #     st.success(f"{d.strftime('%Y-%m-%d')}.csv ha sido creado!")
                 #     st.rerun()
 
-    with st.expander("Eliminar evento"):
+    with st.expander("Eliminar evento", expanded=False):
         events = sorted(os.listdir(f".{path_sep}eventos"))
         events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%Y/%m/%d")
                         for e in events]
@@ -105,6 +124,8 @@ if authentication_status:
             with st.spinner('Actualizando...'):
                 time.sleep(3)
             st.rerun()
+
+    authenticator.logout('Logout')
 
     # with st.expander("Administrar usuarios"):
     #     usuarios = pd.read_csv(
