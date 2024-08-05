@@ -1,18 +1,24 @@
 credentials:
   usernames:
-    tomas:
+    tomas.caballero:
       email:
       failed_login_attempts: 0 # Will be managed automatically
       logged_in: False # Will be managed automatically
-      name: Tomas Caballero
-      password: abc # Will be hashed automatically
-    lucas:
-      email:
+      name: tomas.caballero
+      password: 81TiFZQdJh # Will be hashed automatically
+    lucas.glasner:
+      email: lgvivanco96@gmail.com
       failed_login_attempts: 0 # Will be managed automatically
       logged_in: False # Will be managed automatically
-      name: Lucas Glasner
-      password: abc # Will be hashed automatically
+      name: lucas.glasner
+      password: uCRrDQPMZ9 # Will be hashed automatically
+    patricio.aceituno:
+      email: paceituno2015@gmail.com
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: patricio.aceituno
+      password: laXqJYvClp # Will be hashed automatically
 cookie:
-  expiry_days: 0
+  expiry_days: 10
   key: dsad13 # Must be string
   name: admins
