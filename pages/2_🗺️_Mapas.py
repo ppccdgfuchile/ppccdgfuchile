@@ -23,7 +23,7 @@ st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
 st.sidebar.image(f"static{path_sep}logo_ppcc.png", use_column_width=True)
 st.sidebar.image(f"static{path_sep}logo_dgf.png", use_column_width=True)
-st.sidebar.image(f"static{path_sep}logo_cr2.jpg", use_column_width=True)
+st.sidebar.image(f"static{path_sep}logo_cr2.png", use_column_width=True)
 
 events = sorted(os.listdir(f".{path_sep}eventos"))
 events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%d/%m/%Y")

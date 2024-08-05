@@ -15,7 +15,7 @@ st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
 st.sidebar.image(f"static{path_sep}logo_ppcc.png", use_column_width=True)
 st.sidebar.image(f"static{path_sep}logo_dgf.png", use_column_width=True)
-st.sidebar.image(f"static{path_sep}logo_cr2.jpg", use_column_width=True)
+st.sidebar.image(f"static{path_sep}logo_cr2.png", use_column_width=True)
 
 
 def check_valid_email(email):
