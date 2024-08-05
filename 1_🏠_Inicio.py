@@ -13,7 +13,8 @@ st.image(f'static{path_sep}imagen_satelital1.png')
 st.header('Red de Pluviómetros Ciudadanos')
 st.markdown("""
             El proyecto Pluviómetros Ciudadanos (PPCC) es una iniciativa de ciencia ciudadana desarrollada inicialmente en el [Departamento de Geofísica (DGF)](http://www.dgf.uchile.cl/) de la [Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de Chile](https://ingenieria.uchile.cl/).
-            Su objetivo es estudiar los efectos topográficos sobre la distribución espacial de la precipitación en la Región Metropolitana, a partir de mediciones realizadas por observadores(as) voluntarios(as) y de observaciones en estaciones meteorológicas convencionales. A partir de 2024 el proyecto se ha ampliado a las regiones V y VI, a través de iniciativas que se impulsan desde la Universidad de Valparaiso y la Universidad de O ́Higgins.
+            Su objetivo es estudiar los efectos topográficos sobre la distribución espacial de la precipitación en la Región Metropolitana, a partir de mediciones realizadas por observadores(as) voluntarios(as) y de observaciones en estaciones meteorológicas convencionales.
+            A partir de 2024 el proyecto se ha ampliado a las regiones V y VI, a través de iniciativas que se impulsan desde el [Departamento de Meteorología de la Universidad de Valparaiso](https://meteo.uv.cl) y el [Instituto de Ciencias de la Ingeniería de la Universidad de O ́Higgins](https://www.uoh.cl/instituto-de-ciencias-de-la-ingenieria/).
             
             En este sitio se publica la información recopilada en los eventos de lluvia, y se proveen herramientas para la recopilación de la información y el despliegue de la misma en forma gráfica.
             """, )
