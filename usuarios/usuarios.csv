@@ -1,43 +1,218 @@
-index,nombre,mail,comuna,lat,lon,alias,grupo,pp
-0,Vicente López,vicentelopez.v@gmail.com,Peñaflor,-33.606575,-70.906942,Huaso,MET-01,10.0
-1,Maria Fernanda Ruedlinger,maria.ruedlinger@ug.uchile.cl,Maipu,-33.491232,-70.766251,Saturno,MET-01,
-2,María Victoria Atisha,maria.atisha@ug.uchile.cl,Ñuñoa,-33.460082,-70.592846,Botitas,MET-01,
-3,Diego Ignacio Faúndez,dfaundezortega@gmail.com,La Florida,-33.534556,-70.550194,Fortnite,MET-01,
-4,Matías Valentín Guzmán,matias.guzmanparra@gmail.com,La Florida,-33.53172,-70.556389,KIKE,MET-01,
-5,Emilio Andrés Medina,emilio.medina@ug.uchile.cl,Ñuñoa,-33.439519,-70.583621,Watuh,MET-01,
-6,Mario Calderón,mario.cazen@gmail.com,Peñalolén,-33.49581,-70.577694,CasaM,MET-01,
-7,Ximena Miranda Reyes,ximenamiranda@ug.uchile.cl,Santiago,-33.45573,-70.63062,Antares,MET-01,
-8,Yuuta Naito,yuutanaito.ca@gmail.com,Las Condes,-33.424957,-70.589081,Neptuno,MET-01,
-9,Joaquín Villena Loo,joaquin.villen08@gmail.com,Recoleta,-33.425599,-70.64025,Cerrito,MET-01,
-10,César Torres,cesar.torres.bravo99@gmail.com,Peñalolén,-33.490798,-70.569747,Tórtolas,MET-01,
-11,Javier Leyton,javier.leyton@ug.uchile.cl,Pirque,-33.63692,-70.54591,Tricahue,MET-02,
-12,Fabián Ignacio Corvalán ,fcorvalan52@gmail.com,Maipu,-33.514164,-70.771873,Zanahoria,MET-02,
-13,Ramiro Alonso Olivares Hoffens,ramiro.olivares@ug.uchile.cl,Huechuraba,-33.359459,-70.680397,Sauce,MET-02,
-14,Pablo Schwarze,pabloschwarze@gmail.com,Las Condes,-33.42901,-70.559023,Manquehue,MET-02,5.0
-15,Javier Huenupi,javier.huenupi@gmail.com,Pudahuel,-33.461436,-70.841897,CDLV,MET-02,
-16,José Edwards,josepedroedwards@gmail.com,Las Condes,-33.425797,-70.58127,JPE,MET-02,
-17,Lucas Carrasco,lucas.carrasco@ing.uchile.cl,Las Condes,-33.403104,-70.552105,Renacentistas,MET-02,
-18,Daniel  Osorio Álvarez,daniel.osorio@ug.uchile.cl,Ñuñoa,-33.454362,-70.612983,DOA,MET-02,
-19,Josefina Keymer,josekeymer@gmail.com,Las Condes,-33.427113,-70.561649,Dakiti,MET-02,
-20,Robert Miller,robert.miller@ug.uchile.cl,Ñuñoa,-33.458178,-70.592764,Invernadero,MET-02,
-21,María Courard,mariacourard@gmail.com,Vitacura,-33.385779,-70.581083,Ingo,MET-02,
-22,Pabla Quintana,pablaquintanat@gmail.com ,Puente Alto,-33.582124,-70.585887,CasaPabla,MET-03,
-23,Fernando Huentenao,fernandohuentenao1998@gmail.com ,Quilicura,-33.3595,-70.73047,Huentenao,MET-03,30.0
-24,Fernando Martin,fernando.martin.borquez@gmail.com ,Peñaflor,-33.595172,-70.854915,FernandoM1,MET-03,
-25,Fernando Martin,fernando.martin.borquez@gmail.com ,Santiago,-33.453349,-70.660167,FernandoM2,MET-03,
-26,Juan Leiton,juan.leiton@usach.cl,Maipu,-33.492612,-70.775424,Leiton,MET-03,
-27,Francesca Sepúlveda,francesca.sepulveda.espinoza@gmail.com,Puente Alto,-33.56399,-70.54793,Fran1,MET-03,
-28,Francesca Sepúlveda,francesca.sepulveda.espinoza@gmail.com,Puente Alto,-33.56001,-70.54882,Fran2,MET-03,
-29,Ignacio Guajardo,gignacioantoniog@gmail.com,Maipu,-33.479433,-70.735031,CasaNacho,MET-03,
-30,Martina Canessa Barrientos,martina.canessa.b@gmail.com,Talagante,-33.660288,-70.829621,Vita,MET-03,
-31,José Fuentes Guerra,jose.fuentes.g@ug.uchile.cl,El Bosque,-33.559167,-70.677722,El Bosque,MET-03,
-32,Valeria Campos,valeriacamposb@gmail.com,Peñalolén,-33.47115,-70.538876,Chester,MET-03,
-33,Franco López,fraaanqo.flp@gmail.com,Santiago Centro,-33.448305,-70.644254,Isidro,MET-03,
-34,Francisca Rojas,franrojasq@gmail.com,Peñaflor,-33.607247,-70.893907,Universo,MET-03,
-35,Lucas Glasner,lgvivanco96@gmail.com,Macul,-33.481766,-70.601512,Casa Vásquez,MET-04,
-36,Álvaro Gómez Contreras,alvaro.gomez.c@ug.uchile.cl,Isla de Maipo,-33.754,-70.896,Yubarta,MET-04,
-37,Lampa,x,y,-33.305,-70.741,VisMet,red_nacional,
-38,Quinta Normal. Santiago,x,y,-33.445,-70.6828,red_nacional,red_nacional,
-39,Eulogio Sánchez. Tobalaba Ad.,x,y,-33.4553,-70.5486,red_nacional,red_nacional,
-40,COLINA ,x,y,-33.2188,-70.7158,red_nacional,red_nacional,
-41,Las Vizcachas Aguas Andinas,x,y,-33.5961,-70.5422,red_nacional,red_nacional,20.0
+index,nombre,correo,comuna,lat,lon,alias,actividad,telefono,grupo
+0,Patricio Aceituno,paceituno2015@gmail.com,La Florida,-33.53875,-70.58643,MDM,,,PP CC 01
+1,Paulette Iribarne,paulette.iribarne@gmail.com,Vitacura,-33.39518,-70.58874,Vitacumbia,,,PP CC 01
+2,Benito Piuzzi,bpiuzzi@meteochile.cl,La Reina,-33.45226,-70.55415,San Benito,,,PP CC 01
+3,Gabriel Villagran,gabriel.villagran@gmail.com,Pirque,-33.67233,-70.63635,Pirque,,,PP CC 01
+4,Graciela Garay,graciela80garay@gmail.com,La Florida,-33.53502,-70.57874,Costa Rica,Abogada FCFM,,PP CC 01
+5,Sergio Barrientos,sbarrien@csn.uchile.cl,Vitacura,-33.38146,-70.55663,Auri-001,,,PP CC 01
+6,Perla Valdes,perla.valdes@idiem.cl,Vitacura,-33.38319,-70.57956,Border�o,,,PP CC 01
+7,Patricio Mella,pato@dgf.uchile.cl,Pudahuel,-33.45778,-70.75694,Auquinco,,56993104801,PP CC 01
+8,Jimena Cortes,jimenacortesneira@gmail.com,�u�oa,-33.45604,-70.59815,Morgana,,,PP CC 01
+9,Helmuth Thiemer,hthiemer@ing.uchile.cl ,Colina,-33.30734,-70.6601,Chamisero,,,PP CC 01
+10,James McPhee,jmcphee@uchile.cl ,Lo Barnechea,-33.35672,-70.47984,Array�n - Estero,,,PP CC 01
+11,Raul Segovia,raul.segovia.a@uchile.cl,Huechuraba,-33.34748,-70.66378,Los Guindos,,,PP CC 01
+12,Dolores Rufian,dolores.rufian@gmail.com,Lo Barnechea,-33.33269,-70.52482,Panor�mica,,,PP CC 01
+13,Vivian Montecino,vivianmontecino@uchile.cl,Lo Barnechea,-33.36,-70.47682,Las tres hermanas,,,PP CC 01
+14,Alvaro Silva,asilvam@mac.com,La Reina,-33.43648,-70.54493,asilvam,,,PP CC 01
+15,Maria Pia Martin,mpmartin@dii.uchile.cl,Las Condes,-33.4101,-70.53501,EMEPE,,56994835829,PP CC 01
+16,Maria Jose Contreras,mariajose.contreras@ing.uchile.cl ,�u�oa,-33.45378,-70.61139,Monse�or,,,PP CC 01
+17,Javier Villanueva,javier@villanueva.cl,La Florida,-33.52134,-70.54844,LOCANAS,,,PP CC 01
+18,Luis Ayala ,luis.ayala@aprisa.cl ,Lo Barnechea,-33.34972,-70.54056,Santa Blanca,,,PP CC 01
+19,Valeria Villagr�n,valeria.villagran@fcfm.uchile.cl,Providencia,-33.43646,-70.62057,Ministro,,,PP CC 01
+20,Marcela Munizaga,marce.munizaga@gmail.com ,Providencia,-33.43493,-70.60957,Estanques,,,PP CC 01
+21,Jos� Pedro Mery Garc�a,jpmery@uc.cl,Lo Barnechea,-33.32972,-70.50389,JPMG,Ingeniero,999962063,PP CC 01
+22,Rub�n Boroschek,rborosch@gmail.com,La Reina,-33.43501,-70.53,HelsbyMate,Acad�mico DIC FCFM,998171840,PP CC 01
+23,Leandro Herrera,leandro.herrera@gmail.com,La Florida,-33.53039,-70.56962,Casa_Sary,Acad�mico JP DIQBM,984285649,PP CC 01
+24,Ricardo Mu�oz,rmunoz@dgf.uchile.cl,Santiago,-33.45694,-70.66167,DGF,Acad�mico DGF,,PP CC 01
+25,Nancy Hitschfeld,nanc@dcc.uchile.cl,Calera de Tango,-33.63026,-70.75037,Almendros,Academica,994334007,PP CC 01
+26,Linda Daniele,ldaniele@uchile.cl,�u�oa,-33.44922,-70.60664,sucre- PdV,academica fcfm,976419904,PP CC 01
+27,Jos� Rutllant,jrutllan@dgf.uchile.cl,San Jos� de Maipo,-33.59841,-70.36178,Quillayal,acad�mico FCFM,967787832,PP CC 01
+28,Rodrigo Silva,rodrigo.silvah@idiem.cl,Til Til,-33.16408,-70.78747,AEM Til Til,Funcionario Idiem,972117685,PP CC 01
+29,Jaime Ortega,jortega@dim.uchile.cl,Pe�alol�n,-33.49166,-70.57052,arboleda,Acad�mico DIM,993091221,PP CC 01
+30,Roberto Rondanelli,ronda@dgf.uchile.cl,Lo Barnechea,-33.31861,-70.23306,trespuntas,Acad�mico FCFM,954171651,PP CC 01
+31,Marco Pfeiffer,mpfeiffer@uchile.cl,La Reina,-33.4457,-70.5531,OpaHouse,Acad�mico FCA,945870902,PP CC 01
+32,Rodrigo Arias,reariasf@gmail.com,Colina,-33.235,-70.67333,Chicureo,Acad�mico DFI,979953773,PP CC 01
+33,Rodrigo Pascual,rpascual.acad@gmail.com ,San Jos� de Maipo,-33.57833,-70.4513,El Canelo,Acad�mico DIMEC,967794031,PP CC 01
+34,Jos� Miguel Campillo,jose.campillo@uchile.cl,Quilicura,-33.34986,-70.73458,L�saro,Funcionario DGF,936632254,PP CC 01
+35,Ricardo Mu�oz,rmunoz@dgf.uchile.cl,San Jos� de Maipo,-33.59083,-70.48583,La Obra DGF,Acad�mico DGF,,PP CC 01
+36,Ricardo Mu�oz ,rmunoz@dgf.uchile.cl,Las Condes,-33.39729,-70.53664,Cal�n - DGF,,,PP CC 01
+37,Pablo Rosenblatt,,La Reina,-33.43875,-70.52246,Monbel,Productor audiovisual,56982286014,PP CC 01
+38,Andreina Garc�a,andreina.garcia@amtc.cl,Pudahuel,-33.46389,-70.84333,AnGar,Acad�mica FCFM,56961599001,PP CC 02
+39,Camila Aceituno,,Paine,-33.82042,-70.74104,Probeta,Profesora Liceo Huelquen,9 73151514,PP CC 02
+40,Carolina Alfaro Iturrieta ,Calfaroiturrieta@gmail.com,Olmue,-33.05238,-71.1135,Caroqba,Profesora Escuela de Caleu,940716524,PP CC 02
+41,Carolina Pia Gaete,carolina.gaete@idiem.cl,Pirque,-33.71386,-70.54613,Malena,Profesional del Idiem,56934273613�,PP CC 02
+42,Christian Pe�a,christian@flink.cl,�u�oa,-33.45975,-70.59227,plaza-tocornal,profesional,997153654,PP CC 02
+43,Claudia Villarroel,cvilla.jime@gmail.com,Pudahuel,-33.46677,-70.86392,Ciudad de los Valles,Meteor�loga DMC,56979679801,PP CC 02
+44,Claudio Elgueta,,Las Condes,-33.40002,-70.54015,pie cerro Cal�n,Ingeniero Beachef,995410150,PP CC 02
+45,Cristian Troncoso,ctroncoso@csn.uchile.cl,Puente Alto,-33.58392,-70.51486,Hacienda,Funcionario FCFM,942137251,PP CC 02
+46,Daniel Romero,romero.cl@gmail.com,Las Condes,-33.42389,-70.55755,Dreal,Ingeniero de desarrollo NIC,56956294138,PP CC 02
+47,Fernando Menares,Menares43@gmail.com,Cerro Navia,-33.41946,-70.72695,Nanocerro,,985726625,PP CC 02
+48,Francisca Fonck,franfonck@gmail.com,Colina,-33.26099,-70.64486,�ipa,Profesional,976688724,PP CC 02
+49,Francisco Manzano,francisco.manzano@uchile.cl,Buin,-33.74276,-70.74865,Buin Centro,"Funcionario CSN, FCFM",56981741538,PP CC 02
+50,Francisco Meza,,,,,,Profesor PUC,56992275444,PP CC 02
+51,Gonzalo Herrera,1416gha@gmail.com,Til Til,-33.07726,-70.9251,Til Til Centro,Psic�logo,98883884,PP CC 02
+52,Jos� Urz�a,jose@urzua.cl,Calera de Tango,-33.61044,-70.77025,Tanguito,Acad�mico FCFM,956294139,PP CC 02
+53,Juan Luis Garc�a,jgarciab@uc.cl,Las Condes,-33.37956,-70.51943,Huerta_JLG,Profesor Geograf�a PUC,56961855370,PP CC 02
+54,Luis Montenegro,montenegrolucerol@yahoo.es ,Til Til,-33.003,-70.99704,Profe Luis,Profesor de Ciencias,991513281,PP CC 02
+55,Mar�a Paz Marzolo,mmarzolo@bio.puc.cl ,Las Condes,-33.41354,-70.58728,MPM,"Profesora Dpto. Biolog�a, PUC",56977699429,PP CC 02
+56,Nicolas Raab,nraab@uc.cl,Las Condes,-33.41623,-70.59023,Alcantara,Profesor PUC,4.47501E+11,PP CC 02
+57,Pablo Osses Mc Intyre,posses@uc.cl,Lo Barnechea,-33.34258,-70.47025,POMcI,Profesor Geograf�a PUC,56998377369,PP CC 02
+58,Pablo Pinto,pirexyan@hotmail.com,Pe�alol�n,-33.47848,-70.55167,pe�amex,Arq. Paisaje,984454598,PP CC 02
+59,Paula Cabrera,paucabrera@uchile.cl,Pe�alol�n,-33.50057,-70.53527,Pirquera,Funcionaria DII,9 98957437,PP CC 02
+60,Rodrigo Fernandez,rodfernandez@uchile.cl,Curacav�,-33.3938,-71.03482,Tenca - WS2K,Acad�mico del DGEO,9 40433216,PP CC 02
+61,Sebasti�n Bennett,sebastian.bennett@gmail.com,VITACURA,-33.38191,-70.55027,FlyVideo ,Independiente,992403333,PP CC 02
+62,Solange Ramirez,sramirezastorga@gmail.com,Til Til,-32.99657,-70.95172,Espinalillo,Profesora de Ciencias,987245791,PP CC 02
+63,Valent�n Retamal,valentin.retamal@ug.uchile.cl ,Santiago Centro,-33.45634,-70.63049,Matta52,Licenciado en Geof�sica,56978084377,PP CC 02
+64,Luis Cid,lcidalvarado@gmail.com,Vitacura,-33.38901,-70.55608,Villa El Dorado,T�cnico electr�nico,56998052424,PP CC 02
+65,Gonzalo Morales,gmoralesr1@gmail.com,Macul,-33.491065,-70.587073,Patio,Funcionario cafeteria de Beauchef 850,56986009101,PP CC 02
+66,Francisca Marchant Maldonado,francisca.marchant@ug.uchile.cl,Cerro Navia,-33.41513,-70.72882,Angostura,"Biotecn�loga, Estudiante de doctorado FCFM",982832890,PP CC 02
+67,Sigrid K�pfer Johannsen,kjsigrid@gmail.com,La Reina,-33.4346,-70.522,Petricor,Enfermera,9 98214265,PP CC 02
+68,Patricia Macanas,Patricia Macan�s Pirard,Las Condes,-33.41069,-70.51004,Marley,Acad�mica de la PUC,56977465998,PP CC 02
+69,Gonzalo Herrera,,Til Til,-32.93296,-70.81376,La Cumbre,,,PP CC 02
+70,Gonzalo Herrera,,Til Til,-33.0709,-70.98711,Asiento Viejo,,,PP CC 02
+71,Gonzalo Herrera,,Til Til,-30.15128,-70.88924,La Plazuela,,,PP CC 02
+72,Gozalo Herrera,,Til Til,-33.11828,-70.84519,Punta Peuco,,,PP CC 02
+73,Gonzalo Herrera,,Til Til,-33.135,-70.79722,Huertos Familiares,,,PP CC 02
+74,Gonzalo Herrera,,Til Til,-33.09511,-70.92551,El Sauce,,,PP CC 02
+75,Gonzalo Herrera,,Til Til,-33.11244,-70.79877,Santa Matilde,,,PP CC 02
+76,Gonzalo Herrera,,Til Til,-33.16302,-70.78773,Alto el Manzano,,,PP CC 02
+77,Gonzalo Herrera,,Til Til,-32.9473,-70.75081,Rinc�n de los Valle,,,PP CC 02
+78,Gonzalo Herrera,,Til Til,-32.96924,-70.83778,Montenegro,,,PP CC 02
+79,Gonzalo Herrera,,Til Til,-33.08021,-70.88654,La Aguada,,,PP CC 02
+80,Gonzalo Herrera,,Til Til,-33.07638,-70.94581,Los Quilos ,,,PP CC 02
+81,Gonzalo Herrera,,Til Til,-32.99071,-70.89506,Rungue,,,PP CC 02
+82,Gonzalo Herrera,,Til Til,-33.04158,-70.98044,Caleu Las Cortaderas,,,PP CC 02
+83,Gonzalo Herrera,,Til Til,-33.00033,-70.95162,Espinalillo,,,PP CC 02
+84,Adriana Balboa,,Lo Barnechea,-33.33009,-70.52138,ADRI,,999677732,
+85,Bruno Behn,bbehn39@gmail.com,Lo Barnechea,-33.3508,-70.51874,BRUNO,,,
+86,Abd�n Na�m Pajundakis,abdonnaim@gmail.com,Calera de Tango,-33.64389,-70.83833,Condominio SCdL,Ingeniero Civil UCH,56993246599,PP CC 03
+87,Aquiles Vergara,aquilesvergara@hotmail.com,La Reina,-33.43251,-70.5797,thequeen,ingeniero civil qu�mico,966777745,PP CC 03
+88,Crist�bal de la Maza,cristobaldlm@gmail.com,Las Condes,-33.42492,-70.58216,Cristobaldlm,,569 85960956,PP CC 03
+89,Daniela Pollak,daniela.pollak@idiem.cl,Las Condes,-33.42663,-70.58715,Teruel,Funcionaria de Idiem,993595341,PP CC 03
+90,Doris Carrasco,mediadora180@gmail.com,Pedro Aguirre Cerda,-33.4917,-70.675,Abranquil,Mediadora familar,56999548575,PP CC 03
+91,Felipe Perez Cayupe,felipe.perez.cayupe@gmail.com,Macul,-33.50016,-70.60449,Monumental,Profesor de Historia y Geograf�a,999391288,PP CC 03
+92,Fernando Olea Bascu��n,foleab@gmail.com,San Bernardo,-33.61268,-70.72276,Hue�imalal,"M�dico veterinario, salubrista",569 91390727,PP CC 03
+93,Gabriel Vargas,gabo.gavach@gmail.com,Pirque,-33.64931,-70.60564,IsaPir,Ingeniero de Networking,961340132,PP CC 03
+94,Gregory Espinola,,Til Til,-33.00312,-70.99934,Los Quillayes,,991423117,PP CC 03
+95,Ignacio Quiroga,ignacio.quiroga@ug.uchile.cl,Calera de Tango,-33.57755,-70.78625,ElDuraznal,"Investigador CAPTA, estudiante magister",56985056749,PP CC 03
+96,Julian Harrison,harrison.julian@gmail.com,Melipilla,-33.57611,-71.0874,AgricHarrison,Ingeniero Civil,998735782,PP CC 03
+97,Mar�a Elena Barrie,maelebar@gmail.com,Las Condes,-33.40635,-70.51399,FECHITA,Kinesi�loga,978997169,PP CC 03
+98,Maricel Gonzalez,maricel.gonzalez.garroz@gmail.com,Santiago,-33.44197,-70.66217,Agustinas_Barroso,Ingeniera Civil Industrial,977557240,PP CC 03
+99,Pablo Zurita,zuritamoralespablo@gmail.com,Pe�aflor,-33.60444,-70.89806,BATA,,996798316,PP CC 03
+100,Paola Mu�oz Manugui�n,paomunozm@gmail.com,Providencia,-33.44012,-70.60096,Tranqui,,937608640,PP CC 03
+101,Pascual Barrie,pascualbarrie@gmail.com,Olmue,-32.99056,-71.18028,Colibr�,Jubilado actividad independiente,+56 994481393,PP CC 03
+102,Patricio Rodr�guez,patorodriguez.PR@gmail.com,Til Til,-33.04472,-70.99139,patorod,Ingeniero en Alimentos,984270674,PP CC 03
+103,Paula Sandoval,paulasandovalosses@gmail.com,Maip�,-33.46745,-70.74408,Mija,Egresada ingenier�a forestal UCH,991900290,PP CC 03
+104,Pedro Urzua Lizana,pedrourzualizana@gmail.com,Vitacura,-33.38783,-70.55348,Escultor,Escultor ,998246170,PP CC 03
+105,Waldo Cortez Gore,wcortez@isource.cl,Colina,-33.254,-70.62946,Piedraroja,Ingeniero Civil UdeC,942665963,PP CC 03
+106,Juan Vargas Botia ,juan.mnl.vargas@gmail.com,Lampa,-33.32084,-70.74987,Hubble,Tesista FCA,56965221591,PP CC 03
+107,Mariela Contreras Lizana ,marconliz01@gmail.com,La Cisterna ,-33.52196,-70.6664,Hubble,Estudiante de Geof�sica ,56978013648,PP CC 03
+108,Mauricio Correa,mauricio.knight@gmail.com,La Reina,-33.45928,-70.56545,FG6189,Investigador Asociado,56987594297,PP CC 03
+109,Alejandra Ortiz,aortiz@ing.uchile.cl,Santiago Centro,-33.46936,-70.65347,Melissandra,Analista de Sistemas,56972018837,PP CC 03
+110,Rodrigo Herrera,rod.herrera.s@gmail.com,Las Condes,-33.43106,-70.5839,Rubens,Consultor en Modelaci�n Hidrogeol�gica,965954749,PP CC 03
+111,Andrew Cooke,andrew@acooke.org,providencia,-33.42365,-70.60022,Ito596,Ingeniero en computacion,56966038070,PP CC 03
+112,Mauricio Ort�zar B.,mauricio.ortuzar.b@gmail.com,�u�oa,-33.45059,-70.59138,Brownpoint,Ingeniero civil,993553861,PP CC 03
+113,Sebastian Villal�n ,sebastian.villalon@ug.uchile.cl,Pedro Aguirre Cerda,-33.4874,-70.66065,Panchito's house,Magister en Meteorolog�a y Clima,56975266358,PP CC 03
+114,Piroska Karakay A,pkarakay@gmail.com,Las Condes,-33.37354,-70.5041,La Posada MK,Ingeniero Civil,56999184603,PP CC 03
+115,Matias Rossier,rossier59@gmail.com,La Cisterna ,-33.52583,-70.66781,San Sim�n,Funcionario Municipal,954780801,PP CC 03
+116,Rodrigo Rojas,rodrigo.rojas.s@ug.uchile.cl,La Granja,-33.5503,-70.62438,Casa Rodrigo Rojas,Estudiante Beauchef (Ing. Civil),962235841,PP CC 03
+117,Pamela Zenteno,pzenteno@mail.com,Pe�alol�n,-33.48757,-70.57449,Ciudadana,Asesora en ciencias,98707816,PP CC 03
+118,Andr�s Eduardo Picker Gantz,pickerandres@gmail.com,San Jos� de Maipo,-33.5782,-70.40553,Alicura,Independiente,+56 9 75778844,PP CC 03
+119,Jaime Ort�zar,jaimeortuzar@gmail.com,Isla de Maipo,-33.70443,-70.89853,Granortu,Ingeniero Mec�nico,56998216523,PP CC 03
+120,Patricio Eduardo Chac�n,pachamos@gmail.com,San Jos� de Maipo,-33.76236,-70.27911,pachamos,Ingeniero Civil Mec�nico,996285304,PP CC 03
+121,Alfredo Fern�ndez Fernandez,alfredo.fernandez.f@ug.uchile.cl,Pe�alol�n,-33.50167,-70.58644,Terra-Aqua,Estudiante IRNR,962006319,PP CC 04
+122,Alonso Puig,alonsopuiggodoy@gmail.com,�u�oa,-33.4609,-70.59428,Johow,Profesional independiente,998275447,PP CC 04
+123,Antonio Carrasco,afcarr5@uc.cl,La Florida,-33.56672,-70.59214,Guacolda,Estudiante Geograf�a UC,942037709,PP CC 04
+124,Bruno Vargas,bruno.vargas97@gmail.com,Las Condes,-33.40568,-70.55212,pluv_lcbv,Estudiante postgrado FCFM,964689542,PP CC 04
+125,Diego Dur�n ,diego.duran.b@ug.uchile.cl,La Florida,-33.52336,-70.56212,Miravalle,Estudiante U. Chile,978805996,PP CC 04
+126,Diego Fa�ndez Ortega,dfaundezortega@gmail.com,La Florida,-33.53448,-70.55024,Amongus,Estudiante DCC FCFM ,981227675,PP CC 04
+127,Elisa Albornoz,elisa.albornoz@ug.uchile.cl,Puente Alto,-33.61272,-70.55201,Primavera,Estudiante Geograf�a FAU,952103126,PP CC 04
+128,Eric Concha,econcha02@ufromail.cl,Macul,-33.48119,-70.59626,patioeric,Investigador,973194855,PP CC 04
+129,Felipe Ugalde,felipe.ugalde@ug.uchile.cl,San Jos� de Maipo,-33.58695,-70.4663,Las Vertientes,Geologo - estudiante de magister FCFM,994867450,PP CC 04
+130,Javier Carancio L�pez,javier.carancio@ug.uchile.cl,Talagante,-33.70353,-70.85251,Lonqu�n,Estudiante Astronom�a FCFM,945908982,PP CC 04
+131,Javier Huenupi,javier.huenupi@gmail.com,Pudahuel,-33.46175,-70.84207,chispa,Estudiante F�sica FCFM,999955814,PP CC 04
+132,Lukas Vasquez,lukas.vasquez.verdejo@gmail.com,La Cisterna,-33.526,-70.657,Sora-2,Estudiante DCC FCFM ,986133471,PP CC 04
+133,Maria Courard,mariacourard@gmail.com,Vitacura,-33.38594,-70.58123,Vitacura,Estudiante ,991872511,PP CC 04
+134,Milenka Zambrano,miloenka@gmail.com,Independencia,-33.42244,-70.67161,Poroto,Estudiante FCFM,987492098,PP CC 04
+135,P�a Provoste,pprovostegonzalez@gmail.com,Las Condes,-33.42354,-70.57727,Av. Colon,"Estudiante Plan Com�n, FCFM",997192782,PP CC 04
+136,Valentina Cabrera,vale.cabrera.guillen@gmail.com,�u�oa,-33.4676,-70.62041,Villa Ol�mpica,estudiante U mayor,984598463,PP CC 04
+137,Valentina Gonzalez,v.gonzalez.1@ug.uchile.cl,Pedro Aguirre Cerda,-33.48662,-70.66905,KirefPAC,Profesional FCFCN,94077998,PP CC 04
+138,Millaray Fern�ndez Sep�lveda,millarayfernandez@ug.uchile.cl,Maip� ,-33.49111,-70.7749,Huenteno,Estudiante plan com�n curso de Mec�nica,976657314,PP CC 04
+139,Francisco Mollo Calle,f.mollo.c@gmail.com,Conchal�,-33.38773,-70.65886,Conchal� 1,Estudiante plan com�n curso de Mec�nica,+569 59518044,PP CC 04
+140,Diego Ruiz,diegoalonsoromeroruiz@gmail.com,Lo Barnechea,-33.34007,-70.49979,CDLA,Estudiante plan com�n FCFM,56961579592,PP CC 04
+141,Miguel Fajardo Ib��ez ,mfajardoibanez@gmail.com,San Miguel,-33.51119,-70.66195,Fajardo,Observador Meteorol�gico DMC,+56 974300409,PP CC 04
+142,Franco Hontavilla Bustos,fhonta@me.com,Pedro Aguirre Cerda,-33.49152,-70.68904,Lo Valledor,"Profesor de Matem�tica, Ingeniero Qu�mico",978944107,PP CC 04
+143,Katherine Aguilera brunel,katherine.aguilerab@usach.cl,Maip�,-33.47531,-70.74591,Avatar Api,Profesora de ingl�s,979981193,PP CC 04
+144,Pabla Quintana,pablaquintanat@gmail.com ,Puente Alto,-33.58212,-70.58589,CasaPabla,Meteor�loga DMC,56932154006,PP CC 05
+145,Fernando Huentenao,fernandohuentenao1998@gmail.com ,Quilicura,-33.3595,-70.73047,Huentenao,Meteor�logo DMC,56993269132,PP CC 05
+146,Fernando Martin,fernando.martin.borquez@gmail.com ,Pe�aflor,-33.59517,-70.85491,FernandoM1,Meteor�logo DMC,56934205282,PP CC 05
+147,Jaime Cortez,cortezjaime@gmail.com,Buin,-33.74747,-70.7359,Linderos,Observador Meteorol�gico,998091329,PP CC 05
+148,C�sar Vidal,cesarvidal3@gmail.com,Puente Alto,-33.59039,-70.57344,C�sar3,,56984092008,PP CC 05
+149,Juan Quintana,juaquin@meteochile.cl,Puente Alto,-33.58212,-70.58589,CasaPabla,Meteor�logo DMC,993632620,PP CC 06
+150,Yasna Olivares Araya,yolivares@dgac.gob.cl,Cerrillos,-33.5071,-70.70875,Roc�o,Observadora meteorol�gica,987299471,PP CC 06
+151,Sara Alvear Luengo,sara.alvear@dgac.gob.cl,San Miguel,-33.4973,-70.6554,La Marina,Profesional DMC,984487874,PP CC 06
+152,Sebastian Rozas,sebagigi3511@gmail.com,Maipu,-33.55672,-70.78124,AMC,Estudiante Meteorolog�a ETA,963449115,PP CC 06
+153,Ximena Aguilar,ximena.aguilar@dgac.gob.cl,Lo Espejo,-33.51708,-70.6801,ClaraEstrella,Profesional DMC,965702750,PP CC 06
+154,Sergio Rodr�guez,serrodx@gmail.com,Maipu,-33.51206,-70.76944,Maipu_Templo,Funcionario DMC,977499017,PP CC 06
+155,Elizabeth Lobos,elizabeth.lobos@dgac.gob.cl,Santiago,-33.44825,-70.64401,San Isidro E,profesional de la DMC,966740618,PP CC 06
+156,Carmen Aceituno,carmenaceituno53@gmail.com,Puente Alto,-33.60863,-70.53107,Cordillera,,962454517,PP CC 07
+157,Carmen Galdames,,Huechuraba,-33.3799,-70.62178,El Barrero,Due�a de Casa,956185712,PP CC 07
+158,C�sar Vidal,cesarvidal3@gmail.com,Puente Alto,-33.59031,-70.57085,C�sar,Profesional,984092008,PP CC 07
+159,Francisco Galdames,galdames.francisco@gmail.com,Santiago Centro,-33.44331,-70.6773,Chuca,Profesional,995708455,PP CC 07
+160,Gabriel Videla,gabriel.videlas@sansano.usm.cl,Paico,-33.655,-71.0408,El Paico,Estudiante USM,949816103,PP CC 07
+161,Gabriel Videla,gabriel.videlas@sansano.usm.cl,Lo Barnechea,-33.36356,-70.49601,San Enrique,Estudiante UTFSM,949816103,PP CC 07
+162,Gloria Fuentes,liantuhood@gmail.com,Puente Alto,-33.60863,-70.53107,El P�ramo,,983595144,PP CC 07
+163,Isidora Vial,isidoravial@ug.uchile.cl,Providencia,-33.41812,-70.61176,Aguada,Estudiante IRNR U Chile,987485673,PP CC 07
+164,Matias Roman,matias.roman.moreno@gmail.com,Lo Espejo,-33.51449,-70.69443,Loespuno,Estudiante FCA,989487901,PP CC 07
+165,Rodrigo Poblete Sobarzo,ropoblete@ug.uchile.cl,Puente Alto,-33.55777,-70.5533,Opendoor,Estudiante Campus Sur,984658620,PP CC 07
+166,Sebastian Almonacid,saassebastian@gmail.com,Santiago  ,-33.43339,-70.65846,Ado,Estudiante IRH,56972362754,PP CC 07
+167,Fresia Montalva Silva,fresia.montalva@gmail.com,Puente Alto,-33.601355,-70.515257,Vizcachas,Ingeniera Comercial,998971021,PP CC 07
+168,Yanet Tello Soto,yanet_tello@hotmail.com,El Monte,-33.67925,-70.97853,PIE,Profesora Diferencial,987253439,PP CC 07
+169,Jess Cartes ,jess.re.cartes@gmail.com,San Ram�n,-33.5283,-70.6411,Pep9,trabajo independiente ,994697530,PP CC 07
+170,Felipe Vargas Toledo,ftoledo.1309@gmail.com,San Bernardo,-33.64247,-70.69797,Mi Casa sector Sur,Estudiante FCFM,9 96613440,PP CC 08
+171,Cristobal Camus Parada,cristobal.camus@ug.uchile.cl,La Cisterna,-33.52785,-70.66964,Nueva Espa�a,Estudiante FCFM,56993625018,PP CC 08
+172,Marcos Ignacio Huenchumil,marcos.huenchumil@ug.uchile.cl,Maipu,-33.58498,-70.55902,puentealto,Estudiante FCFM,56959949281,PP CC 08
+173,Carlos Niemeyer ,carlos.niemeyer@ug.uchile.cl,Estaci�n Central,-33.4585,-70.69833,Gatos,Estudiante FCFM,56948473263,PP CC 08
+174,Amanda Cort�s Vargas,amanda.cortes@ug.uchile.cl,�u�oa,-33.45773,-70.66323,Chata,Estudiante FCFM,56987870952,PP CC 08
+175,Sergio Salinas Rueda,sergiosalinasr373@gmail.com,Paine,-33.82071,-70.76171,Jap�n,Estudiante FCFM,950359432,PP CC 08
+176,Benjamin Negrete Castro,benjamin.negrete.c@ug.uchile.cl,Maipu,-33.50477,-70.75434,Munich,Estudiante JGM,56941990538,PP CC 08
+177,Michael Danitz,michaelddanitz@gmail.com,La Cisterna,-33.53351,-70.66997,Cist,Estudiante FCFM,56999696516,PP CC 08
+178,Karla Galleguillos Viedma,karla.galleguillos@ug.uchile.cl,San Jos� de Maipo,-33.63448,-70.35255,San Jos�,Estudiante FCFM,971092217,PP CC 08
+179,Sof�a Moraga,Sofimoraga.v@gmail.com,Renca,-33.40343,-70.70815,Djoko,Estudiante FCFM,955824152,PP CC 08
+180,Manuel D�az Labra,m.arturo.dlx@gmail.com,La Reina,-33.45492,-70.56167,Milna,Estudiante FCFM,953026120,PP CC 08
+181,Miguel Camilo,Miguel.camilo@ug.uchile.cl,Quinta Normal,-33.41289,-70.71052,Casa,estudiante IRNR - FCA,981273151,PP CC 08
+182,Antonia Donoso,antopaz.donoso@gmail.com,Pe�alol�n,-33.4733,-70.53299,CasaAnto,estudiante IRNR - FCA,56963729451,PP CC 08
+183,Pamela Hidalgo,pamela.hidalgo.c@ug.uchile.cl,Puente Alto,-33.58549,-70.58528,Radae,estudiante IRNR - FCA,56977612174,PP CC 08
+184,Ailinne Tapia,ailinne.tapia@ug.uchile.cl,Quilicura,-33.3621,-70.72318,kulakura,estudiante IRNR - FCA,56993273222,PP CC 08
+185,Karina Padilla ,karina.padilla@ug.uchile.cl,�u�oa,-33.46445,-70.62293,Cancha,estudiante IRNR - FCA,9 87092274,PP CC 08
+186,Danae Cort�s Mu�oz,danae.cortes.m@ug.uchile.cl,La Florida,-33.52231,-70.59544,Urbano,estudiante IRNR - FCA,56964460642,PP CC 08
+187,Paul Gajewski,paul.gajewski.a@ug.uchile.cl,Puente Alto,-33.55568,-70.55255,POLCRIB,estudiante IRNR - FCA,9 4849 8974,PP CC 08
+188,Sofia Rom�n ,sofia.roman@ug.uchile.cl ,La Florida ,-33.52608,-70.52459,Lo Ca�as,estudiante IRNR - FCA,977522198,PP CC 08
+189,Camila Prieto,camila.prieto.g@ug.uchile.cl,�u�oa,-33.45808,-70.61191,camipg,estudiante IRNR - FCA,56930611226,PP CC 08
+190,Ignacio Arroyo,arroyo.ignacio0@gmail.com,La Reina,-33.44854,-70.52257,CasaAW,estudiante IRNR - FCA,+569 57339597,PP CC 08
+191,Isidora Sanhueza,isidora.sanhueza.r@ug.uchile.cl,Lo Barnechea,-33.36543,-70.49821,CasaIsidora,estudiante IRNR - FCA,9 79581138,PP CC 08
+192,Mayra Fernanda V�lez Caycho,mayra.velez@ug.uchile.cl,Cerro Navia,-33.41738,-70.75786,Harry,estudiante IRNR - FCA,958389048,PP CC 08
+193,Vicente del Campo,vicente.delcampo@ug.uchile.cl,Pe�alolen,-33.46721,-70.56826,pluvio,estudiante IRNR - FCA,56930793471,PP CC 08
+194,Alejandra Delgadillo,a.delgadillo@ug.uchile.cl,La Cisterna ,-33.53573,-70.66158,Mila,estudiante IRNR - FCA,951973814,PP CC 08
+195,Valentina Baez ,valentina.baez.benitez@gmail.com,Macul,-33.48765,-70.59676,Macul,estudiante IRNR - FCA,56952458345,PP CC 08
+196,Martina Sallorenzo ,martinasallorenzo@gmail.com,Puente Alto ,-33.58358,-70.50814,Casa Martina,estudiante IRNR - FCA,56989696063,PP CC 08
+197,Ailin Mu�oz Jim�nez ,ailin.munoz@uc.cl,Santiago,-33.45583,-70.6625,Beauchef,Estudiante Agronom�a PUC,994377328,PP CC 08
+198,Laura Gana,laura.gana@uc.cl,Pe�alol�n,-33.46203,-70.51886,Condominio CCN,Estudiante Geograf�a UC,56968488336,PP CC 08
+199,Tom�s Hantelmann Rivera,tomhantelmann@gmail.com,�u�oa,-33.46247,-70.62718,Tom�s,Estudiante Geograf�a,979640300,PP CC 08
+200,Ricardo Jerez Z��iga,rjera@uc.cl,Renca,-33.41457,-70.68205,Villa Espa�a,Estudiante,993115190,PP CC 08
+201,Sofia Vargas,sofiangeles@gmail.com,�u�oa,-33.59212,-70.70776,Coventry,investigadora social,56942950932,PP CC 06
+202,Nahdy Moreno Andalaft,nahdy.moreno@yahoo.com,Padre Hurtado,-33.56221,-70.88569,Aromito,Consultora en gesti�n de proyectos,56984643370,PP CC 06
+203,Juan Carlos Mondaca Carrasco ,jmc3465@gmail.com,Padre Hurtado,-33.53837,-70.91502,Cirrus,Independiente,999334660,PP CC 06
+204,Diego Restrepo Marin,diegorestrepomarin@gmail.com,Las Condes,-33.42053,-70.5582,Salvador,Ama de casa,56999932185,PP CC 06
+205,Carlos Villablanca,carlosvillablanca76@outlook.com,Maipu,-33.53858,-70.91284,Charly,T�cnico en turismo,962207135,PP CC 06
+206,Any Arcos Guzm�n ,anyarcos@gmail.com,San Bernardo,-34,-71,Saitama,M�dico Veterinaria,948534954,PP CC 06
+207,Francisco Caama�o ,pancho.javier1989@gmail.com,El Monte,-33.68048,-70.99833,Coipocho,Administrador P�blico,959573626,PP CC 06
+208,�lvaro Figueroa Cristi�,alvaro.figueroa@gmail.com,�u�oa,-33.4479,-70.57847,naima,Ingeniero en Inform�tica,+569 7988 0811,PP CC 06
+209,Claudio P�rez,Claudio.perez@secltda.cl,Pe�alol�n,-33.48939,-70.5418,Puyehue,Independiente,998226183,PP CC 06
+210,Mario Ubilla Arancibia,mario.ubilla@yahoo.es,Rinconada V regi�n,32.50261,-70.41121,Valle Aconcagua,Profesor,56984059366,PP CC 06
+211,Yohanna Carvajal,ycarvajal@munielmonte.cl,El Monte,-33.67873,-70.97931,Secplan,Arquitecta SECPLAN El Monte,993130559,PP CC 06
+212,Gina Garate Ibarra,cuantic.garate@gmail.com,Pe�aflor,-33.3629,-70.5404,LP,Profesora,56982465970,PP CC 06
+213,Matias Pezoa Echag�e,matias.pezoae@gmail.com,Maip�,-33.52608,-70.77006,20,Ingeniero medioambiental,982566491,PP CC 06
+214,Carlos Iv�n cortes fuentes,Carloscortesfuentes@gmail.com,La Reina,-33.44194,-70.56306,Tadeo,Gerente operaciones,994543847,PP CC 06
+215,Sara Quezada,marcos.adq@gmail.com,La Cisterna,-33.52299,-70.64953,LC-SARA,Jubilada,56990510540,PP CC 06
+216,Esperanza Diaz,marcos.adq@gmail.com,La Reina,-33.43578,-70.52176,LR-ESPE,Estudiante 2do Medio,+569 90510540,PP CC 06

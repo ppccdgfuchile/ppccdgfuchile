@@ -16,6 +16,8 @@ st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 st.sidebar.image(f"static{path_sep}logo_ppcc.png", use_column_width=True)
 st.sidebar.image(f"static{path_sep}logo_dgf.png", use_column_width=True)
 st.sidebar.image(f"static{path_sep}logo_cr2.png", use_column_width=True)
+st.sidebar.image(f"static{path_sep}logo_uoh.png", use_column_width=True)
+st.sidebar.image(f"static{path_sep}logo_uvalpo.png", use_column_width=True)
 
 
 def check_valid_email(email):
@@ -40,6 +42,15 @@ def check_nombre(nombre):
         return True
     else:
         st.error("El nombre no es válido (Ej: Juan Ramírez)")
+        return False
+
+
+def check_region(region):
+    pat = r'[a-zA-Zñáéíóú\s]+$'
+    if re.match(pat, region):
+        return True
+    else:
+        st.error("El nombre de la region no es válido (Ej: Valparaiso)")
         return False
 
 
@@ -77,7 +88,7 @@ def register_user(nombre, mail, comuna, alias, latitud, longitud):
         usuarios.loc[len(usuarios.index)] = [nombre, mail,
                                              comuna, latitud, longitud, alias, '']
         usuarios.to_csv(f".{path_sep}usuarios{path_sep}usuarios.csv")
-        st.success("Usuario registrado!")
+        st.success("Usuario registrado! Nos pondremos en contacto :)")
 
 
 with st.form(key='my_form', border=False):

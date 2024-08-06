@@ -16,6 +16,9 @@ st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 st.sidebar.image(f"static{path_sep}logo_ppcc.png", use_column_width=True)
 st.sidebar.image(f"static{path_sep}logo_dgf.png", use_column_width=True)
 st.sidebar.image(f"static{path_sep}logo_cr2.png", use_column_width=True)
+st.sidebar.image(f"static{path_sep}logo_uoh.png", use_column_width=True)
+st.sidebar.image(f"static{path_sep}logo_uvalpo.png", use_column_width=True)
+
 
 with open(f'.{path_sep}admins.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
@@ -37,7 +40,7 @@ if authentication_status:
     st.header("Página de Administración")
     st.divider()
 
-    with st.expander("Usuarios registrados", expanded=True):
+    with st.expander("Usuarios registrados", expanded=False):
         data = pd.read_csv(
             f".{path_sep}usuarios{path_sep}usuarios.csv",
             index_col='index')
@@ -54,15 +57,43 @@ if authentication_status:
         data_edited = st.data_editor(data, use_container_width=True,
                                      num_rows='dynamic', key='data_edit_users')
 
+        sheet = st.file_uploader('Cargar planilla de usuarios...',
+                                 key='users_update')
+        if sheet is not None:
+            fname = sheet.name
+            if fname.split('.')[-1] == 'csv':
+                data = pd.read_csv(sheet)
+                # st.success(f"{fname} ha sido creado!")
+            elif fname.split('.')[-1] in ['xls', 'xlsx']:
+                data = pd.read_excel(sheet)
+                # st.success(f"{fname} ha sido creado!")
+            else:
+                st.error(f'{fname} debe ser una planilla excel o csv!')
+
+            if st.button("Actualizar registro de usuarios"):
+                try:
+                    data['lat'] = data['lat'].map(
+                        lambda s: float(str(s).replace(',', '.')))
+                    data['lon'] = data['lon'].map(
+                        lambda s: float(str(s).replace(',', '.')))
+                    data.to_csv(f'usuarios{path_sep}usuarios.csv')
+                    st.success(f'Archivo {path_sep}usuarios.csv creado !')
+                    st.rerun()
+                except Exception as e:
+                    st.warning(f'No se pudo crear el archivo !')
+                    st.error(f'Error: {e}')
+
     with st.expander("Ver datos de evento", expanded=False):
         events = sorted(os.listdir(f".{path_sep}eventos"))
-        events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%Y/%m/%d")
-                        for e in events]
+        events_names = sorted([datetime.strptime(e.split(".")[0], "%Y-%m-%d")
+                               for e in events], reverse=True)
+        events_names = [e.strftime("%Y/%m/%d") for e in events_names]
         event = st.selectbox(
             'Seleccione evento', events_names, key='verdatos')
 
         data = pd.read_csv(
-            f".{path_sep}eventos{path_sep}{events[events_names.index(event)]}", index_col='index')
+            f".{path_sep}eventos{path_sep}{events[events_names.index(event)]}",
+            index_col=0)
 
         def update_data():
             data_edited.reset_index(inplace=True, drop=True)
@@ -92,6 +123,11 @@ if authentication_status:
 
             if st.button("Agregar a la base de datos"):
                 try:
+                    data['lat'] = data['lat'].map(
+                        lambda s: float(str(s).replace(',', '.')))
+                    data['lon'] = data['lon'].map(
+                        lambda s: float(str(s).replace(',', '.')))
+
                     data.to_csv(f'eventos/{d.strftime('%Y-%m-%d')}.csv')
                     st.success(f"Evento del {d.strftime(
                         '%Y-%m-%d')} ha sido creado!")
@@ -112,8 +148,9 @@ if authentication_status:
 
     with st.expander("Eliminar evento", expanded=False):
         events = sorted(os.listdir(f".{path_sep}eventos"))
-        events_names = [datetime.strptime(e.split(".")[0], "%Y-%m-%d").strftime("%Y/%m/%d")
-                        for e in events]
+        events_names = sorted([datetime.strptime(e.split(".")[0], "%Y-%m-%d")
+                               for e in events], reverse=True)
+        events_names = [e.strftime("%Y/%m/%d") for e in events_names]
         target_event = st.selectbox(
             'Seleccione el evento a eliminar', events_names, key='eliminarevento')
         if st.button("Eliminar"):

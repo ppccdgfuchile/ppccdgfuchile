@@ -1,0 +1,154 @@
+,nombre,comuna,lat,lon,alias,pp,grupo
+0,Gregory Espinola,Til Til,-33.003119,-70.999335,Los Quillayes,184.0,RM
+1,Luis Montenegro,Til Til,-33.002995,-70.997043,Profe Luis,171.0,RM
+2,Patricio Rodríguez,Til Til,-33.0447222222222,-70.9913889,patorod,133.0,RM
+3,Gonzalo Herrera,Til Til,-33.07089722222223,-70.98711388888889,Asiento Viejo,123.0,RM
+4,Gonzalo Herrera,Til Til,-33.07638333333334,-70.94580555555557,Los Quilos ,122.0,RM
+5,Gonzalo Herrera,Til Til,-32.96924166666667,-70.83778333333333,Montenegro,116.0,RM
+6,Gonzalo Herrera,Til Til,-32.94729722222222,-70.75080833333334,Rincón de los Valle,108.0,RM
+7,Gonzalo Herrera,Til Til,-32.99071111111111,-70.89506111111112,Rungue,102.0,RM
+8,Gonzalo Herrera,Til Til,-33.08021111111111,-70.88654166666667,La Aguada,93.0,RM
+9,Francisca Marchant Maldonado,Cerro Navia,-33.41513,-70.72882,Angostura,92.0,RM
+10,Gonzalo Herrera,Til Til,-33.07725555555556,-70.9251,Til Til Centro,91.0,RM
+11,Pascual Barrie,Olmue,-32.99055555555556,-71.18027777777779,Colibrí,90.0,RM
+12,Gonzalo Herrera,Til Til,-30.1512806,-70.8892361,La Plazuela,84.0,RM
+13,Rodrigo Pascual,San José de Maipo,-33.5783328,-70.451299,El Canelo,83.0,RM
+14,Maria Courard,Vitacura,-33.385938,-70.581230114,Vitacura,80.0,RM
+15,Gonzalo Herrera,Til Til,-32.93295833333333,-70.81376388888889,La Cumbre,79.0,RM
+16,Gonzalo Herrera,Til Til,-33.095111111111116,-70.92550833333334,El Sauce,78.0,RM
+17,Julian Harrison,Melipilla,-33.5761125,-71.0873969,AgricHarrison,75.0,RM
+18,Camila Aceituno,Paine,-33.820417,-70.741041,Probeta,75.0,RM
+19,Felipe Ugalde,San José de Maipo,-33.586952,-70.466303,Las Vertientes,74.0,RM
+20,James McPhee,Lo Barnechea,-33.356717,-70.479844,Arrayán - Estero,72.0,RM
+21,Patricio Eduardo Chacón,San José de Maipo,-33.762359,-70.279106,pachamos,72.0,RM
+22,Gonzalo Herrera,Til Til,-33.11244444444445,-70.79876944444445,Santa Matilde,72.0,RM
+23,Francisco Manzano,Buin,-33.7427629,-70.748651,Buin Centro,70.0,RM
+24,Andrés Eduardo Picker Gantz,San José de Maipo,-33.578198,-70.405527,Alicura,70.0,RM
+25,Luis Cid,Vitacura,-33.3890092,-70.5560782,Villa El Dorado,69.0,RM
+26,Nahdy Moreno Andalaft,Padre Hurtado,-33.562211,-70.885686,Aromito,68.0,RM
+27,Jaime Cortez,Buin,-33.747465,-70.735897,Linderos,67.0,RM
+28,Juan Carlos Mondaca Carrasco ,Padre Hurtado,-33.53836888888889,-70.91502100000001,Cirrus,67.0,RM
+29,Lukas Vasquez,La Cisterna,-33.526,-70.657,Sora-2,66.0,RM
+30,Sergio Rodríguez,Maipu,-33.512062,-70.769442,Maipu_Templo,66.0,RM
+31,Raul Segovia,Huechuraba,-33.347483,-70.663776,Los Guindos,65.0,RM
+32,Abdón Naím Pajundakis,Calera de Tango,-33.64388888888889,-70.83833333333332,Condominio SCdL,61.0,RM
+33,Alvaro Silva,La Reina,-33.43648,-70.54493,asilvam,60.5,RM
+34,José Pedro Mery García,Lo Barnechea,-33.3297222,-70.5038889,JPMG,60.0,RM
+35,Pablo Osses Mc Intyre,Lo Barnechea,-33.342583,-70.47025,POMcI,60.0,RM
+36,Jaime Ortúzar,Isla de Maipo,-33.704432,-70.89853,Granortu,59.0,RM
+37,Nancy Hitschfeld,Calera de Tango,-33.63026,-70.75037,Almendros,58.0,RM
+38,Gabriel Videla,Lo Barnechea,-33.363563,-70.496013,San Enrique,58.0,RM
+39,Karla Galleguillos Viedma,San José de Maipo,-33.634484,-70.35255,San José,58.0,RM
+40,Francisca Fonck,Colina,-33.260994,-70.644855,Ñipa,57.0,RM
+41,Benito Piuzzi,La Reina,-33.452259,-70.554147,San Benito,56.0,RM
+42,Doris Carrasco,Pedro Aguirre Cerda,-33.4917,-70.675,Abranquil,56.0,RM
+43,Francisco Mollo Calle,Conchalí,-33.38773,-70.65886,Conchalí 1,55.0,RM
+44,Pablo Rosenblatt,La Reina,-33.438747,-70.522457,Monbel,55.0,RM
+45,Sergio Salinas Rueda,Paine,-33.820713,-70.761706,Japón,55.0,RM
+46,Sigrid Küpfer Johannsen,La Reina,-33.434636,-70.522047,Petricor,54.5,RM
+47,Piroska Karakay A,Las Condes,-33.37354,-70.5041,La Posada MK,54.5,RM
+48,Tomás Hantelmann Rivera,Ñuñoa,-33.4624675,-70.6271803,Tomás,54.0,RM
+49,Carmen Aceituno,Puente Alto,-33.60863,-70.53107,Cordillera,54.0,RM
+50,Paulette Iribarne,Vitacura,-33.395182,-70.588737,Vitacumbia,54.0,RM
+51,Pedro Urzua Lizana,Vitacura,-33.38783,-70.553479,Escultor,54.0,RM
+52,Vivian Montecino,Lo Barnechea,-33.359998,-70.476821,Las tres hermanas,53.0,RM
+53,Pablo Zurita,Peñaflor,-33.6044444,-70.8980556,BATA,53.0,RM
+54,Bruno Vargas,Las Condes,-33.405679,-70.55212,pluv_lcbv,52.0,RM
+55,Pabla Quintana,Puente Alto,-33.5821241,-70.5858865,CasaPabla,52.0,RM
+56,Miguel Fajardo Ibáñez ,San Miguel,-33.51119,-70.66195,Fajardo,52.0,RM
+57,Helmuth Thiemer,Colina,-33.307339,-70.660102,Chamisero,51.7,RM
+58,Gonzalo Herrera,Til Til,-33.135,-70.7972222,Huertos Familiares,51.0,RM
+59,Isidora Sanhueza,Lo Barnechea,-33.365434,-70.498209,CasaIsidora,50.0,RM
+60,Jess Cartes ,San Ramón,-33.528298,-70.6411026,Pep9,49.2,RM
+61,Gonzalo Morales,Macul,-33.491065,-70.587073,Patio,49.0,RM
+62,Paula Cabrera,Peñalolén,-33.5005704,-70.535267,Pirquera,49.0,RM
+63,Patricia Macanas,Las Condes,-33.41069,-70.51004,Marley,48.0,RM
+64,Bruno Behn,Lo Barnechea,-33.35084,-70.51874,BRUNO,48.0,RM
+65,Ximena Aguilar,Lo Espejo,-33.51708,-70.6801,ClaraEstrella,48.0,RM
+66,Any Arcos Guzmán ,San Bernardo,-33592121.0,-70707756.0,Saitama,48.0,RM
+67,Mayra Fernanda Vélez Caycho,Cerro Navia,-33.417376,-70.75786,Harry,47.8,RM
+68,Matias Rossier,La Cisterna ,-33.52583,-70.667812,San Simón,47.0,RM
+69,Antonio Carrasco,La Florida,-33.566723,-70.592142,Guacolda,47.0,RM
+70,Juan Luis García,Las Condes,-33.379558,-70.519431,Huerta_JLG,47.0,RM
+71,María Paz Marzolo,Las Condes,-33.41354,-70.58728,MPM,47.0,RM
+72,Roberto Rondanelli,Lo Barnechea,-33.31861,-70.233055,trespuntas,47.0,RM
+73,Antonia Donoso,Peñalolén,-33.4733008,-70.5329882,CasaAnto,47.0,RM
+74,Gonzalo Herrera,Til Til,-33.04158333333333,-70.98044444444444,Caleu Las Cortaderas,47.0,RM
+75,Graciela Garay,La Florida,-33.5350191,-70.5787438,Costa Rica,46.5,RM
+76,Leandro Herrera,La Florida,-33.53039167,-70.56961667,Casa_Sary,46.0,RM
+77,Patricio Aceituno,La Florida,-33.5387504,-70.58643,MDM,45.8,RM
+78,Mauricio Correa,La Reina,-33.459283,-70.56545,FG6189,45.0,RM
+79,Matias Roman,Lo Espejo,-33.514491,-70.694431,Loespuno,45.0,RM
+80,Pamela Zenteno,Peñalolén,-33.487568,-70.574487,Ciudadana,45.0,RM
+81,Claudio Pérez,Peñalolén,-33.4893921,-70.541795,Puyehue,45.0,RM
+82,Valeria Villagrán,Providencia,-33.436461,-70.620565,Ministro,45.0,RM
+83,Alfredo Fernández Fernandez,Peñalolén,-33.50167,-70.586438,Terra-Aqua,44.0,RM
+84,Gozalo Herrera,Til Til,-33.118275,-70.84519444444445,Punta Peuco,44.0,RM
+85,Diego Durán ,La Florida,-33.52336,-70.56212,Miravalle,43.0,RM
+86,Daniel Romero,Las Condes,-33.423889,-70.557545,Dreal,43.0,RM
+87,Sebastian Almonacid,Santiago  ,-33.4333882,-70.6584614,Ado,42.6,RM
+88,Jimena Cortés,Ñuñoa,-33.456043,-70.598147,Morgana,42.5,RM
+89,Marco Pfeiffer,La Reina,-33.445699,-70.553097,OpaHouse,42.0,RM
+90,Alonso Puig,Ñuñoa,-33.4609,-70.594277,Johow,42.0,RM
+91,Andrew Cooke,providencia,-33.4236496,-70.6002209,Ito596,42.0,RM
+92,Felipe Vargas Toledo,San Bernardo,-33.6424739,-70.6979683,Mi Casa sector Sur,42.0,RM
+93,Daniela Pollak,Las Condes,-33.426634,-70.587151,Teruel,41.0,RM
+94,Gabriel Vargas,Pirque,-33.6493055555556,-70.6056388888889,IsaPir,40.0,RM
+95,Paola Muñoz Manuguián,Providencia,-33.4401249,-70.600959,Tranqui,40.0,RM
+96,Gloria Fuentes,Puente Alto,-33.60863,-70.53107,El Páramo,40.0,RM
+97,Manuel Díaz Labra,La Reina,-33.45492,-70.56167,Milna,38.0,RM
+98,Carlos Iván cortes fuentes,La Reina,-33.44194,-70.56306,Tadeo,38.0,RM
+99,Aquiles Vergara,La Reina,-33.4325123,-70.5797009,thequeen,37.0,RM
+100,Sebastian Villalón ,Pedro Aguirre Cerda,-33.4874038,-70.6606549,Panchito's house,37.0,RM
+101,Mauricio Ortúzar B.,Ñuñoa,-33.450585,-70.591376,Brownpoint,36.5,RM
+102,Sofía Moraga,Renca,-33.40343,-70.70815,Djoko,27.0,RM
+103,Colliguay (AG 499),Quipué,-33.1686089,-71.1557171,Colliguay,135.5,EMA
+104,Alhue,Alhué,-34.065277,-71.254166,Alhué FDF,111.2,EMA
+105,San Pedro de Melipilla (AG 268),San Pedro,-33.898055,-71.452777,San Pedro Melipilla  INIA,108.3,EMA
+106,Cuncumén (AG 559),San Antonio,-33.736215,-71.421579,Cuncumén INIA,107.9,EMA
+107,Los Guindos,Melipilla,-33.8908333,-71.233611,Los Guindos (DGA),97.8,EMA
+108,Melipilla (AG 44),Melipilla,-33.650277,-71.100277,Melipilla FDF,84.4,EMA
+109,La Obra - EMOS,San José de Maipo,-33.5902778,-70.4852778,La Obra EMOS (DGA),83.7,EMA
+110,Rio Angostura en Valdivia de Paine,Paine,-33.811111,-70.88361,Angostura en Valdivia de Paine (DGA),82.8,EMA
+111,Valdivia de Paine (AG738),Buin,-33.7986592,-70.8413394,Valdivia de Paine,80.8,EMA
+112,El Paico,El Monte,-33.706388,-71.008055,El Paico (DMC),79.2,EMA
+113,Curacaví Ad.,Curacavi,-33.411111,-71.167777,Curacavi (DMC),74.4,EMA
+114,Río Volcán en Queltehues,San José de Maipo,-33.809722,-70.210277,Rio Volcan  en Queltehues (DGA),74.0,EMA
+115,Talagante (AG 45),Talagante,-33.673332,-70.92111,Talagante FDF,72.3,EMA
+116,El Oasis (AG 688),Lampa,-33.286388,-70.83611,El Oasis - INIA,70.7,EMA
+117,Santa Amelia (AG 734),Talagante,-33.668744,-70.912195,Santa Amelia,70.0,EMA
+118,El Asiento (AG 511),Alhue,-34.029166,-70.994999,El Asiento - INIA,68.7,EMA
+119,Lo Prado Cerro San Francisco,Pudahuel,-33.458055,-70.94861,Lo Prado (DMC),68.3,EMA
+120,Isla de Maipo (AG 55),Isla de Maipo,-33.763888,-70.886666,Isla de Maipo FDF,67.8,EMA
+121,Colina (Reg.),Colina,-33.162222,-70.643055,Colina (DMC),67.7,EMA
+122,El Villorrio (AG 730),Padre Hurtado,-33.562443,-70.875305,El Villorio,67.1,EMA
+123,Mallarauco,Peñaflor,-33.5716667,-71.1016667,Mallarauco (DGA),65.8,EMA
+124,Melipilla Esc. Tec.,Melipilla,-33.680277,-71.1997,Melipilla Esc. Tec. (DGA),65.7,EMA
+125,Chacabuco (AG 736),Colina,-33.2488,-70.72322,Chacabuco - INIA,64.9,EMA
+126,San Antonio de Naltahua - INIA (AG 267),Isla de Maipo,-33.725554,-71.042499,Sn Antonio Naltahua - INIA,64.1,EMA
+127,Rinconada - U. de Chile,Maipú,-33.497221,-70.845555,Rinconada de Maipú - INIA,63.9,EMA
+128,Til Til (AG 41),Til Til,-33.121388,-70.834166,Til Til FDF,63.4,EMA
+129,Los Tilos (AG 285),Buin,-33.711666,-70.711944,Los Tilos (INIA),63.2,EMA
+130,El Parrón (AG 728),María Pinto,-33.508555,-71.084029,El Parrón,62.9,EMA
+131,Pirque DGA,Pirque,-33.673888,-70.586666,Pirque (DGA),61.4,EMA
+132,"Eulogio Sánchez, Tobalaba Ad.",La Reina,-33.45528,-70.54222,Aer. Tobalaba (DMC),60.6,EMA
+133,San José de Maipo Retén,San José de Maipo,-33.636388,-70.356944,San José de Maipo Retén  (DGA),57.2,EMA
+134,Río Mapocho en Los Almendros,Lo Barnechea,-33.370554,-70.451111,Mapocho - Almendros (DGA),54.9,EMA
+135,"Quinta Normal, Santiago",Santiago,-33.445,-70.67778,Quinta Normal (DMC),54.9,EMA
+136,San Pablo - DASA,Pudahuel,-33.442221,-70.746666,San Pablo (DMC),54.1,EMA
+137,Río Maipo en el Manzano,San José de Maipo,-33.597499,-70.379443,Maipo en el Manzano (DGA),53.8,EMA
+138,Los Panguiles,Curacaví,-33.438888,-71.025277,Panguiles (DGA),53.7,EMA
+139,Buin (AG 43),Buin,-33.707222,-70.707222,Buin FDF,53.0,EMA
+140,La Aurora (AG 732),Curacaví,-33.429661,-71.029152,La Aurora,52.9,EMA
+141,Cerro Calán DGA,Las Condes,-33.394999,-70.536666,Calán (DGA),51.5,EMA
+142,Pudahuel Santiago,Pudahuel,-33.37833,-70.79639,Aer. Pudahuel (DMC),51.3,EMA
+143,La Platina (AG 162),La Granja,-33.572777,-70.619721,La Platina (INIA),51.0,EMA
+144,San José Guayacán,San José de Maipo,-33.615277,-70.350555,Guayacan (DMC),50.9,EMA
+145,Quebrada de Macul,Peñalolén,-33.500833,-70.514166,Quebrada Macul (DGA),50.0,EMA
+146,Laguna Aculeo,Paine,-33.8858333,-70.8775,Laguna de Aculeo (DGA),49.0,EMA
+147,Huelquen (AG 47),Paine,-33.861944,-70.639166,Huelquén FDF,48.8,EMA
+148,Laguna Negra,SanJosé de Maipo,-33.665833333,-70.1077778,Laguna Negra (DGA),47.1,EMA
+149,Terraza DGA central,Santiago,-33.44861,-70.64389,DGA - Terraza Central,46.9,EMA
+150,Curacaví (AG 52),Curacaví,-33.43861,-71.025554,Curacaví FDF,45.9,EMA
+151,Chorrillos,Lampa,-33.34368,-70.8185,Chorrillos,45.4,EMA
+152,Caleu,Til-Til,-33.005556,-70.993611,Caleu  (DGA),42.0,EMA
