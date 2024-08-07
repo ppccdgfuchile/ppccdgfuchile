@@ -37,8 +37,9 @@ events_names = [e.strftime("%Y/%m/%d") for e in events_names]
 target_event = st.selectbox(
     'Seleccione el evento a visualizar', events_names)
 
+target_event2 = target_event.replace('/', '-')
 df = pd.read_csv(
-    f'.{path_sep}eventos{path_sep}{events[events_names.index(target_event)]}')
+    f'.{path_sep}eventos{path_sep}{target_event2}.csv')
 df_map = df[['lat', 'lon', 'pp']].astype('float64')
 df_map['nombre'] = df['nombre']
 df_map['alias'] = df['alias']
@@ -91,7 +92,7 @@ for idx, row in df_map[df_map.grupo != 'EMA'].iterrows():
     # Circle(location=[row.lat, row.lon], radius=1, color='darkblue',
     #        fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     CircleMarker(location=[row.lat, row.lon],
-                 radius=row.pp/10,
+                 radius=row.pp/(8),
                  stroke=True,
                  weight=0.75,
                  color='black',
@@ -106,7 +107,7 @@ for idx, row in df_map[df_map.grupo == 'EMA'].iterrows():
     # Circle(location=[row.lat, row.lon], radius=1, color='darkblue',
     #        fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     CircleMarker(location=[row.lat, row.lon],
-                 radius=row.pp/10,
+                 radius=row.pp/(8),
                  stroke=True,
                  weight=0.75,
                  color='red',
