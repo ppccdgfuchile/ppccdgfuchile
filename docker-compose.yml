@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  app-ppcc:
+    build: ./
+    ports: 
+      - "5555:5555"

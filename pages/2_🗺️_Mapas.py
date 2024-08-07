@@ -92,7 +92,7 @@ for idx, row in df_map[df_map.grupo != 'EMA'].iterrows():
     # Circle(location=[row.lat, row.lon], radius=1, color='darkblue',
     #        fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     CircleMarker(location=[row.lat, row.lon],
-                 radius=row.pp/(8),
+                 radius=row.pp,
                  stroke=True,
                  weight=0.75,
                  color='black',
@@ -107,7 +107,7 @@ for idx, row in df_map[df_map.grupo == 'EMA'].iterrows():
     # Circle(location=[row.lat, row.lon], radius=1, color='darkblue',
     #        fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     CircleMarker(location=[row.lat, row.lon],
-                 radius=row.pp/(8),
+                 radius=row.pp,
                  stroke=True,
                  weight=0.75,
                  color='red',
