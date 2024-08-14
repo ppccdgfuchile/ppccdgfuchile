@@ -23,7 +23,7 @@ st.sidebar.image(f"static{path_sep}logo_uvalpo.png", use_column_width=True)
 with open(f'.{path_sep}admins.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
-stauth.Hasher.hash_passwords(config['credentials'])
+# stauth.Hasher.hash_passwords(config['credentials'])
 authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
