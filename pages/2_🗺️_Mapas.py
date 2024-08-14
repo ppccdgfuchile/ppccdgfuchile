@@ -84,7 +84,19 @@ google_satellite_tile.add_to(folium_map)
 
 group1 = folium.FeatureGroup('Pluviómetros Ciudadanos')
 group2 = folium.FeatureGroup('Pluviómetros Red Nacional')
-colormap = cm.linear.YlGnBu_09.scale(df.pp.min(), df.pp.max())
+try:
+    visparams = pd.read_csv('visparams/visparams.csv', index_col=0)
+    visparams = visparams.loc[target_event2]
+    if np.isnan(visparams).sum() != 0:
+        assert False
+    colormap = cm.linear.YlGnBu_09.scale(visparams.color_min,
+                                         visparams.color_max)
+    point_scale = 1/visparams.point_scale*100
+
+except Exception as e:
+    colormap = cm.linear.YlGnBu_09.scale(df_map.pp.min(), df_map.pp.max())
+    point_scale = 3
+
 for idx, row in df_map[df_map.grupo != 'EMA'].iterrows():
     # color = colormap.scale(row.pp)
     popup = folium.Popup(
@@ -92,7 +104,7 @@ for idx, row in df_map[df_map.grupo != 'EMA'].iterrows():
     # Circle(location=[row.lat, row.lon], radius=1, color='darkblue',
     #        fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     CircleMarker(location=[row.lat, row.lon],
-                 radius=row.pp,
+                 radius=row.pp/point_scale,
                  stroke=True,
                  weight=0.75,
                  color='black',
@@ -107,7 +119,7 @@ for idx, row in df_map[df_map.grupo == 'EMA'].iterrows():
     # Circle(location=[row.lat, row.lon], radius=1, color='darkblue',
     #        fill_color='darkblue', fill=True, fill_opacity=1).add_to(folium_map)
     CircleMarker(location=[row.lat, row.lon],
-                 radius=row.pp,
+                 radius=row.pp/point_scale,
                  stroke=True,
                  weight=0.75,
                  color='red',

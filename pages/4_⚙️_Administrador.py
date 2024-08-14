@@ -23,7 +23,7 @@ st.sidebar.image(f"static{path_sep}logo_uvalpo.png", use_column_width=True)
 with open(f'.{path_sep}admins.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
-# stauth.Hasher.hash_passwords(config['credentials'])
+stauth.Hasher.hash_passwords(config['credentials'])
 authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
@@ -82,6 +82,22 @@ if authentication_status:
                 except Exception as e:
                     st.warning(f'No se pudo crear el archivo !')
                     st.error(f'Error: {e}')
+    with st.expander("Configurar visualizacion", expanded=False):
+        visparams = pd.read_csv(
+            f'visparams{path_sep}visparams.csv', index_col=0)
+
+        def update_visparams():
+            # index = visparams_edited.index
+            # visparams_edited.reset_index(inplace=True, drop=True)
+            # visparams_edited.index.name = 'eventos'
+            visparams_edited.to_csv(
+                f".{path_sep}visparams{path_sep}visparams.csv")
+
+        update_visparams = st.button(
+            "Actualizar", on_click=update_visparams, key='visparams_update')
+        visparams_edited = st.data_editor(
+            visparams, use_container_width=True, num_rows='dynamic',
+            key='visparams_edit')
 
     with st.expander("Ver datos de evento", expanded=False):
         events = sorted(os.listdir(f".{path_sep}eventos"))
@@ -129,6 +145,12 @@ if authentication_status:
                         lambda s: float(str(s).replace(',', '.')))
 
                     data.to_csv(f'eventos/{d.strftime('%Y-%m-%d')}.csv')
+
+                    visparams = pd.read_csv('visparams/visparams.csv',
+                                            index_col=0)
+                    visparams.loc[d.strftime('%Y-%m-%d')] = np.nan
+                    visparams.to_csv('visparams/visparams.csv')
+
                     st.success(f"Evento del {d.strftime(
                         '%Y-%m-%d')} ha sido creado!")
                 except Exception as e:
