@@ -93,7 +93,7 @@ try:
 
 except Exception as e:
     colormap = cm.linear.YlGnBu_09.scale(df_map.pp.min(), df_map.pp.max())
-    point_scale = 3
+    point_scale = 10
 
 for idx, row in df_map[df_map.grupo != 'EMA'].iterrows():
     # color = colormap.scale(row.pp)
