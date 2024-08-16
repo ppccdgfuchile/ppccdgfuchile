@@ -30,16 +30,14 @@ st.sidebar.image(f"static{path_sep}logo_uvalpo.png", use_column_width=True)
 
 
 events = sorted(os.listdir(f".{path_sep}eventos"))
-events_names = sorted([datetime.strptime(e.split(".")[0], "%Y-%m-%d")
-                       for e in events], reverse=True)
-events_names = [e.strftime("%Y/%m/%d") for e in events_names]
+events_names = sorted([e.split('.')[0].replace(
+    '-', '/').replace('_', ' - ') for e in events], reverse=True)
 
-target_event = st.selectbox(
-    'Seleccione el evento a visualizar', events_names)
+target_event = st.selectbox('Seleccione el evento a visualizar', events_names)
+target_event_name = target_event.replace(' - ', '_').replace('/', '-')
 
-target_event2 = target_event.replace('/', '-')
 df = pd.read_csv(
-    f'.{path_sep}eventos{path_sep}{target_event2}.csv')
+    f'.{path_sep}eventos{path_sep}{target_event_name}.csv')
 df_map = df[['lat', 'lon', 'pp']].astype('float64')
 df_map['nombre'] = df['nombre']
 df_map['alias'] = df['alias']
@@ -86,7 +84,7 @@ group1 = folium.FeatureGroup('Pluviómetros Ciudadanos')
 group2 = folium.FeatureGroup('Pluviómetros Red Nacional')
 try:
     visparams = pd.read_csv('visparams/visparams.csv', index_col=0)
-    visparams = visparams.loc[target_event2]
+    visparams = visparams.loc[target_event_name]
     if np.isnan(visparams).sum() != 0:
         assert False
     colormap = cm.linear.YlGnBu_09.scale(visparams.color_min,

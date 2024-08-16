@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import streamlit_authenticator as stauth
+from streamlit_authenticator.utilities.hasher import Hasher
 import yaml
 from yaml.loader import SafeLoader
 from params import *
@@ -23,7 +24,7 @@ st.sidebar.image(f"static{path_sep}logo_uvalpo.png", use_column_width=True)
 with open(f'.{path_sep}admins.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
-# stauth.Hasher.hash_passwords(config['credentials'])
+Hasher.hash_passwords(config['credentials'])
 authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
@@ -101,9 +102,8 @@ if authentication_status:
 
     with st.expander("Ver datos de evento", expanded=False):
         events = sorted(os.listdir(f".{path_sep}eventos"))
-        events_names = sorted([datetime.strptime(e.split(".")[0], "%Y-%m-%d")
-                               for e in events], reverse=True)
-        events_names = [e.strftime("%Y/%m/%d") for e in events_names]
+        events_names = sorted([e.split('.')[0].replace(
+            '-', '/').replace('_', ' - ') for e in events], reverse=True)
         event = st.selectbox(
             'Seleccione evento', events_names, key='verdatos')
 
@@ -124,18 +124,20 @@ if authentication_status:
             key='data_edit_event')
 
     with st.expander("Añadir nuevo evento", expanded=False):
-        d = st.date_input("Fecha del evento a añadir:")
+        d = st.date_input("Fecha del evento a añadir:",
+                          (datetime.today(), datetime.today()))
+        event_name = '_'.join([dd.strftime('%F') for dd in d])
         sheet = st.file_uploader('Cargar planilla de registros...')
         if sheet is not None:
-            fname = sheet.name
-            if fname.split('.')[-1] == 'csv':
+            loaded_fname = sheet.name
+            if loaded_fname.split('.')[-1] == 'csv':
                 data = pd.read_csv(sheet)
-                # st.success(f"{fname} ha sido creado!")
-            elif fname.split('.')[-1] in ['xls', 'xlsx']:
+                # st.success(f"{loaded_fname} ha sido creado!")
+            elif loaded_fname.split('.')[-1] in ['xls', 'xlsx']:
                 data = pd.read_excel(sheet)
-                # st.success(f"{fname} ha sido creado!")
+                # st.success(f"{loaded_fname} ha sido creado!")
             else:
-                st.error(f'{fname} debe ser una planilla excel o csv!')
+                st.error(f'{loaded_fname} debe ser una planilla excel o csv!')
 
             if st.button("Agregar a la base de datos"):
                 try:
@@ -144,18 +146,18 @@ if authentication_status:
                     data['lon'] = data['lon'].map(
                         lambda s: float(str(s).replace(',', '.')))
 
-                    data.to_csv(f'eventos/{d.strftime('%Y-%m-%d')}.csv')
+                    data.to_csv(f'eventos/{event_name}.csv')
 
                     visparams = pd.read_csv('visparams/visparams.csv',
                                             index_col=0)
-                    visparams.loc[d.strftime('%Y-%m-%d')] = np.nan
+                    visparams.loc[event_name] = np.nan
                     visparams.to_csv('visparams/visparams.csv')
 
-                    st.success(f"Evento del {d.strftime(
-                        '%Y-%m-%d')} ha sido creado!")
+                    st.success(f"Evento del {event_name.replace(
+                        '-', '/').replace('_', ' - ')} ha sido creado!")
                 except Exception as e:
                     st.warning(f'No se pudo crear el evento {
-                               d.strftime('%Y-%m-%d')}!')
+                               event_name}!')
                     st.error(f'Error: {e}')
 
                 # st.rerun()
@@ -170,9 +172,8 @@ if authentication_status:
 
     with st.expander("Eliminar evento", expanded=False):
         events = sorted(os.listdir(f".{path_sep}eventos"))
-        events_names = sorted([datetime.strptime(e.split(".")[0], "%Y-%m-%d")
-                               for e in events], reverse=True)
-        events_names = [e.strftime("%Y/%m/%d") for e in events_names]
+        events_names = sorted([e.split('.')[0].replace(
+            '-', '/').replace('_', ' - ') for e in events], reverse=True)
         target_event = st.selectbox(
             'Seleccione el evento a eliminar', events_names, key='eliminarevento')
         if st.button("Eliminar"):
