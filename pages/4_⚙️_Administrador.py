@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import streamlit_authenticator as stauth
-from streamlit_authenticator.utilities.hasher import Hasher
+# from streamlit_authenticator.utilities.hasher import Hasher
 import yaml
 from yaml.loader import SafeLoader
 from params import *
@@ -24,7 +24,7 @@ st.sidebar.image(f"static{path_sep}logo_uvalpo.png", use_column_width=True)
 with open(f'.{path_sep}admins.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
-Hasher.hash_passwords(config['credentials'])
+# Hasher.hash_passwords(config['credentials'])
 authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
