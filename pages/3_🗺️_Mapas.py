@@ -1,0 +1,124 @@
+import streamlit as st
+from streamlit_js_eval import streamlit_js_eval
+from streamlit_folium import st_folium
+from streamlit_folium import st_folium
+
+import pandas as pd
+import numpy as np
+
+import folium
+import branca.colormap as cm
+from folium import CircleMarker
+
+from params import cmap_WhiteBlueGreenYellowRed
+from datetime import datetime
+import os
+import sys
+sys.path.append('../.')
+
+st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
+st.sidebar.image(os.path.join('static', 'logo_ppcc.png'),
+                 use_column_width=True)
+
+events = sorted(os.listdir('eventos'), reverse=True)
+events_names = [e.split('.')[0].replace('-', '/').replace('_', ' - ')
+                for e in events]
+
+target_event = st.selectbox('Seleccione el evento a visualizar', events_names)
+target_event_name = target_event.replace(' - ', '_').replace('/', '-')
+
+df = pd.read_csv(os.path.join('.', 'eventos', f'{target_event_name}.csv'))
+df_map = df[['lat', 'lon', 'pp']].astype('float64')
+df_map['alias'] = df['alias']
+df_map['grupo'] = df['grupo']
+df_map.dropna(inplace=True)
+st.header(f'Precipitaciones acumuladas: Evento {target_event}')
+
+# --------------------------------- BASEMAPS --------------------------------- #
+
+google_maps_tile = folium.TileLayer(
+    tiles='https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}',
+    attr='Google Maps',
+    name='Mapa',
+    overlay=False,
+    control=True
+)
+
+google_terrain_tile = folium.TileLayer(
+    tiles='http://www.google.cn/maps/vt?lyrs=p@189&gl=cn&x={x}&y={y}&z={z}',
+    attr='Google Relief',
+    name='Relieve',
+    overlay=False,
+    control=True
+)
+
+google_satellite_tile = folium.TileLayer(
+    tiles='http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}',
+    attr='Google Satellite',
+    name='Satelite',
+    overlay=False,
+    control=True
+)
+
+# ---------------------------------------------------------------------------- #
+folium_map = folium.Map(location=[-33.5, -70.8],
+                        zoom_start=9,
+                        tiles=google_satellite_tile)
+
+google_terrain_tile.add_to(folium_map)
+google_maps_tile.add_to(folium_map)
+
+group1 = folium.FeatureGroup('Pluviómetros Ciudadanos')
+group2 = folium.FeatureGroup('Pluviómetros Red Nacional')
+try:
+    visparams = pd.read_csv('visparams/visparams.csv', index_col=0)
+    visparams = visparams.loc[target_event_name]
+    if np.isnan(visparams).sum() != 0:
+        assert False
+    vmin, vmax = visparams.color_min, visparams.color_max
+    point_scale = 1/visparams.point_scale*100
+
+except Exception as e:
+    vmin, vmax = df_map.pp.min(), df_map.pp.max()
+    point_scale = 10
+
+# colormap = cm.linear.Paired_08.scale(vmin, vmax);colormap.caption = '(mm)'
+colormap = cm.LinearColormap(colors=cmap_WhiteBlueGreenYellowRed,
+                             vmin=vmin, vmax=vmax,
+                             caption='(mm)')
+# colormap.colors = colormap.colors[::-1]
+
+for idx, row in df_map[df_map.grupo != 'EMA'].iterrows():
+    # color = colormap.scale(row.pp)
+    popup = folium.Popup(
+        f"<b>Alias:</b> {row.alias} <br> <b>Precipitación:</b> {row.pp} [mm] <br> <b>Grupo:</b> {row.grupo} <br>", max_width=1000)
+    CircleMarker(location=[row.lat, row.lon],
+                 radius=row.pp/point_scale,
+                 stroke=True,
+                 weight=0.75,
+                 color='black',
+                 fill_color=colormap(row.pp), fill=True,
+                 fill_opacity=0.8,
+                 popup=popup).add_to(group1)
+
+for idx, row in df_map[df_map.grupo == 'EMA'].iterrows():
+    popup = folium.Popup(
+        f"<b>Alias:</b> {row.alias} <br> <b>Precipitación:</b> {row.pp} [mm] <br> <b>Grupo:</b> {row.grupo} <br>", max_width=1000)
+    CircleMarker(location=[row.lat, row.lon],
+                 radius=row.pp/point_scale,
+                 stroke=True,
+                 weight=0.75,
+                 color='red',
+                 fill_color=colormap(row.pp), fill=True,
+                 fill_opacity=0.8,
+                 popup=popup).add_to(group2)
+
+folium_map.add_child(group1)
+folium_map.add_child(group2)
+folium_map.add_child(folium.map.LayerControl(position='bottomleft'))
+colormap.add_to(folium_map)
+
+st_map = st_folium(folium_map,
+                   width=streamlit_js_eval(
+                       js_expressions='window.innerWidth', key='lwidth'),
+                   height=600)

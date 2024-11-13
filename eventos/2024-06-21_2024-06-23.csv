@@ -1,4 +1,4 @@
-,nombre,comuna,lat,lon,alias,pp,grupo
+index,nombre,comuna,lat,lon,alias,pp,grupo
 0,Jaime Cortez,Buin,-33.747465,-70.735897,Linderos,87.0,RM
 1,Francisco Manzano,Buin,-33.7427629,-70.748651,Buin Centro,79.0,RM
 2,Nancy Hitschfeld,Calera de Tango,-33.63026,-70.75037,Almendros,82.0,RM
@@ -109,68 +109,67 @@
 107,Gonzalo Herrera,Til Til,-32.99071111111111,-70.89506111111112,Rungue,104.0,RM
 108,Gonzalo Herrera,Til Til,-32.96924166666667,-70.83778333333333,Montenegro,101.0,RM
 109,Gonzalo Herrera,Til Til,-33.07725555555556,-70.9251,TilTil Centro,98.0,RM
-110,Gonzalo Herrera,Til Til,-33.095111111111116,-70.92550833333334,El Sauce,96.0,RM
+110,Gonzalo Herrera,Til Til,-33.09511111111112,-70.92550833333334,El Sauce,96.0,RM
 111,Gonzalo Herrera,Til Til,-32.94729722222222,-70.75080833333334,Rincón de los Valle,96.0,RM
 112,Gonzalo Herrera,Til Til,-33.08021111111111,-70.88654166666667,La Aguada,95.0,RM
-113,Gonzalo Herrera,Til Til,-30.1512806,-70.8892361,La Plazuela,93.0,RM
-114,Gonzalo Herrera,Til Til,-33.135,-70.7972222,Huertos Familiares,82.0,RM
-115,Gozalo Herrera,Til Til,-33.118275,-70.84519444444445,Punta Peuco,82.0,RM
-116,Gonzalo Herrera,Til Til,-33.163019444444444,-70.78773333333334,Alto el Manzano,76.0,RM
-117,Rodrigo Silva,Til Til,-33.164083,-70.787468,AEM Til Til,74.0,RM
-118,Gonzalo Herrera,Til Til,-32.93295833333333,-70.81376388888889,La Cumbre,74.0,RM
-119,Paulette Iribarne,Vitacura,-33.395182,-70.588737,Vitacumbia,107.0,RM
-120,Maria Courard,Vitacura,-33.385938,-70.581230114,Vitacura,105.0,RM
-121,Perla Valdés ,Vitacura,-33.383186,-70.579557,Borderío,87.9,RM
-122,Sergio Barrientos,Vitacura,-33.38146,-70.55663,Auri-001,85.0,RM
-123,Pedro Urzua Lizana,Vitacura,-33.38783,-70.553479,Escultor,84.0,RM
-124,El Asiento (AG 511),Alhue,-34.029166,-70.994999,El Asiento INIA,91.6,EMA
-125,Valdivia de Paine (AG738),Buin,-33.7986592,-70.8413394,Valdivia de Paine,91.1,EMA
-126,Los Tilos (AG 285),Buin,-33.711666,-70.711944,Los Tilos (INIA),88.4,EMA
-127,Chacabuco (AG 736),Colina,-33.2488,-70.72322,Chacabuco - INIA,77.0,EMA
-128,Colina (Reg.),Colina,-33.162222,-70.643055,Colina DMC,65.4,EMA
-129,Colina  (AG 48),Colina,-33.218888,-70.715833,Colina FDF,61.6,EMA
-130,Peldehue (AG 438),Colina,-33.1471111,-70.6602222,Peldehue Agromet,59.2,EMA
-131,Lo Pinto,Colina,-33.268054,-70.732221,Lo Pinto DMC,57.8,EMA
-132,Peldehue Ad.,Colina,-33.113888,-70.685833,Peldehue Ad DMC,55.8,EMA
-133,Curacaví Ad.,Curacavi,-33.411111,-71.167777,Curacavi DMC,86.7,EMA
-134,La Aurora (AG 732),Curacaví,-33.429661,-71.029152,La Aurora,90.1,EMA
-135,Los Panguiles,Curacaví,-33.438888,-71.025277,Panguiles DGA,88.3,EMA
-136,El Monte (AG 56),El Monte,-33.691944,-71.101111,El Monte FDF,99.6,EMA
-137,El Paico,El Monte,-33.706388,-71.008055,El Paico DMC,88.8,EMA
-138,San Antonio de Naltahua - INIA (AG 267),Isla de Maipo,-33.725554,-71.042499,Sn Antonio Naltahua INIA,88.5,EMA
-139,La Platina (AG 162),La Granja,-33.572777,-70.619721,La Platina (INIA),86.1,EMA
-140,"Eulogio Sánchez, Tobalaba Ad.",La Reina,-33.45528,-70.54222,Aer. Tobalaba DMC,109.6,EMA
-141,El Oasis (AG 688),Lampa,-33.286388,-70.83611,El Oasis INIA,80.5,EMA
-142,Chorrillos,Lampa,-33.34368,-70.8185,Chorrillos,62.5,EMA
-143,Cerro Calán DGA,Las Condes,-33.394999,-70.536666,Calán - DGA,75.9,EMA
-144,Río Molina antes j San Francisco,Lo Barnechea,-33.37361,-70.396388,Rio Molina DGA,78.4,EMA
-145,Río Mapocho en Los Almendros,Lo Barnechea,-33.370554,-70.451111,Mapocho - Almendros DGA,71.7,EMA
-146,Rinconada - U. de Chile,Maipú,-33.497221,-70.845555,Rinconada INIA,72.2,EMA
-147,El Parrón (AG 728),María Pinto,-33.508555,-71.084029,El Parrón,79.1,EMA
-148,Melipilla Esc. Tec.,Melipilla,-33.680277,-71.1997,Melipilla Esc. Tec. DGA,97.3,EMA
-149,Los Guindos,Melipilla,-33.8908333,-71.233611,Los Guindos - DGA,95.5,EMA
-150,Melipilla (AG 44),Melipilla,-33.650277,-71.100277,Melipilla FDF,92.4,EMA
-151,El Villorrio (AG 730),Padre Hurtado,-33.562443,-70.875305,El Villorio,74.3,EMA
-152,Rio Angostura en Valdivia de Paine,Paine,-33.811111,-70.88361,Angostura en Valdivia de Paine,94.2,EMA
-153,Huelquen (AG 47),Paine,-33.861944,-70.639166,Huelquén FDF,68.6,EMA
-154,Laguna Aculeo,Paine,-33.8858333,-70.8775,Laguna de Aculeo - DGA,53.8,EMA
-155,Mallarauco,Peñaflor,-33.5716667,-71.1016667,Mallarauco - DGA,87.4,EMA
-156,Quebrada de Macul,Peñalolén,-33.500833,-70.514166,Qda Macul DGA,78.3,EMA
-157,Pirque DGA,Pirque,-33.673888,-70.586666,Pirque DGA,99.6,EMA
-158,Lo Prado Cerro San Francisco,Pudahuel,-33.458055,-70.94861,Lo Prado DMC,69.4,EMA
-159,Pudahuel Santiago,Pudahuel,-33.37833,-70.79639,Aer. Pudahuel DMC,56.2,EMA
-160,Colliguay (AG 499),QuiLpué,-33.1686089,-71.1557171,Colliguay,145.1,EMA
-161,Cuncumén (AG 559),San Antonio,-33.736215,-71.421579,Cuncumén INIA,92.4,EMA
-162,La Obra - EMOS,San José de Maipo,-33.5902778,-70.4852778,La Obra EMOS DGA,143.9,EMA
-163,San José de Maipo Retén,San José de Maipo,-33.636388,-70.356944,San José de Maipo Retén - DGA,91.4,EMA
-164,Río Volcán en Queltehues,San José de Maipo,-33.809722,-70.210277,Rio Volcan  en Queltehues - DGA,90.2,EMA
-165,San José Guayacán,San José de Maipo,-33.615277,-70.350555,Guayacan DMC,85.1,EMA
-166,Río Maipo en el Manzano,San José de Maipo,-33.597499,-70.379443,Maipo Manzano DGA,81.2,EMA
-167,San Pedro de Melipilla (AG 268),San Pedro,-33.898055,-71.452777,San Pedro Melipilla  INIA,94.5,EMA
-168,Laguna Negra,SanJosé de Maipo,-33.665833333,-70.1077778,Laguna Negra DGA,56.1,EMA
-169,"Quinta Normal, Santiago",Santiago,-33.445,-70.67778,Q. Normal DMC,80.6,EMA
-170,Terraza DGA central,Santiago,-33.44861,-70.64389,DGA - Terraza Central,79.6,EMA
-171,Santa Amelia (AG 734),Talagante,-33.668744,-70.912195,Santa Amelia,67.5,EMA
-172,Talagante (AG 45),Talagante,-33.673332,-70.92111,Talagante FDF,52.5,EMA
-173,Llano de Caleu La Dormida,Til Til,-33.04944,-71.00139,La Dormida DMC,114.0,EMA
-174,Polpaico,Til Til,-33.123888,-70.828054,Polpaico DMC,88.4,EMA
+113,Gonzalo Herrera,Til Til,-33.135,-70.7972222,Huertos Familiares,82.0,RM
+114,Gozalo Herrera,Til Til,-33.118275,-70.84519444444445,Punta Peuco,82.0,RM
+115,Gonzalo Herrera,Til Til,-33.163019444444444,-70.78773333333334,Alto el Manzano,76.0,RM
+116,Rodrigo Silva,Til Til,-33.164083,-70.787468,AEM Til Til,74.0,RM
+117,Gonzalo Herrera,Til Til,-32.93295833333333,-70.81376388888889,La Cumbre,74.0,RM
+118,Paulette Iribarne,Vitacura,-33.395182,-70.588737,Vitacumbia,107.0,RM
+119,Maria Courard,Vitacura,-33.385938,-70.581230114,Vitacura,105.0,RM
+120,Perla Valdés ,Vitacura,-33.383186,-70.579557,Borderío,87.9,RM
+121,Sergio Barrientos,Vitacura,-33.38146,-70.55663,Auri-001,85.0,RM
+122,Pedro Urzua Lizana,Vitacura,-33.38783,-70.553479,Escultor,84.0,RM
+123,El Asiento (AG 511),Alhue,-34.029166,-70.994999,El Asiento INIA,91.6,EMA
+124,Valdivia de Paine (AG738),Buin,-33.7986592,-70.8413394,Valdivia de Paine,91.1,EMA
+125,Los Tilos (AG 285),Buin,-33.711666,-70.711944,Los Tilos (INIA),88.4,EMA
+126,Chacabuco (AG 736),Colina,-33.2488,-70.72322,Chacabuco - INIA,77.0,EMA
+127,Colina (Reg.),Colina,-33.162222,-70.643055,Colina DMC,65.4,EMA
+128,Colina  (AG 48),Colina,-33.218888,-70.715833,Colina FDF,61.6,EMA
+129,Peldehue (AG 438),Colina,-33.1471111,-70.6602222,Peldehue Agromet,59.2,EMA
+130,Lo Pinto,Colina,-33.268054,-70.732221,Lo Pinto DMC,57.8,EMA
+131,Peldehue Ad.,Colina,-33.113888,-70.685833,Peldehue Ad DMC,55.8,EMA
+132,Curacaví Ad.,Curacavi,-33.411111,-71.167777,Curacavi DMC,86.7,EMA
+133,La Aurora (AG 732),Curacaví,-33.429661,-71.029152,La Aurora,90.1,EMA
+134,Los Panguiles,Curacaví,-33.438888,-71.025277,Panguiles DGA,88.3,EMA
+135,El Monte (AG 56),El Monte,-33.691944,-71.101111,El Monte FDF,99.6,EMA
+136,El Paico,El Monte,-33.706388,-71.008055,El Paico DMC,88.8,EMA
+137,San Antonio de Naltahua - INIA (AG 267),Isla de Maipo,-33.725554,-71.042499,Sn Antonio Naltahua INIA,88.5,EMA
+138,La Platina (AG 162),La Granja,-33.572777,-70.619721,La Platina (INIA),86.1,EMA
+139,"Eulogio Sánchez, Tobalaba Ad.",La Reina,-33.45528,-70.54222,Aer. Tobalaba DMC,109.6,EMA
+140,El Oasis (AG 688),Lampa,-33.286388,-70.83611,El Oasis INIA,80.5,EMA
+141,Chorrillos,Lampa,-33.34368,-70.8185,Chorrillos,62.5,EMA
+142,Cerro Calán DGA,Las Condes,-33.394999,-70.536666,Calán - DGA,75.9,EMA
+143,Río Molina antes j San Francisco,Lo Barnechea,-33.37361,-70.396388,Rio Molina DGA,78.4,EMA
+144,Río Mapocho en Los Almendros,Lo Barnechea,-33.370554,-70.451111,Mapocho - Almendros DGA,71.7,EMA
+145,Rinconada - U. de Chile,Maipú,-33.497221,-70.845555,Rinconada INIA,72.2,EMA
+146,El Parrón (AG 728),María Pinto,-33.508555,-71.084029,El Parrón,79.1,EMA
+147,Melipilla Esc. Tec.,Melipilla,-33.680277,-71.1997,Melipilla Esc. Tec. DGA,97.3,EMA
+148,Los Guindos,Melipilla,-33.8908333,-71.233611,Los Guindos - DGA,95.5,EMA
+149,Melipilla (AG 44),Melipilla,-33.650277,-71.100277,Melipilla FDF,92.4,EMA
+150,El Villorrio (AG 730),Padre Hurtado,-33.562443,-70.875305,El Villorio,74.3,EMA
+151,Rio Angostura en Valdivia de Paine,Paine,-33.811111,-70.88361,Angostura en Valdivia de Paine,94.2,EMA
+152,Huelquen (AG 47),Paine,-33.861944,-70.639166,Huelquén FDF,68.6,EMA
+153,Laguna Aculeo,Paine,-33.8858333,-70.8775,Laguna de Aculeo - DGA,53.8,EMA
+154,Mallarauco,Peñaflor,-33.5716667,-71.1016667,Mallarauco - DGA,87.4,EMA
+155,Quebrada de Macul,Peñalolén,-33.500833,-70.514166,Qda Macul DGA,78.3,EMA
+156,Pirque DGA,Pirque,-33.673888,-70.586666,Pirque DGA,99.6,EMA
+157,Lo Prado Cerro San Francisco,Pudahuel,-33.458055,-70.94861,Lo Prado DMC,69.4,EMA
+158,Pudahuel Santiago,Pudahuel,-33.37833,-70.79639,Aer. Pudahuel DMC,56.2,EMA
+159,Colliguay (AG 499),QuiLpué,-33.1686089,-71.1557171,Colliguay,145.1,EMA
+160,Cuncumén (AG 559),San Antonio,-33.736215,-71.421579,Cuncumén INIA,92.4,EMA
+161,La Obra - EMOS,San José de Maipo,-33.5902778,-70.4852778,La Obra EMOS DGA,143.9,EMA
+162,San José de Maipo Retén,San José de Maipo,-33.636388,-70.356944,San José de Maipo Retén - DGA,91.4,EMA
+163,Río Volcán en Queltehues,San José de Maipo,-33.809722,-70.210277,Rio Volcan  en Queltehues - DGA,90.2,EMA
+164,San José Guayacán,San José de Maipo,-33.615277,-70.350555,Guayacan DMC,85.1,EMA
+165,Río Maipo en el Manzano,San José de Maipo,-33.597499,-70.379443,Maipo Manzano DGA,81.2,EMA
+166,San Pedro de Melipilla (AG 268),San Pedro,-33.898055,-71.452777,San Pedro Melipilla  INIA,94.5,EMA
+167,Laguna Negra,SanJosé de Maipo,-33.665833333,-70.1077778,Laguna Negra DGA,56.1,EMA
+168,"Quinta Normal, Santiago",Santiago,-33.445,-70.67778,Q. Normal DMC,80.6,EMA
+169,Terraza DGA central,Santiago,-33.44861,-70.64389,DGA - Terraza Central,79.6,EMA
+170,Santa Amelia (AG 734),Talagante,-33.668744,-70.912195,Santa Amelia,67.5,EMA
+171,Talagante (AG 45),Talagante,-33.673332,-70.92111,Talagante FDF,52.5,EMA
+172,Llano de Caleu La Dormida,Til Til,-33.04944,-71.00139,La Dormida DMC,114.0,EMA
+173,Polpaico,Til Til,-33.123888,-70.828054,Polpaico DMC,88.4,EMA
