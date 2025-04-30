@@ -1,25 +1,27 @@
+import os
+import sys
+
 import streamlit as st
-import pandas as pd
-import numpy as np
 import streamlit_authenticator as stauth
-from streamlit_authenticator.utilities.hasher import Hasher
+
 import yaml
 from yaml.loader import SafeLoader
-from params import *
-import sys
-import os
+
+
+import numpy as np
+import pandas as pd
+
 from datetime import datetime
 import time
 sys.path.append('../.')
 
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 st.sidebar.image(os.path.join("static", "logo_ppcc.png"),
-                 use_column_width=True)
+                 use_container_width=True)
 
 with open(os.path.join('.', 'admins.yaml')) as file:
     config = yaml.load(file, Loader=SafeLoader)
 
-Hasher.hash_passwords(config['credentials'])
 authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
@@ -27,12 +29,13 @@ authenticator = stauth.Authenticate(
     config['cookie']['expiry_days'],
 )
 
-name, authentication_status, user = authenticator.login()
+try:
+    login = authenticator.login()
+except Exception as e:
+    st.error(e)
+    st.stop()
 
-if authentication_status == False:
-    st.error("Usuario o contraseña incorrectos!")
-
-if authentication_status:
+if st.session_state['authentication_status']:
     st.header("Página de Administración")
     st.divider()
 
@@ -69,10 +72,10 @@ if authentication_status:
                     data['lon'] = data['lon'].map(
                         lambda s: float(str(s).replace(',', '.')))
                     data.to_csv(df_path)
-                    st.success(f'Archivo usuarios.csv creado !')
+                    st.success('Archivo usuarios.csv creado !')
                     st.rerun()
                 except Exception as e:
-                    st.warning(f'No se pudo crear el archivo !')
+                    st.warning('No se pudo crear el archivo !')
                     st.error(f'Error: {e}')
     with st.expander("Configurar visualizacion", expanded=False):
         visparams_path = os.path.join('visparams', 'visparams.csv')

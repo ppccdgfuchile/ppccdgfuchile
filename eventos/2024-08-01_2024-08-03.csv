@@ -1,4 +1,4 @@
-index,comuna,lat,lon,alias,pp,grupo
+index,Comuna,Latitud,Longitud,Alias,Precipitacion,Grupo
 0,Buin,-33.7427629,-70.748651,Buin Centro,70.0,RM
 1,Buin,-33.747465,-70.735897,Linderos,67.0,RM
 2,Calera de Tango,-33.64388888888889,-70.83833333333332,Condominio SCdL,61.0,RM

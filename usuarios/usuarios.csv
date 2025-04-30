@@ -1,4 +1,4 @@
-index,nombre,correo,comuna,lat,lon,alias,actividad,telefono,grupo
+index,Nombre,Correo,Comuna,Latitud,Longitud,Alias,Actividad,Telefono,Grupo
 0,Patricio Aceituno,paceituno2015@gmail.com,La Florida,-33.53875,-70.58643,MDM,,,PP CC 01
 1,Paulette Iribarne,paulette.iribarne@gmail.com,Vitacura,-33.39518,-70.58874,Vitacumbia,,,PP CC 01
 2,Benito Piuzzi,bpiuzzi@meteochile.cl,La Reina,-33.45226,-70.55415,San Benito,,,PP CC 01

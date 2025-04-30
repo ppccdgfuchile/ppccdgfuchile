@@ -11,4 +11,4 @@ COPY . .
 RUN pip install -r requirements_linux.txt
 
 # Ejecutar el servidor web Streamlit
-CMD ["streamlit", "run", "1_🏠_Inicio.py", "--server.port", "5555"]
+CMD ["streamlit", "run", "1_🏠_Inicio.py", "--server.port", "8501"]

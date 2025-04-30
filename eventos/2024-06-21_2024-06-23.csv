@@ -1,4 +1,4 @@
-index,nombre,comuna,lat,lon,alias,pp,grupo
+index,Nombre,Comuna,Latitud,Longitud,Alias,Precipitacion,Grupo
 0,Jaime Cortez,Buin,-33.747465,-70.735897,Linderos,87.0,RM
 1,Francisco Manzano,Buin,-33.7427629,-70.748651,Buin Centro,79.0,RM
 2,Nancy Hitschfeld,Calera de Tango,-33.63026,-70.75037,Almendros,82.0,RM
