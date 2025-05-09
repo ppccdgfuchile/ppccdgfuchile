@@ -1,0 +1,33 @@
+# VIRTUALENV: python -m venv --prompt venv .venv
+# Generar requiremets.txt: python -m piptools compile -o requirements.txt pyproject.toml
+# Generar dev-requiremets.txt: uv pip compile --extra dev --output-file dev-requirements.txt pyproject.toml
+# [tool.setuptools]
+# packages = ["app"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "ppcc_dgfuchile"
+dynamic         = ["version"]
+description     = "Proyecto para la gestión de pluviómetros ciudadanos."
+requires-python = ">=3.11"
+
+dependencies = [
+    "altair==5.5.0",
+    "streamlit==1.45.0",
+    "streamlit==1.45.0",
+    "streamlit-authenticator==0.4.2",
+    "streamlit-folium==0.25.0",
+    "streamlit-js-eval==0.1.7",
+    "numpy==2.2.5",
+    "pandas==2.2.3",
+    "folium==0.19.5",
+]
+
+[tool.setuptools]
+packages = ["pages", "eventos", "usuarios", "visparams", "static", "tmp"]  # Incluye solo los directorios relevantes
+
+[tool.uv]
+no-binary-package = ["numpy", "pandas", "folium"]

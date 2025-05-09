@@ -13,16 +13,16 @@ sys.path.append('../.')
 # locale.setlocale(locale.LC_TIME, 'es_ES')
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
 
-st.sidebar.image(f"static{path_sep}logo_ppcc.png", use_column_width=True)
-st.sidebar.image(f"static{path_sep}logo_dgf.png", use_column_width=True)
-st.sidebar.image(f"static{path_sep}logo_cr2.png", use_column_width=True)
-st.sidebar.image(f"static{path_sep}logo_uoh.png", use_column_width=True)
-st.sidebar.image(f"static{path_sep}logo_uvalpo.png", use_column_width=True)
+st.sidebar.image(f"static/logo_ppcc.png", use_column_width=True)
+st.sidebar.image(f"static/logo_dgf.png", use_column_width=True)
+st.sidebar.image(f"static/logo_cr2.png", use_column_width=True)
+st.sidebar.image(f"static/logo_uoh.png", use_column_width=True)
+st.sidebar.image(f"static/logo_uvalpo.png", use_column_width=True)
 
 
 def check_valid_email(email):
     usuarios = pd.read_csv(
-        f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
+        f"./usuarios/usuarios.csv", index_col='index')
     lista_mails = usuarios.mail.to_list()
     pat = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
     if re.match(pat, email):
@@ -84,10 +84,10 @@ def register_user(nombre, mail, comuna, alias, latitud, longitud):
         return None
     else:
         usuarios = pd.read_csv(
-            f".{path_sep}usuarios{path_sep}usuarios.csv", index_col='index')
+            f"./usuarios/usuarios.csv", index_col='index')
         usuarios.loc[len(usuarios.index)] = [nombre, mail,
                                              comuna, latitud, longitud, alias, '']
-        usuarios.to_csv(f".{path_sep}usuarios{path_sep}usuarios.csv")
+        usuarios.to_csv(f"./usuarios/usuarios.csv")
         st.success("Usuario registrado! Nos pondremos en contacto :)")
 
 
@@ -102,7 +102,7 @@ with st.form(key='my_form', border=False):
 
     with st.expander("¿Cómo obtener la latitud y longitud de tu ubicación?"):
         # st.write('Video')
-        st.video(f'static{path_sep}googlemaps_ubicacion.mp4')
+        st.video(f'static/googlemaps_ubicacion.mp4')
 
     latitud = st.number_input(
         label='Ingresa tu latitud en grados', min_value=-90., max_value=90., step=0.00001)
