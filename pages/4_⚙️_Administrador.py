@@ -177,6 +177,7 @@ if st.session_state['authentication_status']:
         #                 for e in events]
         target_event = st.selectbox('Seleccione el evento a eliminar',
                                     nombres, key='eliminarevento')
+        print(target_event, eventos, nombres)
         if st.button("Eliminar"):
             visparams_path = os.path.join('visparams', 'visparams.csv')
             visparams = pd.read_csv(visparams_path, index_col=0)
