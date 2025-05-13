@@ -88,9 +88,9 @@ if st.session_state['authentication_status']:
 
             if st.button("Actualizar registro de usuarios"):
                 try:
-                    data['lat'] = data['lat'].map(
+                    data['Latitud'] = data['Latitud'].map(
                         lambda s: float(str(s).replace(',', '.')))
-                    data['lon'] = data['lon'].map(
+                    data['Longitud'] = data['Longitud'].map(
                         lambda s: float(str(s).replace(',', '.')))
                     data.to_csv(df_path)
                     st.success('Archivo usuarios.csv creado !')
@@ -153,9 +153,9 @@ if st.session_state['authentication_status']:
 
             if st.button("Agregar a la base de datos"):
                 try:
-                    data['lat'] = data['lat'].map(
+                    data['Latitud'] = data['Latitud'].map(
                         lambda s: float(str(s).replace(',', '.')))
-                    data['lon'] = data['lon'].map(
+                    data['Longitud'] = data['Longitud'].map(
                         lambda s: float(str(s).replace(',', '.')))
 
                     data.to_csv(os.path.join('eventos', f'{event_name}.csv'))
