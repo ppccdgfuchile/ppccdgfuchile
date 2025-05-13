@@ -1,17 +1,13 @@
 import os
 import sys
-
 import streamlit as st
 import streamlit_authenticator as stauth
-
 import yaml
 from yaml.loader import SafeLoader
-
-
 import numpy as np
 import pandas as pd
-
 from datetime import datetime
+from utils import recolectar_eventos
 import time
 sys.path.append('../.')
 
@@ -119,6 +115,7 @@ if st.session_state['authentication_status']:
             key='visparams_edit')
 
     with st.expander("Ver datos de evento", expanded=False):
+        df_eventos, n_eventos = recolectar_eventos()
         events = sorted(os.listdir('eventos'), reverse=True)
         events_names = [e.split('.')[0].replace('-', '/').replace('_', ' - ')
                         for e in events]
@@ -171,22 +168,23 @@ if st.session_state['authentication_status']:
                     st.error(f'Error: {e}')
 
     with st.expander("Eliminar evento", expanded=False):
+        df_eventos, n_eventos = recolectar_eventos()
+        eventos = df_eventos['Evento'].tolist()
+        nombres = df_eventos['Nombre'].tolist()
 
-        events = sorted(os.listdir('eventos'), reverse=True)
-        events_names = [e.split('.')[0].replace('-', '/').replace('_', ' - ')
-                        for e in events]
+        # events = sorted(os.listdir('eventos'), reverse=True)
+        # events_names = [e.split('.')[0].replace('-', '/').replace('_', ' - ')
+        #                 for e in events]
         target_event = st.selectbox('Seleccione el evento a eliminar',
-                                    events_names, key='eliminarevento')
+                                    nombres, key='eliminarevento')
         if st.button("Eliminar"):
             visparams_path = os.path.join('visparams', 'visparams.csv')
             visparams = pd.read_csv(visparams_path, index_col=0)
-            visparams.drop(index=events[events_names.index(target_event)],
-                           inplace=True)
+            visparams.drop(target_event, axis=0, inplace=True)
             visparams.to_csv(visparams_path)
-            epath = os.path.join('.', 'eventos',
-                                 f'{events[events_names.index(target_event)]}')
+            epath = os.path.join('.', 'eventos', f'{target_event}')
             os.remove(epath)
-            text = f"{events[events_names.index(target_event)]}"
+            text = f"{target_event}"
             text = text+'  ha sido eliminado de la base de datos!'
             st.warning(text)
             with st.spinner('Actualizando...'):
