@@ -41,11 +41,11 @@ siguientes, dependiendo de la región de residencia:
     Prof. Patricio Aceituno, Dpt. de Geofísica, FCFM - U. de Chile.
     Correo electrónico: aceituno@uchile.cl
 
-* V Región:
+* Región de Valparaíso:
     Prof. Ana María Córdoba, Dpt. de Meteorología, U. de Valparaíso.
     Correo electrónico: anamaria.cordova@uv.cl
 
-* VI Región:
+* Región de O'Higgins:
     Prof. Raúl Valenzuela, Instituto de Ciencias de la Ingeniería, U. de 
     O'Higgins.
     Correo electrónico: raul.valenzuela@uoh.cl
