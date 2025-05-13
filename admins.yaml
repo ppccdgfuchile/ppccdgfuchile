@@ -1,0 +1,12 @@
+credentials:
+  usernames:
+    admin.ppcc:
+      email:
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: admin.ppcc
+      password: ppccweb2024 # Will be hashed automatically
+cookie:
+  expiry_days: 1
+  key: 3f9c88f2-8a1b-4bb5-b33f-2a0e88d3cbee # Must be string
+  name: cookieppcc

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+pages/2_🌧️_Registros.py
+pages/3_🗺️_Mapas.py
+pages/4_⚙️_Administrador.py
+ppcc_dgfuchile.egg-info/PKG-INFO
+ppcc_dgfuchile.egg-info/SOURCES.txt
+ppcc_dgfuchile.egg-info/dependency_links.txt
+ppcc_dgfuchile.egg-info/requires.txt
+ppcc_dgfuchile.egg-info/top_level.txt

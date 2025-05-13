@@ -1,0 +1,6 @@
+eventos
+pages
+static
+tmp
+usuarios
+visparams
