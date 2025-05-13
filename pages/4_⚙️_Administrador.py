@@ -169,21 +169,22 @@ if st.session_state['authentication_status']:
 
     with st.expander("Eliminar evento", expanded=False):
         df_eventos, n_eventos = recolectar_eventos()
-        eventos = df_eventos['Evento'].tolist()
-        nombres = df_eventos['Nombre'].tolist()
+        eventos = df_eventos['Evento'].to_list()
+        nombres = df_eventos['Nombre'].to_list()
 
         # events = sorted(os.listdir('eventos'), reverse=True)
         # events_names = [e.split('.')[0].replace('-', '/').replace('_', ' - ')
         #                 for e in events]
         target_event = st.selectbox('Seleccione el evento a eliminar',
                                     nombres, key='eliminarevento')
-        print(target_event, eventos, nombres)
+        target_event_fname = eventos[nombres.index(target_event)]
         if st.button("Eliminar"):
             visparams_path = os.path.join('visparams', 'visparams.csv')
             visparams = pd.read_csv(visparams_path, index_col=0)
-            visparams.drop(target_event, axis=0, inplace=True)
+            visparams.drop(target_event_fname.replace('.csv', ''), axis=0,
+                           inplace=True)
             visparams.to_csv(visparams_path)
-            epath = os.path.join('.', 'eventos', f'{target_event}')
+            epath = os.path.join('.', 'eventos', f'{target_event_fname}')
             os.remove(epath)
             text = f"{target_event}"
             text = text+'  ha sido eliminado de la base de datos!'
