@@ -24,6 +24,18 @@ if n_eventos != 0:
             df = df[['Alias', 'Grupo', 'Latitud', 'Longitud', 'Precipitacion']]
             df = df.rename({'Precipitacion': 'Precipitación (mm)'}, axis=1)
             st.dataframe(df)
+    st.sidebar.markdown('---')
+    data = [pd.read_csv(os.path.join('.', 'eventos', evento), index_col=0)
+            for evento in eventos]
+    data = pd.concat(data, keys=nombres).droplevel(1)
+    data.index.name = 'Evento'
+    data.to_csv('tmp/Eventos.csv')
+    fbytes = open('tmp/Eventos.csv', 'rb')
+    st.download_button('Descargar Base de Datos', fbytes,
+                       on_click="rerun", use_container_width=True,
+                       file_name='Eventos.csv', mime='text/csv')
+
+
 else:
     st.warning('No hay eventos disponibles para mostrar.')
     st.stop()
