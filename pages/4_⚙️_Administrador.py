@@ -53,7 +53,7 @@ if st.session_state['authentication_status']:
     with st.expander("Usuarios registrados", expanded=False):
         df_path = os.path.join('.', 'usuarios', 'usuarios.csv')
         if os.path.isfile(df_path):
-            data = pd.read_csv(df_path, index_col='index')
+            data = pd.read_csv(df_path, index_col=0)
         else:
             data = pd.DataFrame(columns=["Nombre", "Correo", "Comuna",
                                          "Latitud", "Longitud", "Alias",
@@ -63,7 +63,6 @@ if st.session_state['authentication_status']:
         def update_data():
             st.success('Actualización exitosa!')
             data_edited.reset_index(inplace=True, drop=True)
-            data_edited.index.name = 'index'
             data_edited.to_csv(df_path)
 
         update_data = st.button("Actualizar", on_click=update_data,
@@ -173,7 +172,7 @@ if st.session_state['authentication_status']:
         nombres = df_eventos['Nombre'].to_list()
 
         # events = sorted(os.listdir('eventos'), reverse=True)
-        # events_names = [e.split('.')[0].replace('-', '/').replace('_', ' - ')
+        # events_names = [e.split('.')[0].replace('-', '/').replace('_'j, ' - ')
         #                 for e in events]
         target_event = st.selectbox('Seleccione el evento a eliminar',
                                     nombres, key='eliminarevento')
