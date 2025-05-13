@@ -20,8 +20,7 @@ observadores(as) voluntarios(as) y de estaciones meteorológicas automáticas
 iniciativas similares coordinadas con el 
 [Departamento de Meteorología de la Universidad de Valparaiso](https://meteo.uv.cl) 
 y el 
-[Instituto de Ciencias de la Ingeniería de la Universidad de O'Higgins]
-(https://www.uoh.cl/instituto-de-ciencias-de-la-ingenieria/).
+[Instituto de Ciencias de la Ingeniería de la Universidad de O'Higgins](https://www.uoh.cl/instituto-de-ciencias-de-la-ingenieria/).
 
 La información de precipitación que se obtiene a través de este proyecto 
 es de libre acceso y se publica en este sitio Web en forma de tablas 
