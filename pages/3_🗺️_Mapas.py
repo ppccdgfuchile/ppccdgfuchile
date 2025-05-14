@@ -10,7 +10,7 @@ from streamlit_folium import st_folium
 
 import folium
 import branca.colormap as cm
-from folium import CircleMarker
+from folium import CircleMarker, Element
 from folium.plugins import StripePattern
 
 from utils import recolectar_eventos, cargar_parametros_visualizacion
@@ -162,10 +162,17 @@ for idx, row in df_map[df_map['Grupo'] == 'EMA'].iterrows():
 folium_map.add_child(grupo1)
 folium_map.add_child(grupo2)
 folium_map.add_child(folium.map.LayerControl(position='bottomleft'))
+
+css_options = ["background-color: rgba(255,255,255, 0.6);",
+               "border: 1px solid black;",
+               "border-radius: 3px;",
+               "font-size: 15px;"]
+css_options = ' '.join(css_options)
+svg_style = '<style>#legend {'+f'{css_options}'+'}</style>'
+folium_map.get_root().header.add_child(folium.Element(svg_style))
+
 mapa_colores.add_to(folium_map)
-# CSS = "font-size: 16px; color: white; text-align: center;"  # add more props if needed
-# folium_map.get_root().header.add_child(
-#     folium.Element(f"<style>#legend > g > text.caption {{{CSS}}}</style>")
-# )
+
+
 map_width = streamlit_js_eval(js_expressions='window.innerWidth', key='lwidth')
 st_map = st_folium(folium_map, width=map_width, height=600)

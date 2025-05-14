@@ -3,6 +3,54 @@ import pandas as pd
 from typing import Tuple
 
 
+def usuarios_qqcc(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Control de calidad de un dataframe de usuarios. Funciones:
+
+    Convierte las columnas 'Latitud' y 'Longitud' de un DataFrame desde 
+    representaciones de cadenas con comas como separadores decimales a valores 
+    de tipo float.
+
+    Args:
+        df (pd.DataFrame): DataFrame de entrada que contiene las columnas 
+        'Latitud' y 'Longitud' con valores en formato de cadena.
+
+    Returns:
+        pd.DataFrame: Un nuevo DataFrame con las columnas 'Latitud' y 'Longitud' 
+        convertidas a valores de tipo float.
+    """
+    df = df.copy()
+    df['Latitud'] = df['Latitud'].map(
+        lambda s: float(str(s).replace(',', '.')))
+    df['Longitud'] = df['Longitud'].map(
+        lambda s: float(str(s).replace(',', '.')))
+    return df
+
+
+def eventos_qqcc(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Control de calidad de un dataframe de eventos. Funciones:
+
+    Convierte las columnas 'Latitud' y 'Longitud' de un DataFrame desde 
+    representaciones de cadenas con comas como separadores decimales a valores 
+    de tipo float.
+
+    Args:
+        df (pd.DataFrame): DataFrame de entrada que contiene las columnas 
+        'Latitud' y 'Longitud' con valores en formato de cadena.
+
+    Returns:
+        pd.DataFrame: Un nuevo DataFrame con las columnas 'Latitud' y 'Longitud' 
+        convertidas a valores de tipo float.
+    """
+    df = df.copy()
+    df['Latitud'] = df['Latitud'].map(
+        lambda s: float(str(s).replace(',', '.')))
+    df['Longitud'] = df['Longitud'].map(
+        lambda s: float(str(s).replace(',', '.')))
+    return df
+
+
 def recolectar_eventos() -> Tuple[pd.DataFrame, int]:
     """
     Recolecta los archivos de eventos desde una carpeta específica, los procesa
