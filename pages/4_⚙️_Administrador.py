@@ -25,21 +25,6 @@ authenticator = stauth.Authenticate(
     config['cookie']['expiry_days'],
 )
 
-# def convert_to_dict(obj):
-#    if isinstance(obj, dict):
-#        return {k: convert_to_dict(v) for k, v in obj.items()}
-#    else:
-#        return obj
-
-# credentials = convert_to_dict(st.secrets['credentials'])
-
-# authenticator = stauth.Authenticate(
-#    credentials,
-#    st.secrets['cookie']['name'],
-#    st.secrets['cookie']['key'],
-#    st.secrets['cookie']['expiry_days'],
-# )
-
 try:
     login = authenticator.login()
 except Exception as e:
