@@ -1,71 +1,185 @@
 import os
+import sys
+
+import pandas as pd
+import numpy as np
+
 import streamlit as st
-# ------------------------------- PAGINA INICIO ------------------------------ #
+from streamlit_js_eval import streamlit_js_eval
+from streamlit_folium import st_folium
+
+import folium
+import branca.colormap as cm
+from folium import CircleMarker, Element
+from folium.plugins import StripePattern
+
+from utils import recolectar_eventos, cargar_parametros_visualizacion
+
+
+sys.path.append('../.')
 st.set_page_config(page_title='Pluviómetros Ciudadanos DGF', layout="wide")
+st.sidebar.image("static/logo_ppcc.png", use_container_width=True)
+
+df_eventos, n_eventos = recolectar_eventos()
+if n_eventos != 0:
+    eventos = df_eventos['Evento'].tolist()
+    nombres = df_eventos['Nombre'].tolist()
+else:
+    st.warning('No hay eventos disponibles para mostrar.')
+    st.stop()
+
+target_event = st.selectbox('Seleccione el evento a visualizar', nombres)
+target_event_name = target_event.replace(' - ', '_').replace('/', '-')
+
+df = pd.read_csv(os.path.join('.', 'eventos', f'{target_event_name}.csv'),
+                 index_col=0)
+df_map = df[['Latitud', 'Longitud', 'Precipitacion']].astype('float64')
+df_map['Alias'] = df['Alias']
+df_map['Grupo'] = df['Grupo']
+try:
+    df_map['Comuna'] = df['Comuna']
+except:
+    df_map['Comuna'] = ''
+df_map.dropna(inplace=True)
+st.header(f'Precipitaciones acumuladas: Evento {target_event}')
 
 
-st.image(os.path.join('static', 'imagen_satelital1.png'))
-st.header('Red de Pluviómetros Ciudadanos')
-st.markdown("""
-El proyecto Pluviómetros Ciudadanos (PPCC) es una iniciativa de ciencia
-ciudadana que se desarrolló en el 
-[Departamento de Geofísica (DGF)](http://www.dgf.uchile.cl/) de la 
-[Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de 
-Chile](https://ingenieria.uchile.cl/) con el objetivo de estudiar los 
-efectos topográficos sobre la distribución espacial de la precipitación 
-en la Región Metropolitana, a partir de mediciones realizadas por 
-observadores(as) voluntarios(as) y de estaciones meteorológicas automáticas 
-(EMA) de la red nacional. El proyecto comenzó en el 2021 ampliándose en el 
-2024 a las regiones de Valparaíso (V) y O'higgins (VI), a través de 
-iniciativas similares coordinadas con el 
-[Departamento de Meteorología de la Universidad de Valparaiso](https://meteo.uv.cl) 
-y el 
-[Instituto de Ciencias de la Ingeniería de la Universidad de O'Higgins](https://www.uoh.cl/instituto-de-ciencias-de-la-ingenieria/).
-
-La información de precipitación que se obtiene a través de este proyecto 
-es de libre acceso y se publica en este sitio Web en forma de tablas 
-(viñeta Registros) y mapas (viñeta Mapas). Los puntos de medición de los(as) 
-observadores que colaboran con el proyecto se identifican mediante un alias.
-
-Al hacer un click sobre un punto de medición en el mapa se despliega 
-información sobre el nombre de la estación meteorológica o el alias del 
-punto de medición, el valor de la precipitación acumulada en milímetros y 
-una caracterización (Grupo) con los códigos EMA si corresponde a una 
-estación meteorológica automática o RM, V-R, VI-R para identificar a qué 
-filial del proyecto pertenece la persona que realiza la observación.
-
-Los contactos para quienes deseen colaborar con este proyecto son los 
-siguientes, dependiendo de la región de residencia:
-
-* Región Metropolitana:
-    Prof. Patricio Aceituno, Dpt. de Geofísica, FCFM - U. de Chile.
-    Correo electrónico: aceituno@uchile.cl
-
-* Región de Valparaíso:
-    Prof. Ana María Córdoba, Dpt. de Meteorología, U. de Valparaíso.
-    Correo electrónico: anamaria.cordova@uv.cl
-
-* Región de O'Higgins:
-    Prof. Raúl Valenzuela, Instituto de Ciencias de la Ingeniería, U. de 
-    O'Higgins.
-    Correo electrónico: raul.valenzuela@uoh.cl
-""")
-
-path1, path2, path3, path4, path5 = [os.path.join('static', f) for f in
-                                     ['logo_ppcc.png', 'logo_dgf.png',
-                                      'logo_uvalpo.png', 'logo_uoh.png',
-                                      'logo_cr2.png']]
-st.sidebar.image(path1, use_container_width=True)
+# ---------------------------------------------------------------------------- #
+# Crear un mapa de Folium centrado en la ubicación de Santiago, Chile
+# Establecer tiles en None para evitar sobrescribir capas personalizadas
+folium_map = folium.Map(location=[-33.5, -70.8],
+                        zoom_start=9,
+                        tiles=None)
 
 
-cols = st.columns(9)
-with cols[0]:
-    st.image(path1, use_container_width=True)
-with cols[2]:
-    st.image(path2, use_container_width=True)
-with cols[4]:
-    st.image(path3, use_container_width=True)
-with cols[6]:
-    st.image(path4, use_container_width=True)
-with cols[8]:
-    st.image(path5, use_container_width=True)
+# Cargar parámetros de visualización
+dvisparams = cargar_parametros_visualizacion('default')
+visparams = cargar_parametros_visualizacion(target_event_name)
+for key in visparams.keys():
+    if isinstance(visparams.get(key), (float, int)):
+        if np.isnan(visparams[key]):
+            visparams[key] = dvisparams[key]
+    elif isinstance(visparams.get(key), str) and visparams[key].lower() == 'nan':
+        visparams[key] = dvisparams[key]
+
+vmin = visparams['vmin']
+vmax = visparams['vmax']
+vstep = visparams['vstep']
+escala_puntos = visparams['escala_puntos']
+paletacolores = visparams['PaletaColores']
+basemap = visparams['MapaFondo']
+cmapticks = np.arange(vmin, vmax+vstep, vstep)
+
+# Configurar mapa de colores
+mapa_colores = eval(f"cm.linear.{paletacolores}").scale(vmin, vmax)
+mapa_colores.caption = 'Precipitación acumulada (mm)'
+mapa_colores.tick_labels = cmapticks.tolist()
+
+# --------------------------------- BASEMAPS --------------------------------- #
+
+google_maps_tile = folium.TileLayer(
+    tiles='https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}',
+    attr='Google Maps',
+    name='Mapa',
+    overlay=False,
+    control=True
+)
+
+google_terrain_tile = folium.TileLayer(
+    tiles='http://www.google.cn/maps/vt?lyrs=p@189&gl=cn&x={x}&y={y}&z={z}',
+    attr='Google Relief',
+    name='Relieve',
+    overlay=False,
+    control=True
+)
+
+google_satellite_tile = folium.TileLayer(
+    tiles='http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}',
+    attr='Google Satellite',
+    name='Satelite',
+    overlay=False,
+    control=True
+)
+
+# Agregar capas base
+tiles = [google_maps_tile, google_terrain_tile, google_satellite_tile]
+if basemap == 'Satelite':
+    google_maps_tile.add_to(folium_map)
+    google_terrain_tile.add_to(folium_map)
+    google_satellite_tile.add_to(folium_map)
+elif basemap == 'Relieve':
+    google_maps_tile.add_to(folium_map)
+    google_satellite_tile.add_to(folium_map)
+    google_terrain_tile.add_to(folium_map)
+elif basemap == 'Mapa':
+    google_terrain_tile.add_to(folium_map)
+    google_satellite_tile.add_to(folium_map)
+    google_maps_tile.add_to(folium_map)
+else:
+    text = [
+        f'{basemap} no es un mapa base válido. Opciones válidas: ',
+        'Mapa, Satelite, Relieve.'
+    ]
+    st.warning(''.join(text))
+
+# ---------------------------------------------------------------------------- #
+# Crear grupos de características
+grupo1 = folium.FeatureGroup('Pluviómetros Ciudadanos')
+grupo2 = folium.FeatureGroup('Pluviómetros Red Nacional')
+
+
+# Plotear puntos
+
+for idx, row in df_map[df_map.Grupo != 'EMA'].iterrows():
+    text = [
+        f"<b>Alias:</b> {row['Alias']} <br> "
+        f"<b>Precipitación:</b> {row['Precipitacion']} [mm] <br> "
+        f"<b>Grupo:</b> {row['Grupo']} <br>"
+        f"<b>Comuna:</b> {row['Comuna']} <br>"
+    ]
+    popup = folium.Popup(' '.join(text), max_width=1000)
+    CircleMarker(location=[row.Latitud, row.Longitud],
+                 radius=row.Precipitacion/escala_puntos,
+                 stroke=True,
+                 weight=0.75,
+                 color='black',
+                 fill_color=mapa_colores(row.Precipitacion), fill=True,
+                 fill_opacity=0.8,
+                 popup=popup).add_to(grupo1)
+
+
+for idx, row in df_map[df_map['Grupo'] == 'EMA'].iterrows():
+    text = [
+        f"<b>Alias:</b> {row['Alias']} <br> "
+        f"<b>Precipitación:</b> {row['Precipitacion']} [mm] <br> "
+        f"<b>Grupo:</b> {row['Grupo']} <br>"
+        f"<b>Comuna:</b> {row['Comuna']} <br>"
+    ]
+    popup = folium.Popup(' '.join(text), max_width=1000)
+    CircleMarker(location=[row['Latitud'], row['Longitud']],
+                 radius=row.Precipitacion/escala_puntos,
+                 stroke=True,
+                 weight=0.75,
+                 color='red',
+                 fill_color=mapa_colores(row['Precipitacion']), fill=True,
+                 fill_opacity=0.8,
+                 popup=popup).add_to(grupo2)
+
+folium_map.add_child(grupo1)
+folium_map.add_child(grupo2)
+folium_map.add_child(folium.map.LayerControl(position='bottomleft'))
+
+css_options = ["background-color: rgba(255,255,255, 0.6);",
+               "border: 1px solid black;",
+               "border-radius: 3px;",
+               "font-size: 15px;"]
+css_options = ' '.join(css_options)
+svg_style = '<style>#legend {'+f'{css_options}'+'}</style>'
+folium_map.get_root().header.add_child(folium.Element(svg_style))
+
+mapa_colores.add_to(folium_map)
+
+
+map_width = streamlit_js_eval(js_expressions='window.innerWidth', key='lwidth')
+st_map = st_folium(folium_map, width=map_width, height=600)
+
