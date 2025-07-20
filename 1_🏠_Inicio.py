@@ -139,7 +139,7 @@ for idx, row in df_map[df_map.Grupo != 'EMA'].iterrows():
     ]
     popup = folium.Popup(' '.join(text), max_width=1000)
     CircleMarker(location=[row.Latitud, row.Longitud],
-                 radius=row.Precipitacion/escala_puntos,
+                 radius=row.Precipitacion/escala_puntos+1,
                  stroke=True,
                  weight=0.75,
                  color='black',
@@ -157,7 +157,7 @@ for idx, row in df_map[df_map['Grupo'] == 'EMA'].iterrows():
     ]
     popup = folium.Popup(' '.join(text), max_width=1000)
     CircleMarker(location=[row['Latitud'], row['Longitud']],
-                 radius=row.Precipitacion/escala_puntos,
+                 radius=row.Precipitacion/escala_puntos+1,
                  stroke=True,
                  weight=0.75,
                  color='red',
