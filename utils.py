@@ -63,7 +63,7 @@ def git_workflow():
         if repo.bare:
             raise ValueError(f"Repository at {repo_path} is bare.")
 
-        git_pull(repo, env)
+        # git_pull(repo, env)
         git_push(repo, env)
 
     finally:
