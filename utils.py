@@ -67,7 +67,8 @@ def git_workflow():
         git_push(repo, env)
 
     finally:
-        os.remove(ssh_key_path)
+        pass
+        # os.remove(ssh_key_path)
 
 
 def usuarios_qqcc(df: pd.DataFrame) -> pd.DataFrame:

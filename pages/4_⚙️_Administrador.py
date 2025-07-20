@@ -7,7 +7,7 @@ from yaml.loader import SafeLoader
 import numpy as np
 import pandas as pd
 from datetime import datetime
-from utils import recolectar_eventos, eventos_qqcc, usuarios_qqcc
+from utils import recolectar_eventos, eventos_qqcc, usuarios_qqcc, git_workflow
 import time
 
 sys.path.append('../.')
@@ -225,6 +225,7 @@ def agregar_evento(st):
                 visparams, visparams_path = cargar_visparams()
                 visparams.loc[event_name] = np.nan
                 visparams.to_csv(visparams_path)
+                git_workflow()
                 text = f'{event_name.replace('-', '/').replace('_', ' - ')}'
                 text = f"Evento del {text} ha sido creado!"
                 st.success(text)
