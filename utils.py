@@ -1,6 +1,73 @@
 import os
 import pandas as pd
 from typing import Tuple
+import tempfile
+import stat
+from git import Repo, GitCommandError
+from pathlib import Path
+import streamlit as st
+
+def get_git_repo_root():
+    repo = Repo(Path(__file__).resolve(), search_parent_directories=True)
+    return repo.working_tree_dir  # Absolute path to the repo root
+
+def create_temp_ssh_key_file():
+    ssh_key = st.secrets['SSH_PRIVATE_KEY']
+    if not ssh_key:
+        raise EnvironmentError("Environment variable SSH_PRIVATE_KEY is not set")
+
+    # Create a temporary file for the SSH key
+    with tempfile.NamedTemporaryFile(delete=False, mode='w') as key_file:
+        key_file.write(ssh_key)
+        key_file_path = key_file.name
+
+    os.chmod(key_file_path, stat.S_IRUSR | stat.S_IWUSR)  # chmod 600
+    return key_file_path
+
+def git_environment_with_key(ssh_key_path):
+    env = os.environ.copy()
+    env['GIT_SSH_COMMAND'] = f'ssh -i {ssh_key_path} -o StrictHostKeyChecking=no'
+    return env
+
+def git_pull(repo: Repo, env: dict):
+    print("Pulling latest changes...")
+    try:
+        repo.git.pull(env=env)
+        print("Pull complete.")
+    except GitCommandError as e:
+        print(f"Error during pull: {e}")
+
+def git_push(repo: Repo, env: dict, commit_message="Automated commit"):
+    print("Staging changes...")
+    repo.git.add(all=True)
+
+    if repo.is_dirty(untracked_files=True):
+        print("Committing changes...")
+        repo.index.commit(commit_message)
+        print("Pushing to remote...")
+        try:
+            repo.git.push(env=env)
+            print("Push complete.")
+        except GitCommandError as e:
+            print(f"Error during push: {e}")
+    else:
+        print("No changes to commit or push.")
+
+def git_workflow():
+    repo_path = get_git_repo_root()
+    ssh_key_path = create_temp_ssh_key_file()
+    env = git_environment_with_key(ssh_key_path)
+
+    try:
+        repo = Repo(repo_path)
+        if repo.bare:
+            raise ValueError(f"Repository at {repo_path} is bare.")
+
+        git_pull(repo, env)
+        git_push(repo, env)
+
+    finally:
+        os.remove(ssh_key_path)
 
 
 def usuarios_qqcc(df: pd.DataFrame) -> pd.DataFrame:
