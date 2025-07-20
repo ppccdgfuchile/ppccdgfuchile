@@ -53,6 +53,28 @@ def git_push(repo: Repo, env: dict, commit_message="Automated commit"):
     else:
         print("No changes to commit or push.")
 
+def git_rm(file_path, delete_from_disk=True):
+    repo_path = get_git_repo_root()
+    try:
+        repo = Repo(repo_path)
+        file_path = Path(file_path)
+        if not file_path.is_absolute():
+            file_path = Path(repo.working_tree_dir) / file_path
+
+        relative_path = file_path.relative_to(repo.working_tree_dir)
+
+        # Remove file from Git index and optionally from working tree
+        repo.index.remove([str(relative_path)], working_tree=delete_from_disk)
+
+        print(f"Removed {relative_path} from Git index" + (" and disk" if delete_from_disk else ""))
+        return True
+
+    except GitCommandError as e:
+        print(f"Git error: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
+    return False
+
 def git_workflow():
     repo_path = get_git_repo_root()
     ssh_key_path = create_temp_ssh_key_file()
@@ -62,13 +84,12 @@ def git_workflow():
         repo = Repo(repo_path)
         if repo.bare:
             raise ValueError(f"Repository at {repo_path} is bare.")
-
-        # git_pull(repo, env)
+        
         git_push(repo, env)
+        git_pull(repo, env)
 
     finally:
-        pass
-        # os.remove(ssh_key_path)
+        os.remove(ssh_key_path)
 
 
 def usuarios_qqcc(df: pd.DataFrame) -> pd.DataFrame:

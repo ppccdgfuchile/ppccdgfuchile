@@ -7,7 +7,8 @@ from yaml.loader import SafeLoader
 import numpy as np
 import pandas as pd
 from datetime import datetime
-from utils import recolectar_eventos, eventos_qqcc, usuarios_qqcc, git_workflow
+from utils import recolectar_eventos, eventos_qqcc, usuarios_qqcc
+from utils import git_workflow, git_rm
 import time
 
 sys.path.append('../.')
@@ -261,7 +262,9 @@ def eliminar_evento(st):
         visparams.drop(event_fname.replace('.csv', ''), axis=0,
                        inplace=True)
         visparams.to_csv(visparams_path)
-        os.remove(event_path)
+        # os.remove(event_path)
+        git_rm(event_path)
+        git_workflow()
         text = f"{event}   ha sido eliminado de la base de datos!"
         st.warning(text)
         with st.spinner('Actualizando...'):
