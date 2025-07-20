@@ -119,6 +119,7 @@ def gestionar_usuarios(st):
         st.success('Actualización exitosa!')
         udf_edit.reset_index(inplace=True, drop=True)
         udf_edit.to_csv(udf_path)
+        git_workflow()
 
     udf, udf_path = cargar_usuarios()
     _update = st.button("Actualizar", on_click=_update,
@@ -151,6 +152,7 @@ def gestionar_visparams(st):
 
     def _update():
         visparams_edit.to_csv(visparams_path)
+        git_workflow()
 
     _update = st.button(
         "Actualizar", on_click=_update, key='visparams_update')
@@ -172,6 +174,7 @@ def gestionar_eventos(st):
         edf_edit.reset_index(inplace=True, drop=True)
         edf_edit.index.name = 'index'
         edf_edit.to_csv(event_path)
+        git_workflow()
 
     df_eventos, n_eventos = recolectar_eventos()
     eventos = df_eventos['Evento'].tolist()
