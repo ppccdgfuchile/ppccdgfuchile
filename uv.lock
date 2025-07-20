@@ -633,6 +633,7 @@ source = { editable = "." }
 dependencies = [
     { name = "altair" },
     { name = "folium" },
+    { name = "gitpython" },
     { name = "numpy" },
     { name = "openpyxl" },
     { name = "pandas" },
@@ -647,6 +648,7 @@ dependencies = [
 requires-dist = [
     { name = "altair", specifier = "==5.5.0" },
     { name = "folium", specifier = "==0.19.5" },
+    { name = "gitpython" },
     { name = "numpy", specifier = "==2.2.5" },
     { name = "openpyxl", specifier = "==3.1.5" },
     { name = "pandas", specifier = "==2.2.3" },
