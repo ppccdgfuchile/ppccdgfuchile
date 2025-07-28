@@ -1,0 +1,76 @@
+,Comuna,Latitud,Longitud,Alias,Precipitacion,Grupo
+0,San José de Maipo,-33.586952,-70.466303,Geoestudios,14.0,RM
+1,Lo Barnechea,-33.342583,-70.47025,POMcI,11.0,RM
+2,Lo Barnechea,-33.356717,-70.479844,Arrayán,5.3,RM
+3,Las Condes,-33.4249222,-70.5821583,Cristobaldlm,4.5,RM
+4,Puente Alto,-33.5821241,-70.5858865,CasaPabla,4.0,RM
+5,San Miguel,-33.4973,-70.6554,La Marina,4.0,RM
+6,La Reina,-33.452259,-70.554147,San Benito,3.0,RM
+7,Las Condes,-33.40002,-70.54015,pie cerro Calán,3.0,RM
+8,Peñaflor,-33.5951716,-70.8549146,FernandoM1,3.0,RM
+9,Cerrillos,-33.5071009,-70.708747,Rocío,3.0,RM
+10,La Florida,-33.5387504,-70.58643,MDM,2.5,RM
+11,Las Condes,-33.379558,-70.519431,Huerta_JLG,2.5,RM
+12,La Reina,-33.43648,-70.54493,asilvam,2.1,RM
+13,Vitacura,-33.395182,-70.588737,Vitacumbia,2.0,RM
+14,Puente Alto,-33.60863,-70.53107,Cordillera,2.0,RM
+15,Maipu,-33.512062,-70.769442,Maipu_Templo,1.9,RM
+16,Caleu,-32.99657,-70.95172,Espinalillo,1.0,RM
+17,Pudahuel,-33.466772,-70.86392,Ciudad de los Valles,0.8,RM
+18,Lo Barnechea,-33.330085,-70.521384,ADRI,0.5,RM
+19,Ñuñoa,-33.4609,-70.594277,Johow,0.5,RM
+20,Colina,-33.307339,-70.660102,Chamisero,0.3,RM
+21,Vitacura,-33.38783,-70.553479,Escultor,0.3,RM
+22,La Florida,-33.52336,-70.56212,Miravalle,0.1,RM
+23,Pudahuel,-33.457778,-70.756944,Auquinco,0.0,RM
+24,Til Til,-33.164083,-70.787468,AEM Til Til,0.0,RM
+25,Peñalolén,-33.500833,-70.514166,Quebrada de Macul - DGA,9.8,EMA
+26,San José de Maipo,-33.597499,-70.379443,Rio Maipo en el  Manzano - DGA,6.6,EMA
+27,,-33.56987,-70.627972833,La Platina - AG162,6.6,EMA
+28,,-33.35,-70.2936,El Colorado - DMC,6.1,EMA
+29,,-33.3706,-70.4508,Río Mapocho en los Almendros,5.5,EMA
+30,San José de Maipo,-33.636388,-70.356944,San José de Maipo - DGA,5.1,EMA
+31,Santiago,-33.445,-70.67778,Quinta Normal - DMC,4.3,EMA
+32,Pirque,-33.673888,-70.586666,Pirque - DGA,4.0,EMA
+33,Santiago,-33.44861,-70.64389,Terraza Central - DGA,3.7,EMA
+34,Lo Barnechea,-33.37361,-70.396388,Rio Molina a/j San Francisco - DGA,3.5,EMA
+35,San José de Maipo,-33.615277,-70.350555,San José de Guayacan - DMC,3.5,EMA
+36,,-33.671388889,-70.581666667,William Febre AG 219,3.4,EMA
+37,La Reina,-33.45528,-70.54222,Aeródromo Tobalaba - DMC,3.1,EMA
+38,,-33.843055556,-70.619722222,Pérez Cruz - AG224,2.8,EMA
+39,,-33.862083,-70.639194,Huelquén - AG47,2.3,EMA
+40,Colina,-33.268054,-70.732221,Lo Pinto - DMC,1.2,EMA
+41,,-33.497093,-70.845436,Rinconada U. de Chile AG373,1.0,EMA
+42,Talagante,-33.670277,-70.849444,Talagante - DMC,0.9,EMA
+43,,-33.6628889,-70.765917,Lo Herrera - AG46,0.9,EMA
+44,,-33.6305555,-70.799167,Calera de Tango - AG49,0.6,EMA
+45,Lo Barnechea,-33.3086111,-70.357222,Río San Francisco a/j estero Yerba Loca - DGA,0.5,EMA
+46,Pudahuel,-33.442221,-70.746666,San Pablo DASA - DMC,0.3,EMA
+47,Buin,-33.754444,-70.764444,El Milagro Buin - DMC,0.1,EMA
+48,Til-Til,-33.005556,-70.993611,Caleu - DGA,0.0,EMA
+49,Melipilla,-33.661388,-71.336944,Estero Puangue - DGA,0.0,EMA
+50,Paine,-33.8858333,-71.8775,Laguna de Aculeo - DGA,0.0,EMA
+51,Melipilla,-33.8908333,-71.233611,Los Guindos - DGA,0.0,EMA
+52,Peñaflor,-33.5716667,-71.1016667,Mallarauco - DGA,0.0,EMA
+53,Melipilla,-33.680277,-71.2,Melipilla - DGA,0.0,EMA
+54,,-33.8111,-70.8836,Río Angostura en Valdivia de Paine - DGA,0.0,EMA
+55,María Pinto,-33.529443,-33.529443,Chorombo - DMC,0.0,EMA
+56,Colina,-33.162222,-70.643055,Colina - DMC,0.0,EMA
+57,Curacavi,-33.411111,-71.167777,Curacavi - DMC,0.0,EMA
+58,El Monte,-33.706388,-71.008055,El Paico - DMC,0.0,EMA
+59,Pudahuel,-33.458055,-70.94861,Lo Prado Co. San Francisco - DMC,0.0,EMA
+60,Colina,-33.113888,-70.685833,Peldehue Ad - DMC,0.0,EMA
+61,,-33.506388889,-71.0608333,Casa Rivas (AG218),0.0,EMA
+62,,-33.736215,-71.421579,Cuncumén - AG559,0.0,EMA
+63,,-33.438611,-71.025555,Curacaví - AG52,0.0,EMA
+64,,-34.029282,-70.995098,El Asiento - AG511,0.0,EMA
+65,,-33.286268,-70.83606,El Oasis - AG688,0.0,EMA
+66,,-33.65,-71.1,Melipilla - AG44,0.0,EMA
+67,,-33.1471111,-70.6602222,Peldehue - AG438,0.0,EMA
+68,,-33.725439,-71.042558,San Antonio de Naltagua - AG267,0.0,EMA
+69,,-33.703027,-71.37186,San Diego - AG39,0.0,EMA
+70,,-33.8913888,-71.3941666,San Pedro - AG54,0.0,EMA
+71,,-33.897935,-71.452881,San Pedro de Melipilla - AG268,0.0,EMA
+72,,-33.67325,-70.921138,Talagante - AG45,0.0,EMA
+73,Til Til,-33.121388,-70.834166,Til Til - AG41,0.0,EMA
+74,,-34.0225,-71.34416666,Ventisquero - AG226,0.0,EMA
