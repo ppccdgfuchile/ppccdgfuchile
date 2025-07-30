@@ -1,0 +1,115 @@
+,Comuna,Latitud,Longitud,Alias,Precipitacion,Grupo
+0,Caleu,-33.003657,-71.015062,Caleu,2.0,RM
+1,Cerrillos,-33.5071009,-70.708747,Rocío,12.0,RM
+2,Cerro Navia,-33.4243,-70.724,Cerro Navia,11.0,RM
+3,Colina,-33.307339,-70.660102,Chamisero,15.0,RM
+4,Colina,-33.208465,-70.660189,Colina,8.0,RM
+5,Huechuraba,-33.341086,-70.665547,Tortuga,16.0,RM
+6,La Cisterna,-33.5205694444444,-70.6585305555556,Talematros,11.0,RM
+7,La Florida,-33.548604,-70.589773,BENAME,25.0,RM
+8,La Florida,-33.534556,-70.550194,Fortnite,21.0,RM
+9,La Florida,-33.549163,-70.57665,John Kennedy,17.0,RM
+10,La Florida,-33.5387504,-70.58643,MDM,17.0,RM
+11,La Florida,-33.523056,-70.561667,Miravalle,16.0,RM
+12,La Florida,-33.515476,-70.563839,Nuevo Amanecer,16.0,RM
+13,La Florida,-33.566926,-70.592082,Los Quillayes,15.0,RM
+14,La Florida,-33.53172,-70.556389,KIKE,15.0,RM
+15,La Florida,-33.521336,-70.548439,LOCANAS,13.0,RM
+16,La Granja,-33.5485378284992,-70.6160126841484,Delfinafonseca,12.0,RM
+17,La Reina,-33.460866,-70.562577,Dragones,20.0,RM
+18,La Reina,-33.449355,-70.550108,Zapiola,20.0,RM
+19,La Reina,-33.452259,-70.554147,San Benito,17.0,RM
+20,La Reina,-33.43648,-70.54493,asilvam,16.0,RM
+21,La Reina,-33.441352,-70.535606,Esquina las Brujas,10.0,RM
+22,Lampa,-33.326486,-70.757239,Valle Grande,17.9,RM
+23,Lampa,-33.2843725,-70.8736396,Celeste,5.0,RM
+24,Las Condes,-33.403104,-70.552105,Renacentistas,22.0,RM
+25,Las Condes,-33.4294111,-70.5641139,Toqui,21.0,RM
+26,Las Condes,-33.379558,-70.519431,Huerta_JLG,21.0,RM
+27,Las Condes,-33.425797,-70.58127,JPE,19.0,RM
+28,Las Condes,-33.42355,-70.585435,Puma,18.0,RM
+29,Las Condes,-33.404553,-70.548143,Chapos's house,18.0,RM
+30,Las Condes,-33.4300093662595,-70.5609341050816,Triwe,17.0,RM
+31,Lo Barnechea,-33.356717,-70.479844,Arrayán,39.0,RM
+32,Lo Barnechea,-33.342583,70.47025000000001,POMcI,35.0,RM
+33,Lo Barnechea,-33.359998,-70.476821,Las tres hermanas,27.0,RM
+34,Lo Barnechea,-33.3497222222222,-70.5405555555556,LAR,27.0,RM
+35,Lo Barnechea,-33.363563,-70.496013,San Enrique,26.0,RM
+36,Lo Barnechea,-33.332691,-70.524816,Panorámica,25.0,RM
+37,Lo Barnechea,-33.330085,-70.521384,ADRI,23.0,RM
+38,Lo Barnechea,-33.347483,-70.663776,Los Guindos,17.0,RM
+39,Macul,-33.481766,-70.601512,Casa Vásquez,15.0,RM
+40,Macul,-33.456043,-70.598147,Morgana,14.0,RM
+41,Maipu,-33.5071,-70.7905,My pooh,18.0,RM
+42,Maipu,-33.48368,-70.769762,El Rosal,13.0,RM
+43,Maipu,-33.557576,-70.774359,Michimalongo ,10.0,RM
+44,María Pinto ,-33.4648501,-71.0842792,Los Rulos,6.0,RM
+45,Melipilla,-33.688841,-71.227145,Sombrero,5.0,RM
+46,Ñuñoa,-33.451,-70.6154,Ñuñork,18.0,RM
+47,Ñuñoa,-33.45378,-70.611387,Monseñor,13.0,RM
+48,Ñuñoa,-33.4397894,-70.579823,Lipigas,11.0,RM
+49,Padre Hurtado,-33.5643611111111,-70.8044166666667,Violetas,8.0,RM
+50,Paico,-33.655,-71.0408,El Paico,1.6,RM
+51,Peñaflor,-33.606575,-70.906942,Huaso,6.0,RM
+52,Peñaflor,-33.5951716,-70.8549146,FernandoM1,5.0,RM
+53,Peñalolen,-33.4916944444444,-70.5370833333333,JucaNku,15.0,RM
+54,Peñalolen,-33.5015555555556,-70.5864444444444,Las Torres,12.0,RM
+55,Peñalolén,-33.490798,-70.569747,Tórtolas,16.0,RM
+56,Peñalolén,-33.49581,-70.577694,CasaM,14.0,RM
+57,Peñalolén,-33.5047084,-70.557723,Límite Peñalolén,13.0,RM
+58,Pirque,-33.7232945,-70.5784115,Blanco,23.0,RM
+59,Pirque,-33.63692,-70.54591,Tricahue,21.0,RM
+60,Pirque,-33.672334,-70.636347,Pirque,14.0,RM
+61,Providencia,-33.419786,-70.607987,Holley,15.0,RM
+62,Pudahuel,-33.457778,-70.756944,Auquinco,11.0,RM
+63,Pudahuel,-33.379973,-70.874791,La periferia,9.0,RM
+64,Pudahuel,-33.466772,-70.86392,Ciudad de los Valles,8.3,RM
+65,Puente Alto,-33.5821241,-70.5858865,CasaPabla,21.0,RM
+66,Puente Alto,-33.612698,-70.55215,Primavera,18.0,RM
+67,Puente Alto,-33.60863,-70.53107,Cordillera,16.0,RM
+68,Puente Alto,-33.561927,-70.551963,Coli,16.0,RM
+69,Puente Alto,-33.584007,-70.551698,El Peral,10.5,RM
+70,Puente Alto,-33.56399,-70.54793,Fran1,10.0,RM
+71,Puente Alto,-33.56001,-70.54882,Fran2,9.0,RM
+72,Quilicura,-33.368808,-70.722058,Poochilloni,10.0,RM
+73,Quilicura,-33.3595,-70.73047,Huentenao,10.0,RM
+74,Quinta Normal,-33.430338,-70.700863,Casa del Jano,14.0,RM
+75,Recoleta,-33.4255985,-70.64025,Cerrito,16.0,RM
+76,San Bernardo,-33.6400972,-70.6944466,Gatorain,12.0,RM
+77,San Bernardo,-33.6241666666667,-70.7047222222222,KIRA,12.0,RM
+78,San Bernardo,-33.629462,-70.677308,CumbresDeNos,10.0,RM
+79,San Bernardo,-33.600384,-70.702447,flopi sbk,9.0,RM
+80,San Miguel,-33.4973,-70.6554,La Marina,13.0,RM
+81,Santiago,-33.45768,-70.62993,Metro Irarrázabal,15.0,RM
+82,Santiago,-33.4402,-70.63935,Torre 3 San Borja,13.0,RM
+83,Santiago,-33.4363305,-70.6607604,Cataluña,13.0,RM
+84,Santiago,-33.4533492,-70.6601665,FernandoM2,12.0,RM
+85,Vitacura,-33.395182,-70.588737,Vitacumbia,19.0,RM
+86,Vitacura,-33.385779,-70.581083,Ingo,19.0,RM
+87,Vitacura,-33.38146,-70.55663,Auri-001,15.5,RM
+88,Vitacura,-33.383186,-70.579557,Borderío,15.0,RM
+89,Talagante,-33.6736,-70.8475,Talagante,6.0,EMA
+90,Curacaví,-33.438611111,-71.025555556,Curacaví,6.6,EMA
+91,Pudahuel,-33.39194,-70.79639,Pudahuel Santiago,7.6,EMA
+92,Nos,-33.62083,-70.71167,NOS  Aguas Andinas,8.9,EMA
+93,Buin,-33.7544444444444,-70.7644444444444,"El Milagro, Buin",9.0,EMA
+94,,-33.4581,-70.9486,Lo Prado Cerro San Francisco,9.7,EMA
+95,,-33.843055556,-70.619722222,Pérez Cruz,10.0,EMA
+96,Pudahuel,-33.4422,-70.7467,San Pablo - DASA,10.3,EMA
+97,Santiago,-33.4486,-70.6444,Terraza Oficinas Centrales DGA,10.38,EMA
+98,,-33.2681,-70.7322,Lo Pinto,10.6,EMA
+99,Colina,-33.11389,-70.68583,Peldehue Ad.,12.3,EMA
+100,Colina,-33.226795,-70.671829,Colina,12.9,EMA
+101,Lampa,-33.305,-70.741,Lampa,12.9,EMA
+102,Quinta Normal,-33.445,-70.6828,"Quinta Normal, Santiago",14.3,EMA
+103,La Reina,-33.45528,-70.54861,"Eulogio Sanchez, Tobalaba Ad.",16.8,EMA
+104,Colina,-33.218777778,-70.715833333,COLINA ,17.7,EMA
+105,,-33.59611,-70.54222,Las Vizcachas Aguas Andinas,18.2,EMA
+106,San José de Maipo,-33.5939,-70.3792,Maipo en El Manzano,18.61,EMA
+107,Las Condes,-33.395,-70.5367,Cerro Calan,19.33,EMA
+108,San José de Maipo,-33.6153,-70.3506,San José Guayacán,20.2,EMA
+109,,-33.671388889,-70.581666667,William Fevre,21.4,EMA
+110,,-33.3703,-70.4508,Mapocho Los Almendros,22.6,EMA
+111,,-33.506688,-70.650813,San Miguel,22.8,EMA
+112,,-33.3733,-70.3961,Rio Molina a/j San Francisco,32.66,EMA
+113,,-33.4878,-70.1367,Rio Olivares a/j Rio Colorado,33.83,EMA
