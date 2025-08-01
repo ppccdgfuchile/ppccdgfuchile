@@ -1,0 +1,159 @@
+,Comuna,Latitud,Longitud,Alias,Precipitacion,Grupo
+0,Buin,-33.7360603,-70.7140394,Petri,19.0,RM
+1,Buin,-33.747465,-70.735897,Linderos,10.0,RM
+2,Buin,-33.737577,-70.758161,Casa JAZ,4.0,RM
+3,Calera de Tango,-33.64388888888889,-70.83833333333332,Condominio SCdL,7.5,RM
+4,Calera de Tango,-33.63026,-70.75037,Almendros,7.0,RM
+5,Calera de Tango,-33.610437,-70.770246,Tanguito,6.0,RM
+6,Cerrillos,-33.5071009,-70.708747,Rocío,4.0,RM
+7,Cerro Navia,-33.417376,-70.75786,Harry,3.5,RM
+8,Cerro Navia,-33.41946,-70.72695,Nanocerro,0.4,RM
+9,Colina,-33.260994,-70.644855,Ñipa,2.0,RM
+10,Colina,-33.307339,-70.660102,Chamisero,1.0,RM
+11,Colina,-33.235,-70.673333,Chicureo,1.0,RM
+12,Colina,-33.2539999,-70.6294618,Piedraroja,1.0,RM
+13,Conchali,-33.3900114,-70.681807378,SOL,6.0,RM
+14,Curacaví,-33.393795,-71.03482,Tenca - WS2K,7.6,RM
+15,El Bosque,-33.572039,-70.69446,Alambres_de_ocaso,4.6,RM
+16,Estación Central ,-33.454825,-70.700096,Michito,2.0,RM
+17,Huechuraba,-33.3799,-70.62178,El Barrero,0.1,RM
+18,La Cisterna,-33.527854,-70.669636,Nueva España,2.0,RM
+19,La Cisterna ,-33.5357254,-70.661582,Mila,2.0,RM
+20,La Florida,-33.566723,-70.592142,Guacolda,3.0,RM
+21,La Florida,-33.5276739,-70.5779872,patio,3.0,RM
+22,La Florida,-33.5387504,-70.58643,MDM,2.3,RM
+23,La Florida,-33.53039167,-70.56961667,Casa_Sary,2.3,RM
+24,La Florida,-33.52336,-70.56212,Miravalle,2.0,RM
+25,La Florida ,-33.533354,-70.58685,Mampato,4.0,RM
+26,La Florida ,-33.5260817,-70.5245883,Lo Cañas,3.1,RM
+27,La Pintana,-33.5754465,-70.6498304,Ronny,3.0,RM
+28,La Reina,-33.4325123,-70.5797009,thequeen,2.0,RM
+29,La Reina,-33.445699,-70.553097,OpaHouse,1.5,RM
+30,La Reina,-33.43648,-70.54493,asilvam,1.3,RM
+31,La Reina,-33.444734,-70.537295,sbolivar,1.3,RM
+32,La Reina,-33.452259,-70.554147,San Benito,1.0,RM
+33,La Reina,-33.435005,-70.529998,HelsbyMate,1.0,RM
+34,Lampa,-33.2792346,-70.8888159,Aldo,2.0,RM
+35,Las Condes,-33.40635,-70.51399,FECHITA,5.0,RM
+36,Las Condes,-33.4249222,-70.5821583,Cristobaldlm,2.0,RM
+37,Las Condes,-33.426634,-70.587151,Teruel,2.0,RM
+38,Las Condes,-33.405679,-70.55212,pluv_lcbv,2.0,RM
+39,Las Condes,-33.425362,-70.5760264,CASASOPA,1.0,RM
+40,Las Condes,-33.39729444444444,-70.53663888888889,Calán DGF,0.5,RM
+41,Las Condes,-33.40002,-70.54015,pie cerro Calán,0.3,RM
+42,Las Condes,-33.423889,-70.557545,Dreal,0.0,RM
+43,Lo Barnechea,-33.31861,-70.233055,trespuntas,19.4,RM
+44,Lo Barnechea,-33.356717,-70.479844,Arrayán,4.0,RM
+45,Lo Barnechea,-33.3297222,-70.5038889,JPMG,3.0,RM
+46,Lo Barnechea,-33.342583,-70.47025,POMcI,3.0,RM
+47,Lo Barnechea,-33.330085,-70.521384,ADRI,3.0,RM
+48,Lo Barnechea,-33.3497222222222,-70.5405555555556,LAR,2.6,RM
+49,Lo Barnechea,-33.363563,-70.496013,San Enrique,2.3,RM
+50,Lo Barnechea,-33.359998,-70.476821,Las tres hermanas,2.0,RM
+51,Lo Barnechea,-33.347483,-70.663776,Los Guindos,1.0,RM
+52,Lo Espejo,-33.514491,-70.694431,Loespuno,3.0,RM
+53,Macul,-33.487645,-70.59676,Macul,3.0,RM
+54,Macul,-33.481192,-70.596257,patioeric,2.0,RM
+55,Maipu,-33.512062,-70.769442,Maipu_Templo,6.0,RM
+56,Maipu,-33.514972,-70.786711,Anis,5.0,RM
+57,Maipu,-33.504287,-70.783822,Tachuris,5.0,RM
+58,Maipu,-33.55672433,-70.7812371,AMC,3.0,RM
+59,Maipu,-33.584984,-70.5590161,puentealto,2.9,RM
+60,Melipilla,-33.5761125,-71.0873969,AgricHarrison,11.0,RM
+61,Ñuñoa,-33.44642,-70.58054,Mofeta,6.0,RM
+62,Ñuñoa,-33.458077,-70.611905,camipg,4.0,RM
+63,ñuñoa,-33.449216,-70.606639,sucre- PdV,0.8,RM
+64,Olmue,-32.99055555555556,-71.18027777777779,Colibrí,5.0,RM
+65,Olmue,-33.0523818,-71.1135032,Caroqba,0.5,RM
+66,Padre Hurtado ,-33.5704588,-70.8320191,Las Olas,4.8,RM
+67,Paine,-33.82136,-70.64788,cubreobjetos,30.0,RM
+68,Paine,-33.8640897,-70.6385446,Matraz,30.0,RM
+69,Paine,-33.8333749,-70.64683,Espátula,29.0,RM
+70,Paine,-33.825849,-70.646401,Guantes,27.0,RM
+71,Paine,-33.8339166666667,-70.6473333333333,Tubo de ensayo,17.0,RM
+72,Paine,-33.820417,-70.741041,Probeta,11.0,RM
+73,Paine,-33.865012,-70.624326,Mortero,9.0,RM
+74,Pedro Aguirre Cerda,-33.4917,-70.675,Abranquil,4.0,RM
+75,Peñaflor,-33.6044444,-70.8980556,BATA,4.0,RM
+76,Peñalolen,-33.49691,-70.5536582,casita,3.0,RM
+77,Peñalolen,-33.46721,-70.568262,pluvio,1.2,RM
+78,Peñalolén,-33.50167,-70.586438,Terra-Aqua,2.0,RM
+79,Pirque,-33.6493055555556,-70.6056388888889,IsaPir,5.0,RM
+80,Pirque,-33.6294445,-70.5776333,Riomaipo,1.0,RM
+81,Providencia,-33.436461,-70.620565,Ministro,2.8,RM
+82,Providencia,-33.4401249,-70.600959,Tranqui,2.0,RM
+83,Pudahuel,-33.466772,-70.86392,Ciudad de los Valles,6.0,RM
+84,Pudahuel,-33.427516,-70.758564,Leo,4.5,RM
+85,Pudahuel,-33.457778,-70.756944,Auquinco,3.0,RM
+86,Puente Alto,-33.5788263,-70.5941799,makizone,3.8,RM
+87,Puente Alto,-33.5821241,-70.5858865,CasaPabla,3.0,RM
+88,Puente Alto,-33.588537,-70.559082,Chucao,3.0,RM
+89,Puente Alto,-33.5556806,-70.5525458,POLCRIB,2.8,RM
+90,Puente Alto,-33.59039,-70.5734443,César3,2.0,RM
+91,Puente Alto,-33.58549,-70.58528,Radae,2.0,RM
+92,Puente Alto,-33.576725,-70.56600833333333,Puente1,2.0,RM
+93,Puente Alto ,-33.58358,-70.50814,Casa Martina,10.0,RM
+94,Quilicura,-33.3621036,-70.7231821,kulakura,4.9,RM
+95,Quilicura,-33.3595,-70.73047,Huentenao,3.0,RM
+96,Quilicura,-33.3832678,-70.7211707,Lola,2.5,RM
+97,Quilicura,-33.354362,-70.731295,DelTrigal,2.0,RM
+98,Quinta Normal,-33.4128931,-70.7105162,Casa,3.0,RM
+99,Quinta Normal,-33.43512,-70.69548,Marina,2.9,RM
+100,San Bernardo,-33.612675,-70.72276,Hueñimalal,7.0,RM
+101,San Bernardo,-33.61697,-70.687,LaSelva,6.5,RM
+102,San Jose de Maipo,-33.594661,-70.379611,manzano,3.1,RM
+103,San José de Maipo,-33.586952,-70.466303,Las Vertientes,5.0,RM
+104,Santiago,-33.47468,-70.653736,BioBio,3.0,RM
+105,Santiago,-33.456944444444446,-70.66166666666668,DGF,2.5,RM
+106,Santiago  ,-33.4441743,-70.6615414,Azulcito,1.9,RM
+107,Til Til,-33.0447222222222,-70.9913889,patorod,11.0,RM
+108,Til Til,-33.003119,-70.999335,Los Quillayes,10.0,RM
+109,Til Til,-33.002995,-70.997043,Profe Luis,7.0,RM
+110,Til til,-33.02857,-71.00011,Vicky,5.0,RM
+111,Til Til,-33.164083,-70.787468,AEM Til Til,2.0,RM
+112,TilTil -centro,-33.07725555555556,-70.9251,TilTil Centro,5.8,RM
+113,Vitacura,-33.383186,-70.579557,Borderío,1.5,RM
+114,Vitacura,-33.395182,-70.588737,Vitacumbia,1.0,RM
+115,Vitacura,-33.385938,-70.581230114,Vitacura,1.0,RM
+116,Til Til,-33.07089722222223,-70.98711388888889,Asiento Viejo,6.5,RM
+117,Alhue,-34.029166,-70.994999,El Asiento INIA,25.8,EMA
+118,Calera de Tango,-33.725554,-71.042499,Sn Antonio Naltahua INIA,17.3,EMA
+119,El Monte,-33.706388,-71.008055,El Paico DMC,16.9,EMA
+120,,-33.7986592,-70.8413394,Valdivia de Paine,12.6,EMA
+121,Buin,-33.754444,-70.764444,El Milagro DMC,9.9,EMA
+122,,-33.668744,-70.912195,Santa Amelia,9.8,EMA
+123,,-33.508555,-71.084029,El Parrón,8.2,EMA
+124,San José de Maipo,-33.636388,-70.356944,San José de Maipo Retén - DGA,7.8,EMA
+125,Talagante,-33.670277,-70.849444,Talagante (DMC),7.6,EMA
+126,Til Til,-33.04944,-71.00139,La Dormida DMC,7.4,EMA
+127,Melipilla,-33.661388,-71.336944,Estero Puangue - DGA,7.3,EMA
+128,Buin,-33.711666,-70.711944,Los Tilos (INIA),7.3,EMA
+129,,-33.562443,-70.875305,El Villorio,7.1,EMA
+130,San José de Maipo,-33.615277,-70.350555,Guayacan (DMC),7.0,EMA
+131,Maipú,-33.497221,-70.845555,Rinconada INIA,6.3,EMA
+132,Buin,-33.707222,-70.707222,Buin FDF,6.0,EMA
+133,,-33.429661,-71.029152,La Aurora,5.6,EMA
+134,Pudahuel,-33.442221,-70.746666,San Pablo (DMC),5.0,EMA
+135,Curacavi,-33.411111,-71.167777,Curacavi DMC,4.7,EMA
+136,Melipilla,-33.680277,-71.1997,Melipilla Esc. Tec. DGA,4.5,EMA
+137,Pudahuel,-33.458055,-70.94861,Lo Prado (DMC),4.2,EMA
+138,Til Til,-33.123888,-70.828054,Polpaico DMC,3.6,EMA
+139,Calera de Tango,-33.624999,-70.799444,Calera de Tango FDF,3.6,EMA
+140,Lampa,-33.286388,-70.83611,El Oasis INIA,3.6,EMA
+141,,-33.673888889,-70.586944444,Pirque,3.6,EMA
+142,La Granja,-33.572777,-70.619721,La Platina (INIA),3.4,EMA
+143,Santiago,-33.445,-70.67778,Q. Normal (DMC),3.1,EMA
+144,Talagante,-33.673332,-70.92111,Talagante FDF,3.0,EMA
+145,Pudahuel,-33.37833,-70.79639,Aer. Pudahuel (DMC),2.7,EMA
+146,Santiago,-33.44861,-70.64389,DGA - Morande,2.6,EMA
+147,Isla de Maipo,-33.763888,-70.886666,Isla de Maipo FDF,2.6,EMA
+148,Til-Til,-33.005556,-70.993611,Caleu - DGA,2.4,EMA
+149,San Bernardo,-33.662777,-70.765833,Sn Bernardo Lo Herrera FDF,2.4,EMA
+150,Colina,-33.162222,-70.643055,Colina DMC,2.3,EMA
+151,Paine,-33.861944,-70.639166,Huelquén FDF,2.2,EMA
+152,Til Til,-33.121388,-70.834166,Til Til FDF,2.2,EMA
+153,Colina,-33.113888,-70.685833,Peldehue Ad DMC,1.9,EMA
+154,,-33.2488,-70.72322,Chacabuco,1.7,EMA
+155,La Reina,-33.45528,-70.54222,Aer. Tobalaba (DMC),1.4,EMA
+156,Colina,-33.1471111,-70.6602222,Peldehue Agromet,1.2,EMA
+157,Colina,-33.268054,-70.732221,Lo Pinto DMC,0.0,EMA
