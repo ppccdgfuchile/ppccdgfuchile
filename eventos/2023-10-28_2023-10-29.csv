@@ -1,0 +1,100 @@
+,Comuna,Latitud,Longitud,Alias,Precipitacion,Grupo
+0,Buin,-33.7427629,-70.748651,Buin Centro,6.0,RM
+1,Buin,-33.747465,-70.735897,Linderos,5.0,RM
+2,Colina,-33.235,-70.673333,Chicureo,1.0,RM
+3,Colina,-33.2539999,-70.6294618,Piedraroja,1.0,RM
+4,Colina,-33.307339,-70.660102,Chamisero,0.3,RM
+5,Curacaví,-33.393795,-71.03482,Tenca - WS2K,2.0,RM
+6,Estación Central,-33.4584952,-70.6983327,Gatos,0.5,RM
+7,La Florida,-33.5387504,-70.58643,MDM,2.9,RM
+8,La Florida ,-33.5260817,-70.5245883,Lo Cañas,4.0,RM
+9,La Reina,-33.452259,-70.554147,San Benito,2.0,RM
+10,La Reina,-33.43648,-70.54493,asilvam,2.0,RM
+11,Las Condes,-33.40635,-70.51399,FECHITA,4.5,RM
+12,Las Condes,-33.39629,-70.53704,Calán - DGF,2.3,RM
+13,Lo Barnechea,-33.359998,-70.476821,Las tres hermanas,3.5,RM
+14,Lo Barnechea,-33.332691,-70.524816,Panorámica,2.5,RM
+15,Lo Barnechea,-33.363563,-70.496013,San Enrique,2.4,RM
+16,Lo Barnechea,-33.3297222,-70.5038889,JPMG,1.7,RM
+17,Macul,-33.481192,-70.596257,patioeric,2.0,RM
+18,Maipu,-33.584984,-70.5590161,puentealto,3.1,RM
+19,Maipu,-33.512062,-70.769442,Maipu_Templo,2.7,RM
+20,Melipilla,-33.5761125,-71.0873969,AgricHarrison,8.0,RM
+21,Olmue,-32.99055555555556,-71.18027777777779,Colibrí,1.0,RM
+22,Paico,-33.655,-71.0408,El Paico,13.0,RM
+23,Peñaflor,-33.6044444,-70.8980556,BATA,1.0,RM
+24,Pirque,-33.6493055555556,-70.6056388888889,IsaPir,3.0,RM
+25,Providencia,-33.436461,-70.620565,Ministro,2.3,RM
+26,Pudahuel,-33.457778,-70.756944,Auquinco,0.2,RM
+27,Puente Alto,-33.60863,-70.53107,El Páramo,4.0,RM
+28,Puente Alto,-33.59039,-70.5734443,César3,2.5,RM
+29,San Bernardo,-33.612675,-70.72276,Hueñimalal,2.0,RM
+30,San José de Maipo,-33.59841,-70.36178,Quillayal,19.2,RM
+31,San José de Maipo,-33.5783328,-70.451299,El Canelo,10.0,RM
+32,Santiago,-33.456944444444446,-70.66166666666668,DGF,2.2,RM
+33,Til Til,-33.003119,-70.999335,Los Quillayes,5.0,RM
+34,Vitacura,-33.38783,-70.553479,Escultor,3.0,RM
+35,Alhué,-34.065,71.2538888,Alhué,24.0,EMA
+36,Alhué,-34.029166,-70.994999,El Asiento INIA,17.6,EMA
+37,Buin,-33.732831,-70.721616,Buin Oriente RedMeteo,8.6,EMA
+38,Buin,-33.754444,-70.764444,El Milagro DMC,5.5,EMA
+39,Buin,-33.8430555,-70.619722,Pérez Cruz,4.4,EMA
+40,Buin,-33.707222,-70.707222,Buin FDF,4.2,EMA
+41,Colina,-33.162222,-70.643055,Colina DMC,0.5,EMA
+42,Colina,-33.268054,-70.732221,Lo Pinto DMC,0.5,EMA
+43,Colina,-33.1471111,-70.6602222,Peldehue Agromet,0.4,EMA
+44,Colina,-33.2488,-70.72322,Chacabuco,0.3,EMA
+45,Colina,-33.218888,-70.715833,Colina FDF,0.2,EMA
+46,Curacavi,-33.411111,-71.167777,Curacavi DMC,1.1,EMA
+47,Curacaví,-33.429661,-71.029152,La Aurora - INIA,5.8,EMA
+48,Curacaví,-33.438888,-71.025277,Panguiles DGA,4.5,EMA
+49,Curacaví,-33.43861,-71.025554,Curacaví FDF,3.5,EMA
+50,Curacaví ,-33.3288113,-71.127431,Curacaví Norte RedMeteo,2.8,EMA
+51,El Monte,-33.691944,-71.101111,El Monte FDF,13.0,EMA
+52,El Monte,-33.706388,-71.008055,El Paico DMC,11.2,EMA
+53,Isla de Maipo,-33.725554,-71.042499,San Antonio de Naltahua (DGA),12.0,EMA
+54,Isla de Maipo,-33.763888,-70.886666,Isla de Maipo FDF,4.8,EMA
+55,La Florida,-33.544999,-70.548333,AA La Florida DMC,3.5,EMA
+56,La Granja,-33.572777,-70.619721,La Platina (INIA),3.0,EMA
+57,La Reina,-33.45528,-70.54222,Aer. Tobalaba (DMC),2.2,EMA
+58,Lampa,-33.286388,-70.83611,El Oasis INIA,1.9,EMA
+59,Lampa,-33.34368,-70.8185,Chorrillos INIA,0.3,EMA
+60,Las Condes,-33.394999,-70.536666,Calán - DGA,2.8,EMA
+61,Lo Barnechea,-33.31861,-70.233055,Trespuntas,42.9,EMA
+62,Maipú,-33.497221,-70.845555,Rinconada INIA,0.9,EMA
+63,María Pinto,-33.508555,-71.084029,El Parrón,3.6,EMA
+64,Melipilla,-33.703027,-71.37186,San Diego,16.8,EMA
+65,Melipilla,-33.680277,-71.1997,Melipilla Esc. Tec. DGA,5.2,EMA
+66,Melipilla,-33.725556,-71.209722,Chocalán,4.5,EMA
+67,Melipilla,-33.650277,-71.100277,Melipilla FDF,3.5,EMA
+68,Melipilla,-33.5716667,-71.1016667,Mallarauco - DGA,3.4,EMA
+69,Melipilla,-33.586666,-70.99611,Melipilla Mallarauco FDF,3.0,EMA
+70,Melipilla,-33.8908333,-71.233611,Los Guindos - DGA,2.1,EMA
+71,Padre Hurtado,-33.562443,-70.875305,El Villorio,0.9,EMA
+72,Paine,-33.811111,-70.88361,Rio Angostura en Valdivia de Paine,9.7,EMA
+73,Paine,-33.771111,-70.6855556,San Pedro El Tránsito,6.8,EMA
+74,Paine,-33.506688,-70.634902,Paine RedMeteo,6.6,EMA
+75,Paine,-33.861944,-70.639166,Huelquén FDF,5.2,EMA
+76,Pirque,-33.671389,-70.5816666,William Febre,4.6,EMA
+77,Pudahuel,-33.458055,-70.94861,Lo Prado (DMC),4.7,EMA
+78,Pudahuel,-33.442221,-70.746666,San Pablo (DMC),1.6,EMA
+79,Pudahuel,-33.37833,-70.79639,Aer. Pudahuel (DMC),0.1,EMA
+80,San Antonio,-33.736215,-71.421579,Cuncumén INIA,19.0,EMA
+81,San Bernardo,-33.662777,-70.765833,Sn Bernardo Lo Herrera FDF,3.8,EMA
+82,San José de Maipo,-33.66583333,-70.1077778,Laguna Negra DGA,33.5,EMA
+83,San José de Maipo,-33.6767,-70.0886,El Yeso Embalse - DGA,20.7,EMA
+84,San José de Maipo,-33.597499,-70.379443,Maipo Manzano DGA,9.6,EMA
+85,San José de Maipo,-33.615277,-70.350555,Guayacan (DMC),7.2,EMA
+86,San José de Maipo,-33.591389,-70.485278,La Obra recinto EMOS - DGA,6.8,EMA
+87,San Miguel,-33.506688,-70.650813,San Miguel RedMeteo,3.3,EMA
+88,San Pedro,-33.898055,-71.452777,San Pedro Melipilla  INIA,21.5,EMA
+89,Santiago,-33.44861,-70.64389,DGA - Morande,2.6,EMA
+90,Santiago,-33.445,-70.67778,Q. Normal (DMC),2.5,EMA
+91,Talagante,-33.673332,-70.92111,Talagante FDF,3.7,EMA
+92,Talagante,-33.668744,-70.912195,Santa Amelia INIA,3.4,EMA
+93,Til Til,-33.04944,-71.00139,La Dormida DMC,4.3,EMA
+94,Til Til,-33.005556,-70.993611,Caleu - DGA,0.7,EMA
+95,Til Til,-33.123888,-70.828054,Polpaico DMC,0.7,EMA
+96,Til Til,-33.121388,-70.834166,Til Til FDF,0.3,EMA
+97,TilTil,-33.07725,-70.925032,Til Til RedMeteo,0.2,EMA
+98,,-33.8913888,-71.3941667,San Pedro,15.4,EMA
