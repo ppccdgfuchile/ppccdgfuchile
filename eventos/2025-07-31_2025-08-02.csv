@@ -127,51 +127,52 @@
 125,Vitacura,-33.3868,-70.5737,Buenaventura,66.0,RM
 126,Vitacura,-33.395182,-70.588737,Vitacumbia,63.0,RM
 127,Vitacura,-33.3890092,-70.5560782,Villa El Dorado,60.0,RM
-128,Vitacura,-33.38146,-70.55663,Auri-001,59.0,RM
-129,Vitacura,-33.38783,-70.553479,Escultor,58.0,RM
-130,Alhue,-34.029166,-70.994999,El Asiento INIA,57.0,EMA
-131,Buin,-33.7986592,-70.8413394,Valdivia de Paine,68.3,EMA
-132,Buin,-33.718611111,-70.66917,Santa Rita,59.7,EMA
-133,Buin,-33.711666,-70.711944,Los Tilos (INIA),49.1,EMA
-134,Colina,-33.2488,-70.72322,Chacabuco - INIA,34.4,EMA
-135,Colina,-33.113888,-70.685833,Peldehue Ad DMC,31.8,EMA
-136,Curacaví,-33.438888,-71.025277,Panguiles DGA,35.5,EMA
-137,Curacaví,-33.429661,-71.029152,La Aurora,34.3,EMA
-138,El Monte,-33.706388,-71.008055,El Paico DMC,53.2,EMA
-139,Isla de Maipo,-33.725554,-71.042499,Sn Antonio Naltahua INIA,47.9,EMA
-140,La Cruz,-32.822,-71.2304,La Cruz (AG 284),87.1,EMA
-141,La Granja,-33.572777,-70.619721,La Platina (INIA),41.7,EMA
-142,Lampa,-33.286388,-70.83611,El Oasis INIA,36.0,EMA
-143,Lampa,-33.34368,-70.8185,Chorrillos,26.4,EMA
-144,Las Condes,-33.394999,-70.536666,Calán - DGA,56.5,EMA
-145,Llay Llay,-32.88138889,-70.913055556,Las Peñas (DMC),49.4,EMA
-146,Lo Barnechea,-33.344444,-70.363889,Estero Yerba Loca a/j San Fco.,42.5,EMA
-147,Maipú,-33.497221,-70.845555,Rinconada INIA,36.6,EMA
-148,María Pinto,-33.508555,-71.084029,El Parrón,35.1,EMA
-149,Melipilla,-33.661388,-71.336944,Estero Puangue - DGA,68.9,EMA
-150,Melipilla,-33.680277,-71.1997,Melipilla Esc. Tec. DGA,41.3,EMA
-151,Padre Hurtado,-33.562443,-70.875305,El Villorio,37.9,EMA
-152,Paine,-33.811111,-70.88361,Angostura en Valdivia de Paine,52.1,EMA
-153,Paine,-33.8858333,-70.8775,Laguna de Aculeo - DGA,35.6,EMA
-154,Peñaflor,-33.5716667,-71.1016667,Mallarauco - DGA,42.0,EMA
-155,Pirque,-33.673888,-70.586666,Pirque DGA,73.3,EMA
-156,Puchuncaví,-32.754967,-71343432.0,Puchuncaví (AG 388),77.3,EMA
-157,Pudahuel,-33.442221,-70.746666,San Pablo DMC,40.3,EMA
-158,Pudahuel,-33.37833,-70.79639,Aer. Pudahuel DMC,31.1,EMA
-159,Quilpué,-33.1686089,-71.1557171,Colliguay,137.4,EMA
-160,San Antonio,-33.736215,-71.421579,Cuncumén INIA,86.5,EMA
-161,San José de Maipo,-33.5902778,-70.4852778,La Obra EMOS DGA,100.9,EMA
-162,San José de Maipo,-33.597499,-70.379443,Maipo Manzano DGA,74.0,EMA
-163,San José de Maipo,-33.636388,-70.356944,San José de Maipo Retén - DGA,66.9,EMA
-164,San José de Maipo,-33.615277,-70.350555,Guayacan DMC,61.0,EMA
-165,San Pedro,-33.898055,-71.452777,San Pedro Melipilla  INIA,91.4,EMA
-166,Santiago,-33.445,-70.67778,Q. Normal DMC,43.6,EMA
-167,Santiago,-33.44861,-70.64389,DGA - Terraza Central,43.2,EMA
-168,Santo Domingo,-33.737533,-71.639331,Luis Felipe Edwards,93.2,EMA
-169,Santo Domingo,-33.655,-71.6142,Aer. Santo Domingo (DMC),84.5,EMA
-170,Talagante,-33.6958333,-70.9236111,El Vergel - DGA,74.4,EMA
-171,Talagante,-33.670277,-70.849444,Talagante DMC,45.0,EMA
-172,Til Til,-33.123888,-70.828054,Polpaico DMC,40.3,EMA
-173,Valparaiso,-33.0367,-71.5342,Rodelillo (DMC),127.5,EMA
-174,Viña del Mar,-32.94944,-71.47444,Aer. Torquemada (DMC),97.2,EMA
-175,,-33.524444,-71.545555,Casa Marín (AG 285),86.0,EMA
+128,Vitacura,-33.383186,-70.579557,Borderío,58.5,RM
+129,Vitacura,-33.38146,-70.55663,Auri-001,59.0,RM
+130,Vitacura,-33.38783,-70.553479,Escultor,58.0,RM
+131,Alhue,-34.029166,-70.994999,El Asiento INIA,57.0,EMA
+132,Buin,-33.7986592,-70.8413394,Valdivia de Paine,68.3,EMA
+133,Buin,-33.718611111,-70.66917,Santa Rita,59.7,EMA
+134,Buin,-33.711666,-70.711944,Los Tilos (INIA),49.1,EMA
+135,Colina,-33.2488,-70.72322,Chacabuco - INIA,34.4,EMA
+136,Colina,-33.113888,-70.685833,Peldehue Ad DMC,31.8,EMA
+137,Curacaví,-33.438888,-71.025277,Panguiles DGA,35.5,EMA
+138,Curacaví,-33.429661,-71.029152,La Aurora,34.3,EMA
+139,El Monte,-33.706388,-71.008055,El Paico DMC,53.2,EMA
+140,Isla de Maipo,-33.725554,-71.042499,Sn Antonio Naltahua INIA,47.9,EMA
+141,La Cruz,-32.822,-71.2304,La Cruz (AG 284),87.1,EMA
+142,La Granja,-33.572777,-70.619721,La Platina (INIA),41.7,EMA
+143,Lampa,-33.286388,-70.83611,El Oasis INIA,36.0,EMA
+144,Lampa,-33.34368,-70.8185,Chorrillos,26.4,EMA
+145,Las Condes,-33.394999,-70.536666,Calán - DGA,56.5,EMA
+146,Llay Llay,-32.88138889,-70.913055556,Las Peñas (DMC),49.4,EMA
+147,Lo Barnechea,-33.344444,-70.363889,Estero Yerba Loca a/j San Fco.,42.5,EMA
+148,Maipú,-33.497221,-70.845555,Rinconada INIA,36.6,EMA
+149,María Pinto,-33.508555,-71.084029,El Parrón,35.1,EMA
+150,Melipilla,-33.661388,-71.336944,Estero Puangue - DGA,68.9,EMA
+151,Melipilla,-33.680277,-71.1997,Melipilla Esc. Tec. DGA,41.3,EMA
+152,Padre Hurtado,-33.562443,-70.875305,El Villorio,37.9,EMA
+153,Paine,-33.811111,-70.88361,Angostura en Valdivia de Paine,52.1,EMA
+154,Paine,-33.8858333,-70.8775,Laguna de Aculeo - DGA,35.6,EMA
+155,Peñaflor,-33.5716667,-71.1016667,Mallarauco - DGA,42.0,EMA
+156,Pirque,-33.673888,-70.586666,Pirque DGA,73.3,EMA
+157,Puchuncaví,-32.754967,-71343432.0,Puchuncaví (AG 388),77.3,EMA
+158,Pudahuel,-33.442221,-70.746666,San Pablo DMC,40.3,EMA
+159,Pudahuel,-33.37833,-70.79639,Aer. Pudahuel DMC,31.1,EMA
+160,Quilpué,-33.1686089,-71.1557171,Colliguay,137.4,EMA
+161,San Antonio,-33.736215,-71.421579,Cuncumén INIA,86.5,EMA
+162,San José de Maipo,-33.5902778,-70.4852778,La Obra EMOS DGA,100.9,EMA
+163,San José de Maipo,-33.597499,-70.379443,Maipo Manzano DGA,74.0,EMA
+164,San José de Maipo,-33.636388,-70.356944,San José de Maipo Retén - DGA,66.9,EMA
+165,San José de Maipo,-33.615277,-70.350555,Guayacan DMC,61.0,EMA
+166,San Pedro,-33.898055,-71.452777,San Pedro Melipilla  INIA,91.4,EMA
+167,Santiago,-33.445,-70.67778,Q. Normal DMC,43.6,EMA
+168,Santiago,-33.44861,-70.64389,DGA - Terraza Central,43.2,EMA
+169,Santo Domingo,-33.737533,-71.639331,Luis Felipe Edwards,93.2,EMA
+170,Santo Domingo,-33.655,-71.6142,Aer. Santo Domingo (DMC),84.5,EMA
+171,Talagante,-33.6958333,-70.9236111,El Vergel - DGA,74.4,EMA
+172,Talagante,-33.670277,-70.849444,Talagante DMC,45.0,EMA
+173,Til Til,-33.123888,-70.828054,Polpaico DMC,40.3,EMA
+174,Valparaiso,-33.0367,-71.5342,Rodelillo (DMC),127.5,EMA
+175,Viña del Mar,-32.94944,-71.47444,Aer. Torquemada (DMC),97.2,EMA
+176,,-33.524444,-71.545555,Casa Marín (AG 285),86.0,EMA
