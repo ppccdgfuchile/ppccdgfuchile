@@ -1,5 +1,5 @@
 Eventos,ColorMin,ColorMax,ColorPaso,Escala,PaletaColores,MapaFondo
-default,0.0,60.0,6.0,5.0,YlGnBu_09,Satelite
+default,0.0,50.0,5.0,4.0,YlGnBu_09,Satelite
 2025-09-20_2025-09-21,0.0,90.0,9.0,8.0,,
 2025-08-20_2025-08-22,0.0,100.0,10.0,7.0,,
 2025-07-31_2025-08-02,0.0,100.0,10.0,10.0,,
