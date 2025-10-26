@@ -1,0 +1,175 @@
+,Comuna,Latitud,Longitud,Alias,Precipitacion,Grupo
+0,Buin,-33.7427629,-70.748651,Buin Centro,10.0,RM
+1,Calera de Tango,-33.63026,-70.75037,Almendros,11.0,RM
+2,Calera de Tango,-33.64388888888889,-70.83833333333332,Condominio SCdL,10.0,RM
+3,Cerrillos,-33.5071009,-70.708747,Rocío,10.0,RM
+4,Cerro Navia,-33.41946,-70.72695,Nanocerro,11.0,RM
+5,Colina,-33.235,-70.673333,Chicureo,11.5,RM
+6,Colina,-33.307339,-70.660102,Chamisero,10.9,RM
+7,Conchalí,-33.38773,-70.65886,Conchalí 1,10.0,RM
+8,El Bosque,-33.563922,-70.6701799,SevenAlan,11.0,RM
+9,El Monte,-33.68048,-70.998302,Coipocho,10.0,RM
+10,Huechuraba,-33.347483,-70.663776,Los Guindos,13.0,RM
+11,Isla de Maipo,-33.704432,-70.89853,Granortu,9.0,RM
+12,La Cisterna,-33.51955,-70.65685,Arimikachi,12.0,RM
+13,La Cisterna,-33.52055555555555,-70.66583333333334,Elparrita,10.0,RM
+14,La Cisterna ,-33.52583,-70.667812,San Simón,10.0,RM
+15,La Florida,-33.521069,-70.527356,Vista_cordillera,13.0,RM
+16,La Florida,-33.52336,-70.56212,Miravalle,12.0,RM
+17,La Florida,-33.53132,-70.56046,Bougainvillea,12.0,RM
+18,La Florida,-33.5387504,-70.58643,MDM,11.7,RM
+19,La Florida,-33.529856,-70.587167,El Limón,11.1,RM
+20,La Florida,-33.566723,-70.592142,Guacolda,11.0,RM
+21,La Granja,-33.54114,-70.62564,ElPepeCharquis,13.0,RM
+22,La Granja,-33.53215,-70.61203,Casa Exequiel,10.0,RM
+23,La Reina,-33.434636,-70.522047,Petricor,14.8,RM
+24,La Reina,-33.459283,-70.56545,FG6189,13.5,RM
+25,La Reina,-33.43648,-70.54493,asilvam,13.2,RM
+26,La Reina,-33.452259,-70.554147,San Benito,12.0,RM
+27,La Reina,-33.4325123,-70.5797009,thequeen,12.0,RM
+28,La Reina,-33.44194,-70.56306,Tadeo,10.0,RM
+29,Lampa,-33.25,-70.8947,Malena,15.0,RM
+30,Lampa,-33.255169,-70.881025,Lampa_Rural,11.0,RM
+31,Las Condes,-33.40635,-70.51399,FECHITA,14.0,RM
+32,Las Condes,-33.41069,-70.51004,Marley,13.0,RM
+33,Las Condes,-33.37354,-70.5041,La Posada MK,13.0,RM
+34,Las Condes,-33.407573,-70.540641,Dominicos,12.5,RM
+35,Las Condes,-33.423889,-70.557545,Dreal,12.0,RM
+36,Las Condes,-33.41068,-70.51288,Boldo,12.0,RM
+37,Las Condes,-33.405679,-70.55212,pluv_lcbv,12.0,RM
+38,Las Condes,-33.402676,-70.542935,casona,12.0,RM
+39,Las Condes,-33.4249222,-70.5821583,Cristobaldlm,11.0,RM
+40,Las Condes,-33.426634,-70.587151,Teruel,11.0,RM
+41,Las Condes,-33.42053,-70.5582,Salvador,11.0,RM
+42,Las Condes,-33.39729444444444,-70.53663888888889,Calán - DGF,12.4,RM
+43,Las Condes,-33.41354,-70.58728,MPM,7.0,RM
+44,Lo Barnechea,-33.356717,-70.479844,Arrayán - Estero,13.0,RM
+45,Lo Barnechea,-33.332691,-70.524816,Panorámica,12.0,RM
+46,Lo Barnechea,-33.365434,-70.498209,CasaIsidora,12.0,RM
+47,Lo Barnechea,-33.3297222,-70.5038889,JPMG,11.3,RM
+48,Lo Barnechea,-33.3497222222222,-70.5405555555556,Santa Blanca,11.2,RM
+49,Lo Barnechea,-33.347133,-70.482523,Arrayán,11.2,RM
+50,Lo Barnechea,-33.359998,-70.476821,Las tres hermanas,11.0,RM
+51,Lo Barnechea,-33.342583,-70.47025,POMcI,11.0,RM
+52,Lo Espejo,-33.514491,-70.694431,Loespuno,11.0,RM
+53,Lo Espejo,-33.51708,-70.6801,ClaraEstrella,9.5,RM
+54,Maipu,-33.512062,-70.769442,Maipu_Templo,13.0,RM
+55,Maipu,-33.52789,-70.76574,Quincho,11.1,RM
+56,Maipu,-33.55672433,-70.7812371,AMC,10.0,RM
+57,Maipú,-33.52718,-70.77573,Pepe Carter,10.0,RM
+58,Maipú,-33.48422,-70.76013,Isi,9.5,RM
+59,Ñuñoa,-33.4624675,-70.6271803,Tomás,14.0,RM
+60,ñuñoa,-33.449216,-70.606639,sucre- PdV,13.0,RM
+61,Ñuñoa,-33.456043,-70.598147,Morgana,11.4,RM
+62,Ñuñoa,-33.450585,-70.591376,Brownpoint,10.5,RM
+63,Olmue,-32.99055555555556,-71.18027777777779,Colibrí,11.0,RM
+64,Padre Hurtado,-33.571829,-70.826461,fcoelectro,9.0,RM
+65,Padre Hurtado,-33.562211,-70.885686,Aromito,6.5,RM
+66,Pedro Aguirre Cerda,-33.4917,-70.675,Abranquil,12.0,RM
+67,Pedro Aguirre Cerda,-33.4987152,-70.6896665,Puente de patohi,10.0,RM
+68,Peñaflor,-33.6044444,-70.8980556,BATA,6.0,RM
+69,Peñalolén,-33.464228,-70.510042,Parque Cantalao,14.0,RM
+70,Peñalolén,-33.504061,-70.529608,Jorge,13.0,RM
+71,Peñalolén,-33.50167,-70.586438,Terra-Aqua,12.0,RM
+72,Peñalolén,-33.4893921,-70.541795,Puyehue,12.0,RM
+73,Peñalolén,-33.4733008,-70.5329882,CasaAnto,11.0,RM
+74,Pirque,-33.6493055555556,-70.6056388888889,IsaPir,10.0,RM
+75,Providencia,-33.436461,-70.620565,Ministro,11.5,RM
+76,Providencia,-33.43551,-70.586153,El Belloto,11.5,RM
+77,Providencia,-33.4401249,-70.600959,Tranqui,11.0,RM
+78,Pudahuel,-33.463888,-70.84333,AnGar,11.0,RM
+79,Pudahuel,-33.454455,-70.85234,MIGIOMI,10.9,RM
+80,Pudahuel,-33.466772,-70.86392,Ciudad de los Valles,10.8,RM
+81,Puente Alto,-33.601355,-70.515257,Vizcachas,13.0,RM
+82,Puente Alto,-33.59039,-70.5734443,César3,12.0,RM
+83,Puente Alto,-33.5821241,-70.5858865,CasaPabla,11.0,RM
+84,Quilicura,-33.35935,-70.72336,mawün,11.5,RM
+85,Quilicura,-33.3498598,-70.73458217,Lásaro,10.0,RM
+86,Renca,-33.40343,-70.70815,Djoko,8.0,RM
+87,San Bernardo,-33.612675,-70.72276,Hueñimalal,10.0,RM
+88,San Bernardo,-33.592121,-70.707756,Saitama,9.0,RM
+89,San José de Maipo,-33.762359,-70.279106,El Ingenio,25.5,RM
+90,San José de Maipo,-33.578198,-70.405527,Alicura,18.0,RM
+91,San José de Maipo,-33.634484,-70.35255,San José,18.0,RM
+92,San José de Maipo,-33.5783328,-70.451299,El Canelo,15.0,RM
+93,San José de Maipo,-33.59083,-70.48583,La Obra DGF,10.4,RM
+94,San Miguel,-33.51119,-70.66195,Fajardo,10.3,RM
+95,San Ramón,-33.528298,-70.6411026,Pep9,10.0,RM
+96,Santiago  ,-33.4333882,-70.6584614,Ado,9.3,RM
+97,Santiago  ,-33.456944444444446,-70.66166666666668,DGF,8.6,RM
+98,Til Til,-33.0447222222222,-70.9913889,patorod,16.0,RM
+99,Til Til,-33.07089722222223,-70.98711388888889,Asiento Viejo,15.0,RM
+100,Til Til,-33.04158333333333,-70.98044444444444,Caleu Las Cortaderas,15.0,RM
+101,Til Til,-33.003119,-70.999335,Los Quillayes,15.0,RM
+102,Til Til,-33.002995,-70.997043,Profe Luis,13.0,RM
+103,Til Til,-33.135,-70.7972222,Huertos Familiares,12.0,RM
+104,Til Til,-32.99071111111111,-70.89506111111112,Rungue,12.0,RM
+105,Til Til,-33.1512806,-70.8892361,La Plazuela,11.0,RM
+106,Til Til,-33.07638333333334,-70.94580555555557,Los Quilos ,11.0,RM
+107,Til Til,-33.11244444444445,-70.79876944444445,Santa Matilde,11.0,RM
+108,Til Til,-33.163019444444444,-70.78773333333334,Alto el Manzano,10.0,RM
+109,Til Til,-33.095111111111116,-70.92550833333334,El Sauce,10.0,RM
+110,Til Til,-32.96924166666667,-70.83778333333333,Montenegro,10.0,RM
+111,Til Til,-33.07725555555556,-70.9251,TilTil Centro,9.5,RM
+112,Til Til,-33.164083,-70.787468,AEM Til Til,9.0,RM
+113,Til Til,-33.08021111111111,-70.88654166666667,La Aguada,9.0,RM
+114,Til Til,-32.93295833333333,-70.81376388888889,La Cumbre,9.0,RM
+115,Til Til,-32.94729722222222,-70.75080833333334,Rincón de los Valle,9.0,RM
+116,Til Til,-33.118275,-70.84519444444445,Punta Peuco,8.5,RM
+117,Vitacura,-33.38146,-70.55663,Auri-001,12.0,RM
+118,Vitacura,-33.3890092,-70.5560782,Villa El Dorado,12.0,RM
+119,Vitacura,-33.38783,-70.553479,Escultor,11.0,RM
+120,San Pedro,-33.898055,-71.452777,San Pedro Melipilla  INIA,3.5,EMA
+121,Padre Hurtado,-33.562443,-70.875305,El Villorio,3.8,EMA
+122,Talagante,-33.673332,-70.92111,Talagante FDF,4.5,EMA
+123,Isla de Maipo,-33.763888,-70.886666,Isla de Maipo FDF,5.2,EMA
+124,Isla de Maipo,-33.725554,-71.042499,Sn Antonio Naltahua INIA,5.8,EMA
+125,Paine,-33.8858333,-70.8775,Laguna de Aculeo - DGA,6.0,EMA
+126,Peñaflor,-33.5716667,-71.1016667,Mallarauco - DGA,6.8,EMA
+127,San Antonio,-33.736215,-71.421579,Cuncumén INIA,7.0,EMA
+128,Melipilla,-33.680277,-71.1997,Melipilla Esc. Tec. DGA,7.2,EMA
+129,María Pinto,-33.508555,-71.084029,El Parrón,7.8,EMA
+130,Colina,-33.2488,-70.72322,Chacabuco - INIA,8.2,EMA
+131,Colina,-33.1471111,-70.6602222,Peldehue Agromet,8.4,EMA
+132,Lampa,-33.286388,-70.83611,El Oasis INIA,8.5,EMA
+133,Buin,-33.711666,-70.711944,Los Tilos (INIA),8.5,EMA
+134,Paine,-33.861944,-70.639166,Huelquén FDF,8.6,EMA
+135,San Pedro,-33.8913888,-71.3941667,San Pedro,9.2,EMA
+136,Til Til,-33.123888,-70.828054,Polpaico DMC,9.5,EMA
+137,Colina,-33.113888,-70.685833,Peldehue Ad DMC,9.7,EMA
+138,Melipilla,-33.8908333,-71.233611,Los Guindos - DGA,9.9,EMA
+139,Santiago,-33.445,-70.67778,Q. Normal DMC,9.9,EMA
+140,Melipilla,-33.661388,-71.336944,Estero Puangue - DGA,10.0,EMA
+141,Santiago,-33.44861,-70.64389,DGA - Terraza Central,10.0,EMA
+142,Colina,-33.218888,-70.715833,Colina FDF,10.0,EMA
+143,Pudahuel,-33.442221,-70.746666,San Pablo DMC,10.1,EMA
+144,La Granja,-33.572777,-70.619721,La Platina (INIA),10.1,EMA
+145,Buin,-33.718611111,-70.66917,Santa Rita,10.1,EMA
+146,Lo Barnechea,-33.370554,-70.451111,Mapocho - Almendros DGA,10.4,EMA
+147,Curacaví,-33.438888,-71.025277,Panguiles DGA,10.9,EMA
+148,Alhue,-34.065,71.2538888,Alhué,11.0,EMA
+149,Curacaví,-33.429661,-71.029152,La Aurora,11.0,EMA
+150,Maipú,-33.497221,-70.845555,Rinconada INIA,11.1,EMA
+151,Talagante,-33.668744,-70.912195,Santa Amelia,11.1,EMA
+152,Alhue,-34.029166,-70.994999,El Asiento INIA,11.3,EMA
+153,Curacaví,-33.43861,-71.025554,Curacaví FDF,11.4,EMA
+154,Lampa,-33.34368,-70.8185,Chorrillos,11.6,EMA
+155,Buin,-33.754444,-70.764444,El Milagro DMC,11.7,EMA
+156,Pudahuel,-33.37833,-70.79639,Aer. Pudahuel DMC,11.7,EMA
+157,Paine,-33.811111,-70.88361,Angostura en Valdivia de Paine,11.9,EMA
+158,Las Condes,-33.394999,-70.536666,Calán - DGA,12.0,EMA
+159,Buin,-33.7986592,-70.8413394,Valdivia de Paine,12.0,EMA
+160,La Reina,-33.45528,-70.54222,Aer. Tobalaba DMC,12.2,EMA
+161,Melipilla,-33.725556,-71.209722,Chocalán,12.8,EMA
+162,Melipilla,-33.650277,-71.100277,Melipilla FDF,12.9,EMA
+163,Talagante,-33.6958333,-70.9236111,El Vergel - DGA,13.2,EMA
+164,El Monte,-33.691944,-71.101111,El Monte FDF,13.2,EMA
+165,San José de Maipo,-33.6767,-70.0886,El Yeso Embalse - DGA,13.4,EMA
+166,Pirque,-33.673888,-70.586666,Pirque DGA,13.6,EMA
+167,Til Til,-33.04944,-71.00139,La Dormida DMC,13.7,EMA
+168,Lo Barnechea,-33.344444,-70.363889,Estero Yerba Loca a/j San Fco.,14.1,EMA
+169,Pirque,-33.673888889,-70.586944444,Pirque,14.8,EMA
+170,San José de Maipo,-33.5902778,-70.4852778,La Obra EMOS DGA,16.4,EMA
+171,San José de Maipo,-33.615277,-70.350555,Guayacan DMC,16.6,EMA
+172,San José de Maipo,-33.636388,-70.356944,San José de Maipo Retén - DGA,16.7,EMA
+173,San José de Maipo,-33.597499,-70.379443,Maipo Manzano DGA,17.3,EMA
