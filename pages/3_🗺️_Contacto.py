@@ -41,7 +41,7 @@ path1, path2 = [os.path.join('static', f) for f in ['logo_ppcc.png', 'logo_dgf.p
 st.sidebar.image(path1, use_container_width=True)
 
 
-cols = st.columns(9)
+cols = st.columns(6)
 with cols[0]:
     st.image(path1, use_container_width=True)
 with cols[2]:
